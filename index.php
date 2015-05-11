@@ -14,31 +14,66 @@
 		<div class="fluid header">
 			<div class="col-md-push-6 col-lg-push-6 col-xs-12 col-sm-12 col-md-6 col-lg-6">
 				<h1>SMA Negeri 9 Yogyakarta</h1>
-				Jalan Sagan 1, Yogyakarta
+				Jalan Sagan 1, Yogyakarta <br><br>
+				<a href="#" class="btn btn-primary" title="">Ikuti Tour</a>
 			</div>	
 		</div>
-		<div class="col-md-push-8 col-lg-push-8 container col-xs-12 col-sm-12 col-md-4 col-lg-4">
+		<div class="container">
+		<!--News panel-->
+		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					Login
+					<h3><span class="glyphicon glyphicon-blackboard"></span> Berita Terbaru</h3>
+				</div>
+				<div class="panel-body">
+				  PHP goes Here.. <br>
+				  	<div class="media">
+					  <div class="media-left">
+					    <a href="#">
+					      <img class="media-object" src="">
+					    </a>
+					  </div>
+					  <div class="media-body">
+					    <h4 class="media-heading">Media heading</h4>
+					    <small>Senin, 17 April 2015</small>
+					    <small>| Dipost oleh: <a href="" title="">admin</a></small>
+					    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					  </div>
+					</div>
+					<hr>
+				  <a href="#" title="">Lihat Post ></a>
+				</div>
+			</div>
+		</div>
+		<!--login panel-->
+		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<span class="glyphicon glyphicon-user"></span> Login
 				</div>
 				<div class="panel-body">
 				   <form action="" method="POST" role="form">		   
 				   	<div class="form-group">
 				   		<label for="user">Username</label>
-				   		<input type="text" class="form-control" id="user" placeholder="Input field">
+				   		<input type="text" class="form-control" id="user" placeholder="NIM atau NIP">
 				   	</div>
 				   	<div class="form-group">
 				   		<label for="pass">Password</label>
-				   		<input type="password" class="form-control" id="pass" placeholder="Input field">
+				   		<input type="password" class="form-control" id="pass" placeholder="Password">
 				   	</div>
-				   
-				   	
-				   
 				   	<button type="submit" class="btn btn-primary">Submit</button>
 				   </form>
 				</div>
+				<div class="panel-footer">
+					Belum punya akun <a href="" title="">Silahkan Daftar!</a>
+				</div>
 			</div>
+		</div>		
 		</div>
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
