@@ -19,8 +19,29 @@
 			</div>	
 		</div>
 		<div class="container">
+		<!--Agenda Sekolah panel-->
+		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3><span class="glyphicon glyphicon-Calendar"></span> Agenda</h3>
+				</div>
+				<div class="panel-body">
+				  PHP goes Here.. <br>
+				  	<div class="media">
+					  <div class="media-left">
+					    <a href="#">
+					      <img class="media-object" src="">
+					    </a>
+					  </div>
+					 
+					</div>
+					<hr>
+				  <a href="#" title="">Lihat Post ></a>
+				</div>
+			</div>
+		</div>
 		<!--News panel-->
-		<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+		<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<h3><span class="glyphicon glyphicon-blackboard"></span> Berita Terbaru</h3>
@@ -51,7 +72,7 @@
 			</div>
 		</div>
 		<!--login panel-->
-		<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
 			<div class="panel panel-default">
 				<div class="panel-heading">
 					<span class="glyphicon glyphicon-user"></span> Login
