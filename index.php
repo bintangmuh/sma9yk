@@ -78,14 +78,14 @@
 					<span class="glyphicon glyphicon-user"></span> Login
 				</div>
 				<div class="panel-body">
-				   <form action="" method="POST" role="form">		   
+				   <form action="login.php" method="POST" role="form">		   
 				   	<div class="form-group">
 				   		<label for="user">Username</label>
-				   		<input type="text" class="form-control" id="user" placeholder="NIM atau NIP">
+				   		<input type="text" name="user" class="form-control" id="user" placeholder="NIM atau NIP">
 				   	</div>
 				   	<div class="form-group">
 				   		<label for="pass">Password</label>
-				   		<input type="password" class="form-control" id="pass" placeholder="Password">
+				   		<input type="password" name="pass" class="form-control" id="pass" placeholder="Password">
 				   	</div>
 				   	<button type="submit" class="btn btn-primary">Submit</button>
 				   </form>
@@ -95,6 +95,9 @@
 				</div>
 			</div>
 		</div>		
+		</div>
+		<div class="fluid">
+			<p class="text-center">Copyright SMA Negeri 9 yogyakarta 2015</p>
 		</div>
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
