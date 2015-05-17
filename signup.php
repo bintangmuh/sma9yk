@@ -29,7 +29,7 @@
 		<div class="container">
 			<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-6 col-lg-6 col-md-offset-3 bayang" style="background: #fff;">
 				<form action="inputsignup.php" method="POST" role="form">
-					<legend><h3><span class="glyphicon glyphicon-user"></span> Daftar Guru</h3></legend>
+					<legend><h3 class="text-center"><span class="glyphicon glyphicon-user"></span> Daftar Guru</h3></legend>
 					<div class="form-group">
 						<label for="user">Username : </label>
 						<input type="text" class="form-control" name="user" id="user" placeholder="Username">

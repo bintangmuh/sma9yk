@@ -1,0 +1,31 @@
+.menu {
+	padding: 0px;
+	height: 600px;
+	background: #000;
+}
+.mymenu {
+	height: 100%;
+	background: #000;
+}
+.mymenu h3 {
+	color: #fff;
+}
+.mymenu ul {
+	padding: 0px;
+	margin: 0px;
+}
+.mymenu ul li {
+	list-style: none;
+	height: 50px;
+}
+.mymenu ul li:hover {
+	background: #0066F1;
+	color: #fff;
+}
+.mymenu ul li a{
+	color: #fff;
+	display: block;
+	padding-left: 10px;
+	text-decoration: none;
+	line-height: 50px;
+}
