@@ -21,10 +21,12 @@
 	</head>
 	<body>
 	<div class="fluid">
-		
 		<?php require 'menu.php'; ?>
-		<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-			<h3><span class="glyphicon glyphicon-home"></span> Beranda - Datang di Admin Page</h3>
+		<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 content-admin">
+			<ol class="breadcrumb">
+			  <li><a href="berita.php" title=""><span class="glyphicon glyphicon-comment"></span> Berita</a></li>
+			</ol>
+			<h3><span class="glyphicon glyphicon-comment"></span> Berita</h3>
 			<hr>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -32,29 +34,8 @@
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<h3 class="text-center">Statistik</h3>
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bayang">
-				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-					<h3>Guru</h3>
-					<hr>
-					<p>Jumlah Staff Pengajar di <?php echo "$sekolah"; ?></p>
-					<h1><span class="glyphicon glyphicon-stats"></span>  65 Pengajar</h1>
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-					<h3>Siswa</h3>
-					<hr>
-					<p>Jumlah Siswa di <?php echo "$sekolah"; ?></p>
-					<ul>
-						<li>Kelas 10: <?php echo "100"; ?></li>
-						<li>Kelas 11: <?php echo "200"; ?></li>
-						<li>Kelas 12: <?php echo "160"; ?></li>
-					</ul>
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-					<h3>Sarana Prasarana</h3>
-					<hr>
-				</div>
-			</div>
+			<a href="addnews.php" class="btn btn-success" title=""><span class="glyphicon glyphicon-plus"></span> Tambah Berita</a>
+		</div>
 		</div>
 	</div>
 		<!-- jQuery -->
