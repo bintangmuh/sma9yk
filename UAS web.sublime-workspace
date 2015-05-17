@@ -1,0 +1,524 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"bu",
+				"bubblesortreversed"
+			],
+			[
+				"m",
+				"metodesort"
+			],
+			[
+				"i",
+				"im	import"
+			],
+			[
+				"a",
+				"arr"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"st",
+				"st	static"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"e",
+				"exsort"
+			],
+			[
+				"let",
+				"letakakhir"
+			],
+			[
+				"le",
+				"letakpos"
+			],
+			[
+				"Le",
+				"letakpos"
+			],
+			[
+				"leta",
+				"letak"
+			],
+			[
+				"pos",
+				"posisi"
+			],
+			[
+				"ps",
+				"posisi"
+			],
+			[
+				"S",
+				"Scanner"
+			],
+			[
+				"car",
+				"cariNama"
+			],
+			[
+				"D",
+				"daftarNama"
+			],
+			[
+				"DE",
+				"DECLARATION"
+			],
+			[
+				"END",
+				"END-FOR"
+			],
+			[
+				"EN",
+				"END-IF"
+			],
+			[
+				"ind",
+				"indeks2"
+			],
+			[
+				"inde",
+				"indeks2"
+			],
+			[
+				"pan",
+				"panjang1"
+			],
+			[
+				"kak",
+				"KakiKiri"
+			],
+			[
+				"pa",
+				"PahaKiri"
+			],
+			[
+				"pah",
+				"PahaKanan"
+			],
+			[
+				"tan",
+				"TanganKiri"
+			],
+			[
+				"t",
+				"TanganKanan"
+			],
+			[
+				"tamp",
+				"tampilDataJam"
+			],
+			[
+				"pri",
+				"print"
+			],
+			[
+				"s",
+				"search"
+			],
+			[
+				"nex",
+				"nextLine"
+			],
+			[
+				"Sa",
+				"Scanner"
+			],
+			[
+				"prnt",
+				"println"
+			],
+			[
+				"pr",
+				"println"
+			],
+			[
+				"tam",
+				"tampilDataPegawai"
+			],
+			[
+				"gaji",
+				"gajiJam"
+			],
+			[
+				"gj",
+				"gajiPerJam"
+			],
+			[
+				"str",
+				"String"
+			],
+			[
+				"nam",
+				"nama"
+			],
+			[
+				"gol",
+				"goljam"
+			],
+			[
+				"el",
+				"el	else"
+			],
+			[
+				"Pe",
+				"penjumlahan"
+			],
+			[
+				"print",
+				"println"
+			],
+			[
+				"matr",
+				"matriksA"
+			],
+			[
+				"ne",
+				"nextInt"
+			],
+			[
+				"matrik",
+				"matriksB"
+			],
+			[
+				"mat",
+				"matriksC"
+			],
+			[
+				"an",
+				"ang2"
+			],
+			[
+				"detik",
+				"detik1"
+			],
+			[
+				"ni",
+				"nilaiUnicode"
+			],
+			[
+				"p",
+				"pu	public"
+			],
+			[
+				"sy",
+				"System"
+			],
+			[
+				"br",
+				"break"
+			],
+			[
+				"C",
+				"C"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Snippet: java.math."
+			],
+			[
+				"",
+				"File: Close All"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 304.0,
+		"history":
+		[
+			"soalButs.java",
+			"coba",
+			"help",
+			"javac",
+			"javac soalButs.java",
+			"setpat",
+			"java",
+			"java soalButs",
+			"javac soalButs.java"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/pjava/CariBiner.java",
+		"/E/pjava/CariBinerMenurunSoal3.java",
+		"/E/pjava/CariBinerMenurun.java",
+		"/E/pjava/alpro/soal1ls11.java",
+		"/E/pjava/alpro/soal2ls11.java",
+		"/E/pjava/alpro/CariLinear.java",
+		"/E/pjava/alpro/soalButs.java",
+		"/E/pjava/alpro/CariNama.java",
+		"/E/xampp/htdocs/githubpages/bintangmuh.github.io/teletype/demo.html",
+		"/E/Program Files/sublime/Data/Packages/Terminal/Default (Windows).sublime-keymap",
+		"/E/pjava/alpro/test.java",
+		"/E/pjava/alpro/pseudoAlis.txt",
+		"/E/pjava/alpro/soal4ls6.java",
+		"/E/pjava/alpro/soal2ls6.java",
+		"/E/pjava/alpro/soal2ls7.java",
+		"/E/pjava/alpro/soalutsA.java",
+		"/E/pjava/alpro/soalutsB.java",
+		"/E/pjava/alpro/rekursi.java",
+		"/E/pjava/alpro/OpArit.java",
+		"/E/pjava/alpro/soal1ls7.java",
+		"/E/Bintang's Doc/Semester 2/alpro/LS_8/OpLogika.java",
+		"/E/Bintang's Doc/Semester 2/alpro/LS_8/OpBanding.java",
+		"/E/Bintang's Doc/Semester 2/alpro/LS_8/opincredandecre.java",
+		"/E/pjava/alpro/opbit.java",
+		"/E/pjava/alpro/FormatString.java",
+		"/E/pjava/alpro/testarray.java",
+		"/E/pjava/alpro/soal1ls6.java",
+		"/E/pjava/alpro/soal3ls6.java",
+		"/E/pjava/alpro/soal1ls5.java",
+		"/E/pjava/alpro/soal2ls5.java",
+		"/E/pjava/alpro/soal3ls5.java",
+		"/E/pjava/alpro/soal4ls5.java",
+		"/E/pjava/alpro/soal5ls5.java",
+		"/E/pjava/alpro/Gajipegawai.java",
+		"/E/pjava/alpro/soal3ls5do.java",
+		"/E/pjava/alpro/kalkulator.java",
+		"/E/pjava/alpro/soal2ls4.java",
+		"/E/pjava/alpro/soal3ls4.java",
+		"/E/pjava/alpro/soal5ls4.java",
+		"/E/pjava/alpro/soal4ls4.java",
+		"/E/pjava/alpro/soalbls3.java",
+		"/E/pjava/alpro/soalA3.java",
+		"/E/pjava/alpro/soalA4.java",
+		"/E/pjava/alpro/soalA5.java",
+		"/E/pjava/alpro/soalA2.java",
+		"/E/pjava/alpro/soalcls3.java",
+		"/E/pjava/alpro/soalA1.java",
+		"/E/pjava/alpro/soaA1.java",
+		"/E/pjava/alpro/Peluru.java",
+		"/E/pjava/alpro/opplusplus.java",
+		"/E/pjava/alpro/tugas2.txt",
+		"/E/Bintang's Doc/Semester 2/LS_2_14520241057/soalD.java",
+		"/E/Bintang's Doc/Semester 2/LS_2_14520241057/soalC.java",
+		"/E/Bintang's Doc/Semester 2/LS_2_14520241057/soalA.java",
+		"/E/Bintang's Doc/Semester 2/LS_2_14520241057/soalB.java",
+		"/D/coba.html",
+		"/E/pjava/alpro/coba.java",
+		"/E/Bintang's Doc/sublime text/Data/Packages/User/WakaTime.sublime-settings",
+		"/E/Bintang's Doc/sublime text/Data/Packages/WakaTime/WakaTime.sublime-settings",
+		"/E/pjava/Nilaiunmat.java",
+		"/E/pjava/AbedBintangHasan.class",
+		"/E/pjava/Grade.java",
+		"/E/pjava/Nilaiif.java",
+		"/E/pjava/Bintang.java",
+		"/E/pjava/Piramid.java",
+		"/E/pjava/Nilaiun.java",
+		"/F/Gradeswitch.java",
+		"/E/pjava/Seleksiif.java",
+		"/E/pjava/Ganjilgenap.java",
+		"/E/pjava/switchBuah.java",
+		"/E/pjava/Faktorial.java",
+		"/E/pjava/Faktorial2.java",
+		"/E/pjava/Faktorialdo.java",
+		"/E/pjava/Akarkw.java",
+		"/E/Dropbox/tugas kelas 12/SIE/editdata.php",
+		"/E/pjava/Coba1.java",
+		"/E/pjava/Invardata.java",
+		"/E/wData Bintang SM/xampp/xampplite/htdocs/pilosis/abc247ec4501be56704f2fd9c879268d.php",
+		"/E/pjava/Program1.java"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"[teletype ~]#",
+			"()",
+			"}",
+			"{",
+			"second",
+			"glembur",
+			"bulan",
+			"gol",
+			"metodesaya",
+			"10s",
+			"9s",
+			"|",
+			"printData",
+			"ambilData",
+			"inputData",
+			"tampilkan",
+			"”",
+			"“",
+			"Sysem",
+			"String",
+			"b",
+			"a",
+			"gpj",
+			"gtp",
+			"nim1",
+			"String predikat",
+			"break",
+			"println",
+			"kata",
+			"bilr",
+			"Nilai",
+			"umur",
+			"<<"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 131.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"E:\\xampp\\htdocs\\tugasweb\\LS_6\\index.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 260.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

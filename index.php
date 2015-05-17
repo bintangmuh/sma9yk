@@ -1,3 +1,4 @@
+<?php require 'config.php'; ?>
 <!DOCTYPE html>
 <html lang="">
 	<head>
@@ -13,8 +14,9 @@
 	<body>
 		<div class="fluid header">
 			<div class="col-md-push-6 col-lg-push-6 col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<h1>SMA Negeri 9 Yogyakarta</h1>
-				Jalan Sagan 1, Yogyakarta <br><br>
+				<h1><?php echo "$sekolah" ?></h1>
+				<?php echo "$alamat "; ?><span class="glyphicon glyphicon-phone-alt"> </span> <?php echo "$telepon"; ?> <br>
+				 <br>
 				<a href="#" class="btn btn-primary" title="">Ikuti Tour</a>
 			</div>	
 		</div>
@@ -91,7 +93,7 @@
 				   </form>
 				</div>
 				<div class="panel-footer">
-					Belum punya akun <a href="" title="">Silahkan Daftar!</a>
+					Belum punya akun <a href="signup.php" title="">Silahkan Daftar!</a>
 				</div>
 			</div>
 		</div>		

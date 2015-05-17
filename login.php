@@ -1,11 +1,17 @@
 <?php
+require 'account.php';
 if(isset($_POST['user']) && $_POST['pass']) {
 	$uname = $_POST['user'];
-	$upass = $_POST['pass'];	
+	$upass = $_POST['pass'];
+	$login = new account($uname, $upass);
+	if ($login->ceklogin()) {
+		$_SESSION['nama'] = $login->getNama();
+		$message="Selamat Datang";
+	}
 }
 else {
 	$uname = "";
-	$upass ="";
+	$upass = "";
 	$message = "Anda belum memasukan username dan password";
 }
 ?>
@@ -19,6 +25,7 @@ else {
 
 		<!-- Bootstrap CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -28,12 +35,20 @@ else {
 		<![endif]-->
 	</head>
 	<body>
+	<div class="fluid header">
 	<h3 class="text-center">Halaman Login</h3>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
 	<div class="container">
 	<?php if(isset($message)) { ?>
 	<div class="alert alert-danger">
 		<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-		<strong>Oops..</strong><?php echo "$message"; ?>
+		<strong><span class="glyphicon glyphicon-alert"></span> Oops.. </strong><?php echo "$message"; ?>
 	</div>
 	<?php } ?>
 	<div class="col-xs-12 col-sm-5 col-md-5 col-lg-5">
