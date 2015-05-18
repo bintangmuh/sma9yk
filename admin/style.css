@@ -1,11 +1,10 @@
 .menu {
 	padding: 0px;
-	height: 600px;
-	background: #000;
+	min-height: 800px;
+	background: #383636;
 }
 .mymenu {
-	height: 100%;
-	background: #000;
+	background: #383636;
 }
 .mymenu h3 {
 	color: #fff;
@@ -17,10 +16,18 @@
 .mymenu ul li {
 	list-style: none;
 	height: 50px;
+	transition: 0.2s;
 }
 .mymenu ul li:hover {
 	background: #0066F1;
 	color: #fff;
+}
+.mymenu ul li.active {
+	background: #0066F1;
+	color: #fff;
+}
+.mymenu ul li:hover a {
+	padding-left: 30px;
 }
 .mymenu ul li a{
 	color: #fff;
@@ -28,7 +35,12 @@
 	padding-left: 10px;
 	text-decoration: none;
 	line-height: 50px;
+	transition: 0.2s;
 }
 .content-admin {
 	padding-top: 20px;
+	max-height: 600px;
+}
+.kotak {
+	padding: 20px;
 }

@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Administrator Page - <?php echo "$sekolah"; ?></title>
+		<title>Halaman Daftar Guru - <?php echo "$sekolah"; ?></title>
 
 		<!-- Bootstrap CSS -->
 		<link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -23,8 +23,13 @@
 	<div class="fluid">
 		
 		<?php require 'menu.php'; ?>
-		<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-			<h3><span class="glyphicon glyphicon-home"></span> Beranda - Datang di Admin Page</h3>
+		<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 content-admin">
+			<!--pagination menu-->
+			<ol class="breadcrumb">
+			  <li><a href="guru.php" title=""><span class="glyphicon glyphicon-user"></span> Guru</a></li>
+			</ol>
+			<!--Content Guru-->
+			<h3><span class="glyphicon glyphicon-user"></span> Guru <?php echo "$sekolah"; ?></h3>
 			<hr>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -32,34 +37,27 @@
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<div class="bg-primary kotak">
-				<h4>Waktu Hari Ini</h4>
-				<span class="glyphicon glyphicon-calendar"></span> <strong>Tanggal : </strong><?php echo date('d M Y'); ?><br>
-				<span class="glyphicon glyphicon-time"></span> <strong>Jam : </strong><?php echo date('h:i'); ?>
-			</div>
-			<h3 class="text-center">Statistik</h3>
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bayang">
-				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-					<h3>Guru</h3>
-					<hr>
-					<p>Jumlah Staff Pengajar di <?php echo "$sekolah"; ?> yang terdaftar</p>
-					<h1><span class="glyphicon glyphicon-stats"></span>  65 Pengajar</h1>
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-					<h3>Siswa</h3>
-					<hr>
-					<p>Jumlah Siswa di <?php echo "$sekolah"; ?> yang terdaftar</p>
-					<ul>
-						<li>Kelas 10: <?php echo "100"; ?></li>
-						<li>Kelas 11: <?php echo "200"; ?></li>
-						<li>Kelas 12: <?php echo "160"; ?></li>
-					</ul>
-				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-					<h3>Sarana Prasarana</h3>
-					<hr>
-				</div>
-			</div>
+			<!--table guru-->
+			<table class="table table-hover">
+				<thead>
+					<tr>
+						<th>NIP</th>
+						<th>Nama</th>
+						<th>Mata Pelajaran</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>111 22 3 4 2323 23</td>
+						<td>Bintang Muhammad</td>
+						<td>Kehidupan</td>
+						<td><a href="info.php" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a> <a href="info.php" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
+					</tr>
+				</tbody>
+			</table>
+			<a href="addguru.php" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> Tambah Guru</a> 
+			<a href="addmapel.php" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Tambah Mata Pelajaran</a></a>
 		</div>
 	</div>
 		<!-- jQuery -->
