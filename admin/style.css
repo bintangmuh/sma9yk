@@ -5,6 +5,8 @@
 }
 .mymenu {
 	background: #383636;
+	position: fixed;
+	width: 25%;
 }
 .mymenu h3 {
 	color: #fff;

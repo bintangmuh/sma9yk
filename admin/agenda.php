@@ -5,7 +5,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Administrator Page - <?php echo "$sekolah"; ?></title>
+		<title>Halaman Daftar Guru - <?php echo "$sekolah"; ?></title>
 
 		<!-- Bootstrap CSS -->
 		<link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -21,13 +21,16 @@
 	</head>
 	<body>
 	<div class="fluid">
+		
 		<?php require 'menu.php'; ?>
 		<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 content-admin">
+			<!--pagination menu-->
 			<ol class="breadcrumb">
 			  <li><a href="index.php" title=""><span class="glyphicon glyphicon-home"></span> Beranda</a></li>
-			  <li><a href="berita.php" title=""><span class="glyphicon glyphicon-comment"></span> Berita</a></li>
+			  <li><a href="agenda.php" title=""><span class="glyphicon glyphicon-calendar"></span> Agenda</a></li>
 			</ol>
-			<h3><span class="glyphicon glyphicon-comment"></span> Berita</h3>
+			<!--Content Guru-->
+			<h3><span class="glyphicon glyphicon-user"></span> Agenda <?php echo "$sekolah"; ?></h3>
 			<hr>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -35,8 +38,26 @@
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<a href="addnews.php" class="btn btn-success" title=""><span class="glyphicon glyphicon-plus"></span> Tambah Berita</a>
-		</div>
+			<!--table Agenda-->
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th>Tanggal</th>
+						<th>Agenda</th>
+						<th>Isi</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>20 Mei 2015</td>
+						<td>Kera Bakti</td>
+						<td>Diharapkan seluruh untuk menaati peraturan</td>
+						<td><a href="info.php" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a> <a href="info.php" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
+					</tr>
+				</tbody>
+			</table>
+			<a href="addagenda.php" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> Tambah Agenda</a> 
 		</div>
 	</div>
 		<!-- jQuery -->

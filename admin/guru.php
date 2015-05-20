@@ -26,6 +26,7 @@
 		<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 content-admin">
 			<!--pagination menu-->
 			<ol class="breadcrumb">
+			  <li><a href="index.php" title=""><span class="glyphicon glyphicon-home"></span> Beranda</a></li>
 			  <li><a href="guru.php" title=""><span class="glyphicon glyphicon-user"></span> Guru</a></li>
 			</ol>
 			<!--Content Guru-->
@@ -38,7 +39,7 @@
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<!--table guru-->
-			<table class="table table-hover">
+			<table class="table table-hover table-bordered">
 				<thead>
 					<tr>
 						<th>NIP</th>
