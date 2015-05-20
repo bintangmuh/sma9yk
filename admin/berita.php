@@ -1,4 +1,9 @@
-<?php require '../config.php'; ?>
+<?php require '../config.php'; 
+$sql="SELECT * FROM `tb_berita` ";
+$result = $conn->query($sql);
+$rows = $result->num_rows;
+
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -29,12 +34,19 @@
 			</ol>
 			<h3><span class="glyphicon glyphicon-comment"></span> Berita</h3>
 			<hr>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>There is no news updated</p>
+			<?php
+				for ($j=0; $j < $rows ; $j++) { 
+					$result->data_seek($j);
+					$row = $result->fetch_array(MYSQLI_ASSOC);
+					echo "<h3>".$row['judul']."</h3>";
+					echo "<p>".$row['konten']."</p>";
+					echo '<a href="info.php" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a> <a href="info.php" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a>';
+					echo "<hr>";
+
+				}
+			 ?>
+
 			<a href="addnews.php" class="btn btn-success" title=""><span class="glyphicon glyphicon-plus"></span> Tambah Berita</a>
 		</div>
 		</div>
