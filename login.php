@@ -1,12 +1,28 @@
 <?php
-require 'account.php';
+require 'config.php';
+session_start();
 if(isset($_POST['user']) && $_POST['pass']) {
 	$uname = $_POST['user'];
 	$upass = $_POST['pass'];
-	$login = new account($uname, $upass);
-	if ($login->ceklogin()) {
-		$_SESSION['nama'] = $login->getNama();
-		$message="Selamat Datang";
+
+	$loginquery = "SELECT * FROM `tb_user` WHERE `user_id` = '$uname' AND `password`='$upass'";
+	$hasillogin = $conn->query($loginquery);
+	$ketemu = $hasillogin->num_rows;
+
+	if ($ketemu == 1) {
+		$hasillogin->data_seek(0);
+		$row = $hasillogin->fetch_array(MYSQLI_ASSOC);
+		echo $row['user_id'];
+		echo $row['password'];
+		if ($row['level'] == 1) {
+			echo "Kowe Admin";		
+		}
+		else if ($row['level'] == 1) {
+			echo "Kowe Guru";		
+		}
+	}
+	else {
+		$message = "Kesalahan Login! data tidak ada";
 	}
 }
 else {
@@ -61,11 +77,11 @@ else {
 				
 					<div class="form-group">
 						<label for="user">Username</label>
-						<input type="text" name="user" class="form-control" id="user" placeholder="Input field" value="<?php echo "$uname"; ?>">
+						<input type="text" name="user" class="form-control" id="user" placeholder="NIM atau username" value="<?php echo "$uname"; ?>">
 					</div>
 					<div class="form-group">
-						<label for="pass">Username</label>
-						<input type="password" name="pass" class="form-control" id="pass" placeholder="Input field" value="<?php echo "$upass"; ?>">
+						<label for="pass">Password</label>
+						<input type="password" name="pass" class="form-control" id="pass" placeholder="password" value="<?php echo "$upass"; ?>">
 					</div>
 				
 					
@@ -83,3 +99,4 @@ else {
 		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
+<?php session_stop(); ?>

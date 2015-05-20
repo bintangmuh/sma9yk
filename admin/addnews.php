@@ -33,7 +33,7 @@
 			<form action="" method="POST" role="form">						
 					<div class="form-group">
 						<label for="title">Judul Berita</label>
-						<input type="text" class="form-control" id="title" name="judul" placeholder="Judul">
+						<input type="text" name="judul" class="form-control" id="title" name="judul" placeholder="Judul">
 					</div>
 					<div class="form-group">
 						<label for="">Konten Berita</label>

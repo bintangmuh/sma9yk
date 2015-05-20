@@ -1,5 +1,5 @@
 <?php require '../config.php'; 
-$sql="SELECT * FROM `tb_berita` ";
+$sql="SELECT * FROM `tb_berita` ORDER BY `tb_berita`.`waktu` DESC";
 $result = $conn->query($sql);
 $rows = $result->num_rows;
 
@@ -32,19 +32,36 @@ $rows = $result->num_rows;
 			  <li><a href="index.php" title=""><span class="glyphicon glyphicon-home"></span> Beranda</a></li>
 			  <li><a href="berita.php" title=""><span class="glyphicon glyphicon-comment"></span> Berita</a></li>
 			</ol>
+
 			<h3><span class="glyphicon glyphicon-comment"></span> Berita</h3>
 			<hr>
-			<p>There is no news updated</p>
+			<?php 
+				if($rows < 1) {
+					echo "no post";
+				}
+			 ?>
 			<?php
 				for ($j=0; $j < $rows ; $j++) { 
 					$result->data_seek($j);
 					$row = $result->fetch_array(MYSQLI_ASSOC);
-					echo "<h3>".$row['judul']."</h3>";
-					echo "<p>".$row['konten']."</p>";
-					echo '<a href="info.php" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a> <a href="info.php" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a>';
-					echo "<hr>";
-
+			?>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<div class="panel panel-default bayang">
+					<div class="panel-body">
+					   <h4><?php echo $row['judul']; ?></h4>
+					   <p><?php echo $row['konten']; ?></p>
+					   <h4 class="pull-left"><small>posted by <?php echo $row['user_id']; ?> pada <?php echo $row['waktu']; ?></small></h4>
+					   <div class="btn-group pull-right">
+					   	<a href="info.php" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span> Edit</a> 
+					   <a href="info.php" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Delete</a>
+					   </div>
+					</div>
+				</div>
+			</div>
+			<?php
 				}
+				$result->close();
+				$conn->close();
 			 ?>
 
 			<a href="addnews.php" class="btn btn-success" title=""><span class="glyphicon glyphicon-plus"></span> Tambah Berita</a>
