@@ -1,6 +1,16 @@
 <?php
 require 'config.php';
 session_start();
+//cek session, jika sudah login akan diarahkan kemari
+if(isset($_SESSION['user']) && isset($_SESSION['level'])) {
+	if ($_SESSION['level'] == 1) {
+			header("location: ./admin/");		
+	}
+	else {
+			header("location: ./home.php");		
+	}
+}
+//cek ada tidaknya 
 if(isset($_POST['user']) && $_POST['pass']) {
 	$uname = $_POST['user'];
 	$upass = $_POST['pass'];
@@ -9,22 +19,28 @@ if(isset($_POST['user']) && $_POST['pass']) {
 	$hasillogin = $conn->query($loginquery);
 	$ketemu = $hasillogin->num_rows;
 
+	//jika data ditemukan
 	if ($ketemu == 1) {
 		$hasillogin->data_seek(0);
 		$row = $hasillogin->fetch_array(MYSQLI_ASSOC);
-		echo $row['user_id'];
-		echo $row['password'];
+		$_SESSION['user'] = $row['user_id'];
+		$_SESSION['level'] = $row['level'];
+
+		var_dump($_SESSION);
+
 		if ($row['level'] == 1) {
-			echo "Kowe Admin";		
+			header("location: ./admin/");	
 		}
 		else if ($row['level'] == 1) {
-			echo "Kowe Guru";		
+			header("home.php");		
 		}
 	}
+	//jika tidak
 	else {
 		$message = "Kesalahan Login! data tidak ada";
 	}
 }
+//jika tidak ada data yang masuk melalui method post
 else {
 	$uname = "";
 	$upass = "";
@@ -99,4 +115,6 @@ else {
 		<script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
-<?php session_stop(); ?>
+<?php
+	$conn->close();
+?>

@@ -9,6 +9,9 @@
 	position: fixed;
 	width: 25%;
 }
+.menu p {
+	margin-top: 20px;
+}
 .mymenu h3 {
 	color: #fff;
 }

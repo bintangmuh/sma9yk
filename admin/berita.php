@@ -1,7 +1,13 @@
 <?php require '../config.php'; 
+
+//mencari data pada tabel berita
 $sql="SELECT * FROM `tb_berita` ORDER BY `tb_berita`.`waktu` DESC";
 $result = $conn->query($sql);
 $rows = $result->num_rows;
+
+//memulai session dan mengecek session
+session_start();
+require 'allowedadmin.php';
 
 ?>
 <!DOCTYPE html>

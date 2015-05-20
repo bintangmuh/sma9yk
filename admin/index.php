@@ -1,4 +1,8 @@
-<?php require '../config.php'; ?>
+<?php require '../config.php'; 
+//cek session
+session_start();
+require 'allowedadmin.php';
+?>
 <!DOCTYPE html>
 <html>
 	<head>
