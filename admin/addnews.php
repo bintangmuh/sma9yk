@@ -1,4 +1,7 @@
-<?php require '../config.php'; ?>
+<?php require '../config.php'; 
+session_start();
+require 'allowedadmin.php';
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -30,7 +33,7 @@
 			</ol>
 			<h3><span class="glyphicon glyphicon-plus"></span> Tambah Berita</h3>
 			<hr>
-			<form action="" method="POST" role="form">						
+			<form action="submitberita.php" method="POST" role="form">						
 					<div class="form-group">
 						<label for="title">Judul Berita</label>
 						<input type="text" name="judul" class="form-control" id="title" name="judul" placeholder="Judul">

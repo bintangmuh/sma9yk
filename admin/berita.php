@@ -38,14 +38,34 @@ require 'allowedadmin.php';
 			  <li><a href="index.php" title=""><span class="glyphicon glyphicon-home"></span> Beranda</a></li>
 			  <li><a href="berita.php" title=""><span class="glyphicon glyphicon-comment"></span> Berita</a></li>
 			</ol>
-
 			<h3><span class="glyphicon glyphicon-comment"></span> Berita</h3>
 			<hr>
+
+			<!--alert warning-->
+			<?php if(isset($_GET['err']) &&  ($_GET['err'] == 1)) {?>
+			<div class="alert alert-danger alert-dismissible" role="alert">
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			  <strong>Gagal Post</strong> Sebaiknya anda melakukan kembali postingan
+			</div>
+			<?php } ?>
+
+			<?php if(isset($_GET['err']) && ($_GET['err'] == 0)) {?>
+			<div class="alert alert-success alert-dismissible" role="alert">
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			  <strong>Post Sudah Berhasil dipublikasi</strong> Silahkan cek postingan!
+			</div>
+
+			<?php } ?>
+			<!--cek jika tidak ada post-->
 			<?php 
-				if($rows < 1) {
-					echo "no post";
-				}
+				if($rows < 1) { ?>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bayang">
+					<p>Tak ada post</p>
+				</div>
+			<?php }
 			 ?>
+
+			<!--tampilkann jika ada post-->
 			<?php
 				for ($j=0; $j < $rows ; $j++) { 
 					$result->data_seek($j);
