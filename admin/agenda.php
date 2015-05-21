@@ -1,4 +1,12 @@
-<?php require '../config.php'; ?>
+<?php require '../config.php'; 
+	session_start();
+	require 'allowedadmin.php';
+	$query="SELECT * FROM `tb_agenda` ";
+	$agenda = $conn->query($query);
+
+	$rows = $agenda->num_rows;
+
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -43,18 +51,33 @@
 				<thead>
 					<tr>
 						<th>Tanggal</th>
+						<th>Jam</th>
 						<th>Agenda</th>
 						<th>Isi</th>
 						<th>Action</th>
 					</tr>
 				</thead>
 				<tbody>
+				<!-- tampilkan jika tidak ada data -->
+				<?php 
+					if ($rows == 0) {
+						echo '<tr><td colspan="5" class="text-center"> Tidak ada data sama sekali</td></tr>';
+					} 
+				?>
+				<!-- Tampilkan data -->
+				<?php 
+					for ($i=0; $i < $rows; $i++) { 
+						$agenda->data_seek($i);
+						$row = $agenda->fetch_array(MYSQLI_ASSOC);
+				 ?>
 					<tr>
-						<td>20 Mei 2015</td>
-						<td>Kera Bakti</td>
-						<td>Diharapkan seluruh untuk menaati peraturan</td>
-						<td><a href="info.php" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a> <a href="info.php" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
+						<td><?php echo date("d M Y",strtotime($row['agendawkt'])); ?></td>
+						<td><?php echo date("H:i",strtotime($row['agendawkt'])); ?></td>
+						<td><?php echo $row['judul']; ?> </td>
+						<td><?php echo $row['konten']; ?></td>
+						<td><a href="editagenda.php?id=<?php echo $row['id_agenda']; ?>" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a> <a href="delagenda.php?id=<?php echo $row['id_agenda']; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
 					</tr>
+				<?php } ?>
 				</tbody>
 			</table>
 			<a href="addagenda.php" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> Tambah Agenda</a> 

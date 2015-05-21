@@ -1,4 +1,5 @@
-<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 menu hidden-xs">
+<a href="#menuadmin" class="affix"><span class="glyphicon glyphicon-th-list"></span></a>
+<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 menu hidden-xs" id="menuadmin">
 <!--<img src="https://pbs.twimg.com/media/CFNIzagUIAAPjuY.jpg:small" alt="" class="img-responsive">-->
 
 <nav class="mymenu">

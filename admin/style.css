@@ -50,3 +50,6 @@
 .kotak {
 	padding: 20px;
 }
+.menu#menuadmin:focus{
+	display: block;
+}

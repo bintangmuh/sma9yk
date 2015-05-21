@@ -8,7 +8,6 @@ $rows = $result->num_rows;
 //memulai session dan mengecek session
 session_start();
 require 'allowedadmin.php';
-
 ?>
 <!DOCTYPE html>
 <html>
@@ -76,7 +75,7 @@ require 'allowedadmin.php';
 					<div class="panel-body">
 					   <h4><?php echo $row['judul']; ?></h4>
 					   <p><?php echo $row['konten']; ?></p>
-					   <h4 class="pull-left"><small>posted by <?php echo $row['user_id']; ?> pada <?php echo $row['waktu']; ?></small></h4>
+					   <h4 class="pull-left"><small>posted by <?php echo $row['user_id']; ?> pada <?php echo date( 'd M Y H:i', strtotime($row['waktu'])); ?></small></h4>
 					   <div class="btn-group pull-right">
 					   	<a href="info.php" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span> Edit</a> 
 					   <a href="info.php" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Delete</a>
