@@ -48,6 +48,7 @@ require 'allowedadmin.php';
 			</div>
 			<?php } ?>
 
+			<!-- alert sukses posting -->
 			<?php if(isset($_GET['err']) && ($_GET['err'] == 0)) {?>
 			<div class="alert alert-success alert-dismissible" role="alert">
 			  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -69,25 +70,27 @@ require 'allowedadmin.php';
 				for ($j=0; $j < $rows ; $j++) { 
 					$result->data_seek($j);
 					$row = $result->fetch_array(MYSQLI_ASSOC);
-			?>
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-				<div class="panel panel-default bayang">
-					<div class="panel-body">
-					   <h4><?php echo $row['judul']; ?></h4>
-					   <p><?php echo $row['konten']; ?></p>
-					   <h4 class="pull-left"><small>posted by <?php echo $row['user_id']; ?> pada <?php echo date( 'd M Y H:i', strtotime($row['waktu'])); ?></small></h4>
-					   <div class="btn-group pull-right">
-					   	<a href="info.php" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span> Edit</a> 
-					   <a href="info.php" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Delete</a>
-					   </div>
+				?>
+				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+					<div class="panel panel-default bayang">
+						<div class="panel-body">
+						   <h4><?php echo $row['judul']; ?></h4>
+						   <pre><?php echo $row['konten']; ?></pre>
+						   <h4 class="pull-left"><small>posted by <?php echo $row['user_id']; ?> pada <?php echo date( 'd M Y H:i', strtotime($row['waktu'])); ?></small></h4>
+						   <div class="btn-group pull-right">
+						   	<a href="editnews.php?idpost=<?php echo $row['id_post']; ?>" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span> Edit</a> 
+						   <a href="info.php" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Delete</a>
+						   </div>
+						</div>
 					</div>
 				</div>
-			</div>
-			<?php
+				<?php
 				}
 				$result->close();
 				$conn->close();
 			 ?>
+
+			 <!-- akhir tampilkan post -->
 
 			<a href="addnews.php" class="btn btn-success" title=""><span class="glyphicon glyphicon-plus"></span> Tambah Berita</a>
 		</div>
