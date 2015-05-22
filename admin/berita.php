@@ -78,6 +78,7 @@ require 'allowedadmin.php';
 						   <pre><?php echo $row['konten']; ?></pre>
 						   <h4 class="pull-left"><small>posted by <?php echo $row['user_id']; ?> pada <?php echo date( 'd M Y H:i', strtotime($row['waktu'])); ?></small></h4>
 						   <div class="btn-group pull-right">
+						   	<a href="../news.php?idpost=<?php echo $row['id_post']; ?>" class="btn btn-default"><span class="glyphicon glyphicon-eye-open"></span> Lihat</a> 
 						   	<a href="editnews.php?idpost=<?php echo $row['id_post']; ?>" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span> Edit</a> 
 						   <a href="info.php" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Delete</a>
 						   </div>

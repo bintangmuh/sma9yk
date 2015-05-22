@@ -49,7 +49,7 @@ $row = $resedit->fetch_array(MYSQLI_ASSOC);
 			  <li>Edit Berita</li>
 			  <li><?php echo $row['judul']; ?></li>
 			</ol>
-			<h3><span class="glyphicon glyphicon-pencil"></span> <small>Edit Berita</small> | <?php echo $row['judul']; ?></h3>
+			<h3><span class="glyphicon glyphicon-pencil"></span><small>Edit Berita</small> | <?php echo $row['judul']; ?></h3>
 			<hr>
 			<form action="submitberita.php" method="POST" role="form">
 					<input type="hidden" name="" value="<?php echo $row['id_post'] ?>">						

@@ -25,9 +25,9 @@ require 'allowedadmin.php';
 	</head>
 	<body>
 	<div class="fluid">
-		
+	<?php require 'navbar.php'; ?>
 		<?php require 'menu.php'; ?>
-		<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
 			<h3><span class="glyphicon glyphicon-home"></span> Beranda - Datang di Admin Page</h3>
 			<hr>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
