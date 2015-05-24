@@ -32,7 +32,7 @@
 	background: #0066F1;
 	color: #fff;
 }
-.mymenu ul li:hover a {
+.mymenu ul li a:hover {
 	padding-left: 30px;
 }
 .mymenu ul li a{
@@ -43,13 +43,45 @@
 	line-height: 50px;
 	transition: 0.2s;
 }
+.button-black {
+	background: transparent;
+	line-height: 50px;
+	width: 15%;
+	text-align: center;
+	color: #fff;
+	transition: 0.2s;
+}
+.button-black:hover {
+	background: #0548F3;
+	color: #fff;
+	text-decoration: none;
+}
 .content-admin {
 	padding-top: 20px;
-	max-height: 600px;
+	padding-bottom: 20px;
 }
 .kotak {
 	padding: 20px;
 }
 .menu#menuadmin:focus{
 	display: block;
+}
+/*setting fixed navbar*/
+
+body {
+	margin-top: 52px;
+}
+.navbar {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 1;
+	margin: 0px; 
+	background-color: #383636; 
+	border:0px; 
+	border-bottom: 2px solid #337AB7; 
+	border-radius:0px; color: #fff; 
+	/*box-shadow: 2px 6px 5px -4px rgba(133,130,133,1); */
+	/*position: fixed; */
+}
 }

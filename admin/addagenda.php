@@ -1,4 +1,8 @@
-<?php require '../config.php'; ?>
+<?php require '../config.php'; 
+session_start();
+require 'allowedadmin.php';
+
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -20,6 +24,8 @@
 		<![endif]-->
 	</head>
 	<body>
+	<!-- loading navigasi -->
+	<?php require 'navbar.php'; ?>
 	<div class="fluid">
 		
 		<?php require 'menu.php'; ?>
@@ -43,14 +49,36 @@
 					<label for="">Isi : </label>
 					<textarea class="form-control" rows=10 name="content"></textarea>
 				</div>
+				<div class="form-inline">
 				<div class="form-group">
-					<label for="">Tanggal Diadakan : </label>
-					<input type="date" name="date" placeholder="">
+					<label for="date"><span class="glyphicon glyphicon-calendar"></span> Tanggal Diadakan : </label>
+					<input class="form-control" type="date" name="date" id="date" placeholder="jquery UI datepicker">
 				</div>
-			
 				
+				<div class="form-group">
+					<label for="jam"><span class="glyphicon glyphicon-time"></span> Jam : </label>
+					<select name="hour" class="form-control">
+					
+					<?php 
+						for ($j=0; $j < 25 ; $j++) { 
+							echo "<option value=".$j.">".$j."</option>";
+						}
+					 ?>
+					 </select> : 
+
+					 <select name="minute" class="form-control">
+					
+					<?php 
+						for ($m=0; $m < 60 ; $m++) { 
+							echo "<option value=".$m.">".$m."</option>";
+						}
+					 ?>
+					 </select>
+				</div>
+				</div>
+				<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span> Terbitkan</button>
+				</form>
 			
-				<button type="submit" class="btn btn-primary">Submit</button>
 			</form>
 		</div>
 	</div>
@@ -58,5 +86,6 @@
 		<script src="../js/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="../js/bootstrap.min.js"></script>
+		<?php $conn->close(); ?>
 	</body>
 </html>

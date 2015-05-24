@@ -8,6 +8,13 @@ $rows = $result->num_rows;
 //memulai session dan mengecek session
 session_start();
 require 'allowedadmin.php';
+
+if (!isset($_GET['postcount'])) {
+	$count = 5;		
+}
+else {
+	$count = $_GET['postcount'];
+}
 ?>
 <!DOCTYPE html>
 <html>
@@ -15,7 +22,7 @@ require 'allowedadmin.php';
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Administrator Page - <?php echo "$sekolah"; ?></title>
+		<title>Berita - Administrator Page - <?php echo "$sekolah"; ?></title>
 
 		<!-- Bootstrap CSS -->
 		<link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -30,9 +37,11 @@ require 'allowedadmin.php';
 		<![endif]-->
 	</head>
 	<body>
+
+	<?php require 'navbar.php'; ?>
 	<div class="fluid">
 		<?php require 'menu.php'; ?>
-		<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 content-admin">
+		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 content-admin">
 			<ol class="breadcrumb">
 			  <li><a href="index.php" title=""><span class="glyphicon glyphicon-home"></span> Beranda</a></li>
 			  <li><a href="berita.php" title=""><span class="glyphicon glyphicon-comment"></span> Berita</a></li>
@@ -54,8 +63,37 @@ require 'allowedadmin.php';
 			  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
 			  <strong>Post Sudah Berhasil dipublikasi</strong> Silahkan cek postingan!
 			</div>
-
 			<?php } ?>
+
+			<!-- alert sukses edit -->
+			<?php if(isset($_GET['err']) && ($_GET['err'] == 2)) {?>
+			<div class="alert alert-success alert-dismissible" role="alert">
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			  <strong>Post Sudah Berhasil di edit</strong> Silahkan cek postingan!
+			</div>
+			<?php } ?>
+
+
+			<!-- alert sukses edit -->
+			<?php if(isset($_GET['err']) && ($_GET['err'] == 3)) {?>
+			<div class="alert alert-danger alert-dismissible" role="alert">
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			  <strong>Post Sudah Berhasil di hapus</strong> Post yang telah dihapus tidak akan kembali
+			</div>
+			<?php } ?>
+
+			<center>
+			<div class="btn-group">
+				<a href="addnews.php" class="btn btn-success" title="" style="margin-bottom: 10px"><span class="glyphicon glyphicon-plus"></span> Tambah Berita</a>
+				<?php 
+					if ($count < $rows) {
+					// lihat selebihnya
+					echo '<a class="btn btn-primary" href="berita.php?postcount='.($count+5).'">Lihat Selebihnya</a>';
+				}
+				?>
+			</div>
+			</center>
+			
 			<!--cek jika tidak ada post-->
 			<?php 
 				if($rows < 1) { ?>
@@ -67,7 +105,7 @@ require 'allowedadmin.php';
 
 			<!--tampilkann jika ada post-->
 			<?php
-				for ($j=0; $j < $rows ; $j++) { 
+				for ($j=0; ($j < $rows) && ($j < $count) ; $j++) { 
 					$result->data_seek($j);
 					$row = $result->fetch_array(MYSQLI_ASSOC);
 				?>
@@ -92,11 +130,10 @@ require 'allowedadmin.php';
 			 ?>
 
 			 <!-- akhir tampilkan post -->
-
-			<a href="addnews.php" class="btn btn-success" title=""><span class="glyphicon glyphicon-plus"></span> Tambah Berita</a>
 		</div>
 		</div>
 	</div>
+
 		<!-- jQuery -->
 		<script src="../js/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->

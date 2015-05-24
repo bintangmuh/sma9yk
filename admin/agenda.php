@@ -13,7 +13,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Halaman Daftar Guru - <?php echo "$sekolah"; ?></title>
+		<title>Agenda - <?php echo "$sekolah"; ?></title>
 
 		<!-- Bootstrap CSS -->
 		<link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -28,6 +28,7 @@
 		<![endif]-->
 	</head>
 	<body>
+	<?php require 'navbar.php'; ?>
 	<div class="fluid">
 		
 		<?php require 'menu.php'; ?>
@@ -47,7 +48,7 @@
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<!--table Agenda-->
-			<table class="table table-hover table-bordered">
+			<table class="table table-hover table-stripped">
 				<thead>
 					<tr>
 						<th>Tanggal</th>
@@ -88,4 +89,5 @@
 		<!-- Bootstrap JavaScript -->
 		<script src="../js/bootstrap.min.js"></script>
 	</body>
-</html>
+	<?php $conn->close(); ?>
+</html>	

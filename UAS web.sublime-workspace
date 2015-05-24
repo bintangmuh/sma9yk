@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"pri",
+				"printf"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
 				"id",
 				"id_post"
 			],
@@ -14,10 +38,6 @@
 			[
 				"marg",
 				"margin-top"
-			],
-			[
-				"pad",
-				"padding-top"
 			],
 			[
 				"header",
@@ -74,10 +94,6 @@
 			[
 				"a",
 				"a	<a>"
-			],
-			[
-				"te",
-				"text-decoration"
 			],
 			[
 				"label",
@@ -208,10 +224,6 @@
 				"tampilDataJam"
 			],
 			[
-				"pri",
-				"print"
-			],
-			[
 				"s",
 				"search"
 			],
@@ -316,82 +328,18 @@
 	"buffers":
 	[
 		{
-			"file": "admin/style.css",
-			"settings":
-			{
-				"buffer_size": 752,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "css/style.css",
-			"settings":
-			{
-				"buffer_size": 514,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "config.php",
-			"settings":
-			{
-				"buffer_size": 414,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "admin/addnews.php",
-			"settings":
-			{
-				"buffer_size": 2074,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "admin/editnews.php",
-			"settings":
-			{
-				"buffer_size": 2777,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "admin/berita.php",
-			"settings":
-			{
-				"buffer_size": 3970,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "admin/menu.php",
-			"settings":
-			{
-				"buffer_size": 996,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "admin/navbar.php",
-			"settings":
-			{
-				"buffer_size": 1452,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "admin/submitberita.php",
-			"settings":
-			{
-				"buffer_size": 494,
-				"line_ending": "Windows"
-			}
-		},
-		{
 			"file": "admin/agenda.php",
 			"settings":
 			{
-				"buffer_size": 3440,
+				"buffer_size": 3500,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "admin/addagenda.php",
+			"settings":
+			{
+				"buffer_size": 3040,
 				"line_ending": "Windows"
 			}
 		},
@@ -399,7 +347,39 @@
 			"file": "admin/index.php",
 			"settings":
 			{
-				"buffer_size": 2871,
+				"buffer_size": 4321,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "admin/style.css",
+			"settings":
+			{
+				"buffer_size": 1301,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "admin/menu.php",
+			"settings":
+			{
+				"buffer_size": 1440,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "admin/berita.php",
+			"settings":
+			{
+				"buffer_size": 4005,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "admin/navbar.php",
+			"settings":
+			{
+				"buffer_size": 2125,
 				"line_ending": "Windows"
 			}
 		}
@@ -413,6 +393,10 @@
 			[
 				"gly",
 				"Snippet: bs3-glyphicon"
+			],
+			[
+				"inline",
+				"Snippet: bs3-form-inline"
 			],
 			[
 				"input hid",
@@ -460,10 +444,6 @@
 			],
 			[
 				"inlin",
-				"Snippet: bs3-form-inline"
-			],
-			[
-				"inline",
 				"Snippet: bs3-form-inline"
 			],
 			[
@@ -524,33 +504,39 @@
 	},
 	"expanded_folders":
 	[
-		"/E/xampp/htdocs/sma9yk",
-		"/E/xampp/htdocs/sma9yk/admin",
-		"/E/xampp/htdocs/sma9yk/css"
+		"/D/xampp/htdocs/sma9yk",
+		"/D/xampp/htdocs/sma9yk/admin"
 	],
 	"file_history":
 	[
+		"/D/xampp/htdocs/sma9yk/css/style.css",
+		"/D/xampp/htdocs/sma9yk/css/bootstrap.min.css",
+		"/D/xampp/htdocs/sma9yk/to do list",
+		"/D/xampp/htdocs/sma9yk/index.php",
+		"/D/xampp/htdocs/sma9yk/css/bootstrap.css",
+		"/E/xampp/htdocs/sma9yk/config.php",
+		"/E/xampp/htdocs/sma9yk/admin/style.css",
+		"/E/xampp/htdocs/sma9yk/css/style.css",
+		"/E/xampp/htdocs/sma9yk/admin/addnews.php",
+		"/E/xampp/htdocs/sma9yk/admin/editnews.php",
+		"/E/xampp/htdocs/sma9yk/admin/berita.php",
+		"/E/xampp/htdocs/sma9yk/admin/menu.php",
+		"/E/xampp/htdocs/sma9yk/admin/navbar.php",
+		"/E/xampp/htdocs/sma9yk/admin/submitberita.php",
+		"/E/xampp/htdocs/sma9yk/admin/agenda.php",
+		"/E/xampp/htdocs/sma9yk/admin/index.php",
 		"/E/Program Files/sublime/Data/Packages/User/WakaTime.sublime-settings",
 		"/E/Program Files/sublime/Data/Packages/WakaTime/WakaTime.sublime-settings",
-		"/E/xampp/htdocs/sma9yk/admin/berita.php",
-		"/E/xampp/htdocs/sma9yk/admin/addnews.php",
-		"/E/xampp/htdocs/sma9yk/admin/menu.php",
 		"/E/xampp/htdocs/sma9yk/login.php",
-		"/E/xampp/htdocs/sma9yk/admin/submitberita.php",
 		"/E/xampp/htdocs/sma9yk/testberita.php",
 		"/E/xampp/htdocs/sma9yk/logout.php",
 		"/E/xampp/htdocs/sma9yk/admin/allowedadmin.php",
-		"/E/xampp/htdocs/sma9yk/admin/index.php",
 		"/E/xampp/htdocs/sma9yk/account.php",
 		"/E/xampp/htdocs/sma9yk/submitberita.php",
 		"/E/xampp/htdocs/sma9yk/info.php",
 		"/E/xampp/htdocs/sma9yk/admin/addagenda.php",
 		"/E/xampp/htdocs/sma9yk/admin/guru.php",
-		"/E/xampp/htdocs/sma9yk/admin/agenda.php",
-		"/E/xampp/htdocs/sma9yk/config.php",
-		"/E/xampp/htdocs/sma9yk/admin/style.css",
 		"/E/xampp/htdocs/sma9yk/beta.php",
-		"/E/xampp/htdocs/sma9yk/css/style.css",
 		"/E/xampp/htdocs/sma9yk/signup.php",
 		"/E/xampp/htdocs/sma9yk/index.php",
 		"/E/xampp/htdocs/sma9yk/css/bootstrap.min.css",
@@ -652,6 +638,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"pre",
+			"PRE",
+			"sr-only",
+			"conten",
+			"nav",
 			");\n",
 			"*",
 			"Selamat",
@@ -708,261 +699,146 @@
 	[
 		{
 			"follow_symlinks": true,
-			"path": "E:\\xampp\\htdocs\\sma9yk"
+			"path": "D:\\xampp\\htdocs\\sma9yk"
 		}
 	],
 	"groups":
 	[
 		{
-			"selected": 6,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "admin/style.css",
+					"file": "admin/agenda.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 752,
+						"buffer_size": 3500,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								711,
-								711
+								508,
+								508
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "css/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 514,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								384,
-								433
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "config.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 414,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5,
-								5
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 9,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "admin/addnews.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2074,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								891,
-								891
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML5/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 127.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 8,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "admin/editnews.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2777,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2461,
-								2461
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML5/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 156.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "admin/berita.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3970,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3562,
-								3562
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML5/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 1042.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "admin/menu.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 996,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								996,
-								996
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML5/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "admin/navbar.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1452,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1317,
-								1317
-							]
-						],
-						"settings":
-						{
-							"auto_name": "",
-							"syntax": "Packages/HTML5/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 630.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "admin/submitberita.php",
+					"buffer": 1,
+					"file": "admin/addagenda.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 494,
+						"buffer_size": 3040,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6,
-								0
+								2790,
+								2790
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 805.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "admin/index.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4321,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2121,
+								2121
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 525.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "admin/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1301,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								799,
+								799
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "admin/menu.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1440,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1440,
+								1440
 							]
 						],
 						"settings":
@@ -973,24 +849,24 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 10,
+					"stack_index": 0,
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "admin/agenda.php",
+					"buffer": 5,
+					"file": "admin/berita.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3440,
+						"buffer_size": 4005,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1862,
-								1862
+								1197,
+								1197
 							]
 						],
 						"settings":
@@ -999,39 +875,39 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 690.0,
+						"translation.y": 210.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 7,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
-					"buffer": 10,
-					"file": "admin/index.php",
+					"buffer": 6,
+					"file": "admin/navbar.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2871,
+						"buffer_size": 2125,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1675,
-								1675
+								1150,
+								1150
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML5/HTML.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 389.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 5,
 					"type": "text"
 				}
 			]
@@ -1118,7 +994,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 155.0,
+	"side_bar_width": 175.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

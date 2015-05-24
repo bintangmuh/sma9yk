@@ -25,12 +25,3 @@
 	border-radius: 3px;
 	margin-bottom: 20px;
 }
-.navbar {
-	margin: 0px; 
-	background-color: #383636; 
-	border:0px; 
-	border-bottom: 2px solid #337AB7; 
-	border-radius:0px; color: #fff; 
-	box-shadow: 2px 6px 12px -4px rgba(133,130,133,1); 
-	/*position: fixed; */
-}

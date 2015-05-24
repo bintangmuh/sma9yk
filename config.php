@@ -5,7 +5,7 @@ $password = "";
 $mydb = "websekolah"; //nama database
 
 //sekolah
-$sekolah="SMA Negeri 8 Yogyakarta";
+$sekolah="Majisuka Jyogakuen";
 $alamat="Alamat Goes Here";
 $telepon="+62845663";
 // Create connection

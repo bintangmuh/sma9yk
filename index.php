@@ -99,11 +99,12 @@
 		</div>		
 		</div>
 		<div class="fluid">
-			<p class="text-center">Copyright SMA Negeri 9 yogyakarta 2015</p>
+			<p class="text-center">Copyright &copy; <?php echo "$sekolah"; ?> 2015</p>
 		</div>
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
 	</body>
+	<?php $conn->close(); ?>
 </html>

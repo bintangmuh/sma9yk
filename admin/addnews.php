@@ -24,12 +24,13 @@ require 'allowedadmin.php';
 		<![endif]-->
 	</head>
 	<body>
+		<?php require 'navbar.php'; ?>
 	<div class="fluid">
 		<?php require 'menu.php'; ?>
 		<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 content-admin">
 			<ol class="breadcrumb">
-			  <li><a href="index.php" title=""><span class="glyphicon glyphicon-home"></span> Beranda</a></li>
-			  <li><a href="berita.php" title=""><span class="glyphicon glyphicon-comment"></span> Berita</a></li>
+			  <li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Beranda</a></li>
+			  <li><a href="berita.php"><span class="glyphicon glyphicon-comment"></span> Berita</a></li>
 			  <li>Tambah Berita</li>
 			</ol>
 			<h3><span class="glyphicon glyphicon-plus"></span> Tambah Berita</h3>
@@ -54,4 +55,7 @@ require 'allowedadmin.php';
 		<!-- Bootstrap JavaScript -->
 		<script src="../js/bootstrap.min.js"></script>
 	</body>
+	<?php 
+		$conn->close();
+	 ?>
 </html>

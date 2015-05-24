@@ -2,6 +2,10 @@
 //cek session
 session_start();
 require 'allowedadmin.php';
+//querying agenda
+$query="SELECT * FROM `tb_agenda`";
+$agenda = $conn->query($query);
+$rows = $agenda->num_rows;
 ?>
 <!DOCTYPE html>
 <html>
@@ -24,8 +28,8 @@ require 'allowedadmin.php';
 		<![endif]-->
 	</head>
 	<body>
-	<div class="fluid">
 	<?php require 'navbar.php'; ?>
+	<div class="fluid">
 		<?php require 'menu.php'; ?>
 		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
 			<h3><span class="glyphicon glyphicon-home"></span> Beranda - Datang di Admin Page</h3>
@@ -41,6 +45,44 @@ require 'allowedadmin.php';
 				<span class="glyphicon glyphicon-calendar"></span> <strong>Tanggal : </strong><?php echo date('d M Y'); ?><br>
 				<span class="glyphicon glyphicon-time"></span> <strong>Jam : </strong><?php echo date('h:i'); ?>
 			</div>
+
+			<!-- tabel agenda hari ini -->
+			<h3>Agenda Hari Ini <span class="label label-primary"><?php echo "$rows"; ?></span></h3>
+			<table class="table table-hover table-stripped">
+				<thead>
+					<tr>
+						<th>Tanggal</th>
+						<th>Jam</th>
+						<th>Agenda</th>
+						<th>Isi</th>
+						<th>Action</th>
+					</tr>
+				</thead>
+				<tbody>
+				<!-- tampilkan jika tidak ada data -->
+				<?php 
+					if ($rows == 0) {
+						echo '<tr><td colspan="5" class="text-center"> Tidak ada data sama sekali</td></tr>';
+					} 
+				?>
+				<!-- Tampilkan data -->
+				<?php 
+					for ($i=0; $i < $rows; $i++) { 
+						$agenda->data_seek($i);
+						$row = $agenda->fetch_array(MYSQLI_ASSOC);
+				 ?>
+					<tr class="danger">
+						<td><?php echo date("d M Y",strtotime($row['agendawkt'])); ?></td>
+						<td><?php echo date("H:i",strtotime($row['agendawkt'])); ?></td>
+						<td><?php echo $row['judul']; ?> </td>
+						<td><?php echo $row['konten']; ?></td>
+						<td><a href="editagenda.php?id=<?php echo $row['id_agenda']; ?>" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a> <a href="delagenda.php?id=<?php echo $row['id_agenda']; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
+					</tr>
+				<?php } 
+				$agenda->close()
+				?>
+				</tbody>
+			</table>
 			<h3 class="text-center">Statistik</h3>
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bayang">
 				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
@@ -66,6 +108,7 @@ require 'allowedadmin.php';
 			</div>
 		</div>
 	</div>
+	<?php $conn->close(); ?>
 		<!-- jQuery -->
 		<script src="../js/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->

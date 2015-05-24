@@ -40,6 +40,7 @@ $row = $resedit->fetch_array(MYSQLI_ASSOC);
 		<![endif]-->
 	</head>
 	<body>
+		<?php require 'navbar.php'; ?>
 	<div class="fluid">
 		<?php require 'menu.php'; ?>
 		<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 content-admin">
@@ -49,10 +50,11 @@ $row = $resedit->fetch_array(MYSQLI_ASSOC);
 			  <li>Edit Berita</li>
 			  <li><?php echo $row['judul']; ?></li>
 			</ol>
-			<h3><span class="glyphicon glyphicon-pencil"></span><small>Edit Berita</small> | <?php echo $row['judul']; ?></h3>
+			
+			<h3><span class="glyphicon glyphicon-pencil"></span> <?php echo $row['judul']; ?> <small><code>Edit Berita</code></small></h3>
 			<hr>
-			<form action="submitberita.php" method="POST" role="form">
-					<input type="hidden" name="" value="<?php echo $row['id_post'] ?>">						
+			<form action="edittbberita.php" method="POST" role="form">
+					<input type="hidden" name="idpost" value="<?php echo $row['id_post'] ?>">						
 					<div class="form-group">
 						<label for="title">Judul Berita</label>
 						<input type="text" name="judul" class="form-control" id="judul" name="judul" placeholder="Judul" value="<?php echo $row['judul'] ?>">
@@ -62,7 +64,7 @@ $row = $resedit->fetch_array(MYSQLI_ASSOC);
 						<textarea name="konten" rows="10" class="form-control" placeholder="Konten Berita"><?php echo $row['konten'] ?></textarea>
 					</div>
 
-					<button type="submit" class="btn btn-primary">Terbitkan</button>
+					<button type="submit" name="submit" class="btn btn-primary">Terbitkan</button>
 			</form>			
 		</div>
 		</div>
