@@ -13,7 +13,7 @@
 		$judul = $_POST['judul'];
 		$konten = $_POST['konten'];
 	}
-	$query = "UPDATE `websekolah`.`tb_berita` SET `judul` = '$judul', `konten` = '$konten' WHERE `tb_berita`.`id_post` = $id;";
+	$query = "UPDATE `$mydb`.`tb_berita` SET `judul` = '$judul', `konten` = '$konten' WHERE `tb_berita`.`id_post` = $id;";
 	$prosesedit = $conn->query($query);
 	if (!$prosesedit) {
 		echo "there is problem";

@@ -1,11 +1,14 @@
-<?php require '../config.php'; ?>
+<?php require '../config.php'; 
+	session_start();
+	require 'allowedadmin.php'	;
+?>
 <!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Halaman Daftar Guru - <?php echo "$sekolah"; ?></title>
+		<title>Halaman Guru - <?php echo "$sekolah"; ?></title>
 
 		<!-- Bootstrap CSS -->
 		<link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -20,10 +23,12 @@
 		<![endif]-->
 	</head>
 	<body>
+	<!-- load navbar -->
+	<?php require 'navbar.php'; ?>
 	<div class="fluid">
 		
 		<?php require 'menu.php'; ?>
-		<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 content-admin">
+		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 content-admin">
 			<!--pagination menu-->
 			<ol class="breadcrumb">
 			  <li><a href="index.php" title=""><span class="glyphicon glyphicon-home"></span> Beranda</a></li>
@@ -64,6 +69,10 @@
 		<!-- jQuery -->
 		<script src="../js/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->
+		<script type="text/javascript">
+			$('#gurumenu').attr({class : 'active'})
+		</script>
 		<script src="../js/bootstrap.min.js"></script>
 	</body>
+	<?php $conn->close(); ?>
 </html>

@@ -111,6 +111,9 @@ $rows = $agenda->num_rows;
 	<?php $conn->close(); ?>
 		<!-- jQuery -->
 		<script src="../js/jquery.js"></script>
+		<script type="text/javascript">
+			$('#berandamenu').attr({class : 'active'})
+		</script>
 		<!-- Bootstrap JavaScript -->
 		<script src="../js/bootstrap.min.js"></script>
 	</body>

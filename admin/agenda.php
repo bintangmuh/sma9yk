@@ -32,7 +32,7 @@
 	<div class="fluid">
 		
 		<?php require 'menu.php'; ?>
-		<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9 content-admin">
+		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 content-admin">
 			<!--pagination menu-->
 			<ol class="breadcrumb">
 			  <li><a href="index.php" title=""><span class="glyphicon glyphicon-home"></span> Beranda</a></li>
@@ -47,6 +47,18 @@
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+			<!-- alert Delete berhasil -->
+			<?php if (isset($_GET['err']) && ($_GET['err'] == 3)) {
+				?>
+			<div class="alert alert-danger alert-dismissible" role="alert">
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			  <strong>Agenda Sudah Berhasil di hapus</strong> Agenda yang telah dihapus tidak akan kembali
+			</div>
+			<?php
+			} ?>
+			<!-- akhir alert delete -->
+
 			<!--table Agenda-->
 			<table class="table table-hover table-stripped">
 				<thead>
@@ -76,7 +88,7 @@
 						<td><?php echo date("H:i",strtotime($row['agendawkt'])); ?></td>
 						<td><?php echo $row['judul']; ?> </td>
 						<td><?php echo $row['konten']; ?></td>
-						<td><a href="editagenda.php?id=<?php echo $row['id_agenda']; ?>" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a> <a href="delagenda.php?id=<?php echo $row['id_agenda']; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
+						<td><a href="editagenda.php?id=<?php echo $row['id_agenda']; ?>" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a> <a href="delagenda.php?idpost=<?php echo $row['id_agenda']; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
 					</tr>
 				<?php } ?>
 				</tbody>
@@ -86,6 +98,10 @@
 	</div>
 		<!-- jQuery -->
 		<script src="../js/jquery.js"></script>
+		<!-- ative menu -->
+		<script type="text/javascript">
+			$('#agendamenu').attr({class : 'active'})
+		</script>
 		<!-- Bootstrap JavaScript -->
 		<script src="../js/bootstrap.min.js"></script>
 	</body>

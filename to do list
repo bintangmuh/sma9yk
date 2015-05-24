@@ -2,10 +2,32 @@ TODO LIST:
 
 -Admin Page 
 - Berita 
-	Edit Berita tampil tapi belum edit
-	delete juga
+	Edit Berita tampil tapi belum edit --> done
+	delete juga --> done
+	upload img--?
 - Agenda 
 	-CRUD total belum
+	create --> nunggu jq UI
+	update --> total belum
+	delete --> done
+
+Target: Senin  malam frontend selesai
+UP NO _PENDING
+-Ptofil Sekolah
+	-visi misi
+	-sejarah
+	-prestasi
+	-
+
+-ekstrakurikuler
+	- view - homepage
+	- upload image
+	- Nama
+	- Deskripsi
+
+
+
+PENDING
 -Guru SIswa
 	-DB belum
 	-CRUD apalagi -_-

@@ -1,6 +1,5 @@
 .menu {
 	padding: 0px;
-	min-height: 800px;
 	background: #383636;
 }
 .mymenu {
@@ -63,9 +62,6 @@
 .kotak {
 	padding: 20px;
 }
-.menu#menuadmin:focus{
-	display: block;
-}
 /*setting fixed navbar*/
 
 body {
@@ -81,7 +77,7 @@ body {
 	border:0px; 
 	border-bottom: 2px solid #337AB7; 
 	border-radius:0px; color: #fff; 
-	/*box-shadow: 2px 6px 5px -4px rgba(133,130,133,1); */
+	box-shadow: 2px 6px 5px -4px rgba(88, 88, 88, 0.5); 
 	/*position: fixed; */
 }
 }

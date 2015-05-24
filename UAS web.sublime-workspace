@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"btn-",
+				"btn-primary"
+			],
+			[
+				"style",
+				"style	Attr"
+			],
+			[
+				"pos",
+				"postcount"
+			],
+			[
 				"pri",
 				"printf"
 			],
@@ -154,10 +166,6 @@
 			[
 				"leta",
 				"letak"
-			],
-			[
-				"pos",
-				"posisi"
 			],
 			[
 				"ps",
@@ -328,42 +336,10 @@
 	"buffers":
 	[
 		{
-			"file": "admin/agenda.php",
+			"file": "admin/editnews.php",
 			"settings":
 			{
-				"buffer_size": 3500,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "admin/addagenda.php",
-			"settings":
-			{
-				"buffer_size": 3040,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "admin/index.php",
-			"settings":
-			{
-				"buffer_size": 4321,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "admin/style.css",
-			"settings":
-			{
-				"buffer_size": 1301,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "admin/menu.php",
-			"settings":
-			{
-				"buffer_size": 1440,
+				"buffer_size": 2846,
 				"line_ending": "Windows"
 			}
 		},
@@ -371,15 +347,39 @@
 			"file": "admin/berita.php",
 			"settings":
 			{
-				"buffer_size": 4005,
+				"buffer_size": 5292,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "admin/navbar.php",
+			"file": "admin/delagenda.php",
 			"settings":
 			{
-				"buffer_size": 2125,
+				"buffer_size": 494,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "admin/agenda.php",
+			"settings":
+			{
+				"buffer_size": 3945,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "admin/addagenda.php",
+			"settings":
+			{
+				"buffer_size": 3033,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "admin/editagenda.php",
+			"settings":
+			{
+				"buffer_size": 3065,
 				"line_ending": "Windows"
 			}
 		}
@@ -475,7 +475,7 @@
 				"File: Close All"
 			]
 		],
-		"width": 512.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -505,13 +505,27 @@
 	"expanded_folders":
 	[
 		"/D/xampp/htdocs/sma9yk",
-		"/D/xampp/htdocs/sma9yk/admin"
+		"/D/xampp/htdocs/sma9yk/admin",
+		"/D/xampp/htdocs/sma9yk/css"
 	],
 	"file_history":
 	[
+		"/D/xampp/htdocs/sma9yk/admin/edittbberita.php",
+		"/D/xampp/htdocs/sma9yk/config.php",
+		"/D/xampp/htdocs/sma9yk/admin/delberita.php",
+		"/D/xampp/htdocs/sma9yk/admin/submitberita.php",
+		"/D/xampp/htdocs/sma9yk/README.md",
+		"/D/xampp/htdocs/sma9yk/admin/addagenda.php",
+		"/D/xampp/htdocs/sma9yk/to do list",
+		"/D/xampp/htdocs/sma9yk/admin/berita.php",
+		"/D/xampp/htdocs/sma9yk/admin/agenda.php",
+		"/D/xampp/htdocs/sma9yk/admin/addnews.php",
+		"/D/xampp/htdocs/sma9yk/admin/navbar.php",
+		"/D/xampp/htdocs/sma9yk/admin/index.php",
+		"/D/xampp/htdocs/sma9yk/admin/style.css",
+		"/D/xampp/htdocs/sma9yk/admin/menu.php",
 		"/D/xampp/htdocs/sma9yk/css/style.css",
 		"/D/xampp/htdocs/sma9yk/css/bootstrap.min.css",
-		"/D/xampp/htdocs/sma9yk/to do list",
 		"/D/xampp/htdocs/sma9yk/index.php",
 		"/D/xampp/htdocs/sma9yk/css/bootstrap.css",
 		"/E/xampp/htdocs/sma9yk/config.php",
@@ -638,6 +652,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"title=\"\"",
 			"pre",
 			"PRE",
 			"sr-only",
@@ -705,24 +720,24 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 5,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "admin/agenda.php",
+					"file": "admin/editnews.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3500,
+						"buffer_size": 2846,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								508,
-								508
+								2302,
+								2302
 							]
 						],
 						"settings":
@@ -731,27 +746,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 630.0,
+						"translation.y": 63.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 2,
+					"stack_index": 5,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "admin/addagenda.php",
+					"file": "admin/berita.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3040,
+						"buffer_size": 5292,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2790,
-								2790
+								3219,
+								2919
 							]
 						],
 						"settings":
@@ -760,90 +775,120 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 805.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "admin/index.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4321,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2121,
-								2121
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 525.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 6,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "admin/style.css",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1301,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								799,
-								799
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 728.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "admin/menu.php",
+					"buffer": 2,
+					"file": "admin/delagenda.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1440,
+						"buffer_size": 494,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1440,
-								1440
+								477,
+								477
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "admin/agenda.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3945,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2540,
+								2540
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 420.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "admin/addagenda.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3033,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								286,
+								286
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "admin/editagenda.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3065,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								927,
+								927
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -851,71 +896,13 @@
 					},
 					"stack_index": 0,
 					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "admin/berita.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4005,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1197,
-								1197
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 210.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "admin/navbar.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2125,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1150,
-								1150
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
 				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 22.0
 	},
 	"input":
 	{
@@ -955,7 +942,7 @@
 	"project": "",
 	"replace":
 	{
-		"height": 42.0
+		"height": 40.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -994,7 +981,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 175.0,
+	"side_bar_width": 193.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

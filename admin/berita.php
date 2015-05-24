@@ -74,7 +74,7 @@ else {
 			<?php } ?>
 
 
-			<!-- alert sukses edit -->
+			<!-- alert sukses delete -->
 			<?php if(isset($_GET['err']) && ($_GET['err'] == 3)) {?>
 			<div class="alert alert-danger alert-dismissible" role="alert">
 			  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
@@ -88,7 +88,7 @@ else {
 				<?php 
 					if ($count < $rows) {
 					// lihat selebihnya
-					echo '<a class="btn btn-primary" href="berita.php?postcount='.($count+5).'">Lihat Selebihnya</a>';
+					echo '<a class="btn btn-primary" href="berita.php?postcount='.($count+5).'"><span class="glyphicon glyphicon-chevron-down"></span> Lihat Selebihnya</a>';
 				}
 				?>
 			</div>
@@ -118,7 +118,7 @@ else {
 						   <div class="btn-group pull-right">
 						   	<a href="../news.php?idpost=<?php echo $row['id_post']; ?>" class="btn btn-default"><span class="glyphicon glyphicon-eye-open"></span> Lihat</a> 
 						   	<a href="editnews.php?idpost=<?php echo $row['id_post']; ?>" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span> Edit</a> 
-						   <a href="info.php" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Delete</a>
+						   <a href="delberita.php?idpost=<?php echo $row['id_post']; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Delete</a>
 						   </div>
 						</div>
 					</div>
@@ -136,6 +136,9 @@ else {
 
 		<!-- jQuery -->
 		<script src="../js/jquery.js"></script>
+		<script type="text/javascript">
+			$('#beritamenu').attr({class : 'active'})
+		</script>
 		<!-- Bootstrap JavaScript -->
 		<script src="../js/bootstrap.min.js"></script>
 	</body>
