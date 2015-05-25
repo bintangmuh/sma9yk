@@ -1,15 +1,17 @@
 <?php 
-	require '../config.php';
+	require "../config.php";
 	session_start();
 
-	// allowed admin only
+	//allowed admin
 	require 'allowedadmin.php';
+
 	if (isset($_POST['submit'])) {
+		$id = $_POST['idekskul'];
 		$nama = $_POST['ekskul'];
 		$descrip = $_POST['desc'];
 	}
 
-	$sql = "INSERT INTO `$mydb`.`tb_ekskul` (`id_ekskul`, `nama_ekskul`, `deskripsi`, `image`) VALUES (NULL, '$nama', '$descrip', '');";
+	$sql = "UPDATE `$mydb`.`tb_ekskul` SET `nama_ekskul` = '$nama', `deskripsi` = '$descrip' WHERE `tb_ekskul`.`id_ekskul` = $id;";
 	$process = $conn->query($sql);
 
 	if(!$process) {

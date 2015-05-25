@@ -39,7 +39,7 @@
 			  <li><a href="ekskul.php"><span class="glyphicon glyphicon-knight"></span> Ekstrakurikuler</a></li>
 			</ol>
 			<!--Content Guru-->
-			<h3><span class="glyphicon glyphicon-knight"></span> EKstrakurikuler <?php echo "$sekolah"; ?></h3>
+			<h3><span class="glyphicon glyphicon-knight"></span> Ekstrakurikuler - <?php echo "$sekolah"; ?></h3>
 			<hr>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -47,10 +47,30 @@
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<!-- alert -->
+			<!--alert warning-->
+			<?php if(isset($_GET['err']) &&  ($_GET['err'] == 1)) {?>
+			<div class="alert alert-danger alert-dismissible" role="alert">
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			  <strong>Gagal</strong> Ada sebuah kesalahan
+			</div>
+			<?php } ?>
+
+			<!-- alert sukses posting -->
+			<?php if(isset($_GET['err']) && ($_GET['err'] == 0)) {?>
+			<div class="alert alert-success alert-dismissible" role="alert">
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			  <strong>Ekstrakurikuler Sudah Berhasil dipublikasi</strong> Silahkan cek postingan!
+			</div>
+			<?php } ?>
+
+			<!-- end of alert -->
+
 			<!--table ekskul-->
 			<table class="table table-hover table-striped">
 				<thead>
 					<tr>
+						<th>No.</th>
 						<th>Nama Ekstrakurikuler</th>
 						<th>Action</th>
 					</tr>
@@ -68,13 +88,17 @@
 						$result->data_seek($i);
 						$row = $result->fetch_array(MYSQLI_ASSOC);
 				 ?>
-					<tr>
+					<tr class="info">
+						<td><?php echo ($i+1) ?></td>
 						<td><?php echo $row['nama_ekskul'] ?></td>
 						<td>
 							<div class="btn-group">
-								<a href="editekskul.php?id=<?php echo $row['id_ekskul']; ?>" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a> <a href="delekskul.php?idpost=<?php echo $row['id_ekskul']; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a>
+								<a href="editekskul.php?id=<?php echo $row['id_ekskul']; ?>" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a> <a href="delekskul.php?id=<?php echo $row['id_ekskul']; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a>
 							</div>
 						</td>
+					</tr>
+					<tr>
+						<td colspan="4"><b>Deskripsi</b><br><?php echo $row['deskripsi']; ?></td>
 					</tr>
 				<?php } ?>
 				<!-- akhir perulangan -->
@@ -90,20 +114,14 @@
 				  	<legend>Tambah Ekstrakurikuler</legend>
 				  
 				  	<div class="form-group">
-				  		<label for="">Nama Ekstrakurikuler</label>
-				  		<input type="text" class="form-control" id="" placeholder="Prestasi">
+				  		<label for="name">Nama Ekstrakurikuler</label>
+				  		<input type="text" name="ekskul" class="form-control" id="name" placeholder="Nama Ekstrakurikuler">
 				  	</div>
 				  	<div class="form-group">
-				  		<label for="">Deskripsi</label>
-				  		<textarea type="text" class="form-control" id="" placeholder="Peserta"></textarea>
-				  	</div>
-				  	<div class="form-group">
-				  		<label for="">Tingkat</label>
-				  		<input type="text" class="form-control" id="" placeholder="Tingkat">
-				  	</div>
-				  	 
-				  	<br>
-				  	<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span> Submit</button>
+				  		<label for="desk">Deskripsi</label>
+				  		<textarea type="text" name="desc" class="form-control" id="desk" placeholder="Deskripsi Ekstrakurikuler" rows="15"></textarea>
+				  	</div>				  	 
+				  	<button type="submit" name="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span> Submit</button>
 				  </form>
 				</div>
 			    </div>

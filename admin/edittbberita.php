@@ -16,7 +16,7 @@
 	$query = "UPDATE `$mydb`.`tb_berita` SET `judul` = '$judul', `konten` = '$konten' WHERE `tb_berita`.`id_post` = $id;";
 	$prosesedit = $conn->query($query);
 	if (!$prosesedit) {
-		echo "there is problem";
+		header("location: ./berita.php?err=2");
 	}
 
 	$conn->close();
