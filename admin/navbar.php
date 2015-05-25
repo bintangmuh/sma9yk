@@ -20,7 +20,9 @@
 			<ul class="dropdown-menu">
 			<li><a href="index.php" ><span class="glyphicon glyphicon-home"></span> Beranda</a> </li>
 			<li><a href="berita.php" ><span class="glyphicon glyphicon-comment"></span> Berita</a></li>
-			<li><a href="agenda.php" ><span class="glyphicon glyphicon-calendar"></span> Agenda</a></li>
+			<li id="agendamenu"><a href="agenda.php"><span class="glyphicon glyphicon-calendar"></span> Agenda</a></li>
+			<li id="ekskul"><a href="ekskul.php"><span class="glyphicon glyphicon-knight"></span> Ekstrakurikuler</a></li>
+			<li id="pengaturan"><a href="setting.php"><span class="glyphicon glyphicon-wrench"></span> Setting Profil Sekolah</a></li>
 			<li><a href="guru.php" ><span class="glyphicon glyphicon-user"></span> Guru</a></li>
 			<li><a href="" ><span class="glyphicon glyphicon-education"></span> Siswa</a></li>
 			<li><a href="" ><span class="glyphicon glyphicon-pencil"></span> Pelajaran</a></li>

@@ -110,7 +110,7 @@ $rows = $agenda->num_rows;
 		<!-- jQuery -->
 		<script src="../js/jquery.js"></script>
 		<script type="text/javascript">
-			$('#berandamenu').attr({class : 'active'})
+			$('#berandamenu').attr({class : 'active'});
 		</script>
 		<!-- Bootstrap JavaScript -->
 		<script src="../js/bootstrap.min.js"></script>

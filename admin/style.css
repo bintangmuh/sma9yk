@@ -27,8 +27,11 @@
 	background: #0066F1;
 	color: #fff;
 }
+.mymenu ul li.active a {
+	color: #fff;
+}
 .mymenu ul li.active {
-	background: #0066F1;
+	background: #000;
 	color: #fff;
 }
 .mymenu ul li a:hover {

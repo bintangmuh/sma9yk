@@ -130,9 +130,10 @@
 	</div>
 		<!-- jQuery -->
 		<script src="../js/jquery.js"></script>
+
 		<!-- Bootstrap JavaScript -->
 		<script type="text/javascript">
-			$('#ekskul').attr({class : 'active'})
+			$('#ekskulmenu').attr({class : 'active'})
 		</script>
 		<script src="../js/bootstrap.min.js"></script>
 	</body>

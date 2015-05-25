@@ -100,7 +100,7 @@
 		<script src="../js/jquery.js"></script>
 		<!-- ative menu -->
 		<script type="text/javascript">
-			$('#agendamenu').attr({class : 'active'})
+			$('#agendamenubar').attr({class : 'active'})
 		</script>
 		<!-- Bootstrap JavaScript -->
 		<script src="../js/bootstrap.min.js"></script>
