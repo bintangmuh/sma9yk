@@ -53,14 +53,14 @@
 
 			  <!-- Nav tabs -->
 			  <ul class="nav nav-tabs" role="tablist">
-			    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Visi Misi</a></li>
+			    <li role="presentation" class="active"><a href="#visi" aria-controls="visi" role="tab" data-toggle="tab">Visi Misi</a></li>
 			    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Sejarah</a></li>
 			    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-certificate"></span> Prestasi</a></li>
 			  </ul>
 
 			  <!-- Tab panes -->
 			  <div class="tab-content">
-			    <div role="tabpanel" class="tab-pane active" id="home">
+			    <div role="tabpanel" class="tab-pane active" id="visi">
 			    <h3>Visi Misi</h3>
 			    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
@@ -68,7 +68,20 @@
 			    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			    <!-- form edit -->
+			    <form action="visimisi.php" method="POST" role="form"> 
+			    	<div class="form-group">
+			    		<label>Visi Misi</label>
+			    		<textarea name="visimisi" class="form-control" rows=10>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+			    	</div>
+			    	<button type="submit" class="btn btn-primary">Submit</button>
+			    </form>
 			    </div>
+
+			    <!-- tab sejarah -->
 			    <div role="tabpanel" class="tab-pane" id="profile">
 			    <h3>Sejarah</h3>
 			    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -76,7 +89,20 @@
 			    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+			    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			    <form action="sejarah.php" method="POST" role="form"> 
+			    	<div class="form-group">
+			    		<label>Sejarah</label>
+			    		<textarea name="sejarah" class="form-control" rows=10>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+			    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+			    	</div>
+			    	<button type="submit" class="btn btn-primary">Submit</button>
+			    </form>
+			    </div>
+
+			    <!-- tab prestasi -->
 			    <div role="tabpanel" class="tab-pane" id="messages">
 			    <h3>Prestasi</h3>
 			    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -115,7 +141,40 @@
 			    		</tr>
 			    	</tbody>
 			    </table>
-				<a href="addekstra.php" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> Tambah Ekstrakurikuler</a> 
+			    <!-- toogle form -->
+				<a class="btn btn-success"  data-toggle="collapse" href="#formprestasi" aria-expanded="false" aria-controls="formprestasi"><span class="glyphicon glyphicon-plus"></span> Tambah Prestasi</a>
+
+				<!-- view form -->
+				<div class="collapse" id="formprestasi">
+				  <form action="submitprestasi.php" method="POST" role="form">
+				  	<legend>Tambah Prestasi</legend>
+				  
+				  	<div class="form-group">
+				  		<label for="">Prestasi yang diraih</label>
+				  		<input type="text" class="form-control" id="" placeholder="Prestasi">
+				  	</div>
+				  	<div class="form-group">
+				  		<label for="">Nama Pemenang</label>
+				  		<input type="text" class="form-control" id="" placeholder="Peserta">
+				  	</div>
+				  	<div class="form-group">
+				  		<label for="">Tingkat</label>
+				  		<input type="text" class="form-control" id="" placeholder="Tingkat">
+				  	</div>
+				  	<div class="form-inline">
+				  		<label for="">Tahun: </label>
+				  		<select name="tahun" class="form-control">
+				  		<option value="">--Pilih Tahun--</option>}
+				  		option
+				  		<?php for ($year=1945; $year <= date('Y') ; $year++) { 
+				  			echo "<option value=".$year.">$year</option>";
+				  		} ?>
+				  		</select>
+				  	</div>  
+				  	<br>
+				  	<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span> Submit</button>
+				  </form>
+				</div>
 			    </div>
 			  </div>
 

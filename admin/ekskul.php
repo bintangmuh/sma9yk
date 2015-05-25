@@ -1,6 +1,10 @@
 <?php require '../config.php'; 
 	session_start();
 	require 'allowedadmin.php'	;
+	$sql = "SELECT * FROM `tb_ekskul`";
+	$result = $conn->query($sql);
+	$rows = $result->num_rows;
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -43,24 +47,67 @@
 			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-			<!--table guru-->
-			<table class="table table-hover table-bordered">
+			<!--table ekskul-->
+			<table class="table table-hover table-striped">
 				<thead>
 					<tr>
-						<th>Nama</th>
-						<th>Deskripsi</th>
+						<th>Nama Ekstrakurikuler</th>
 						<th>Action</th>
 					</tr>
 				</thead>
 				<tbody>
+				<!-- Perulangan list ekstra kurikuler -->
+				<?php 
+					if ($rows == 0) {
+						echo '<tr><td colspan="3" class="text-center"> Tidak ada data sama sekali</td></tr>';
+					} 
+				?>
+				<!-- Tampilkan data -->
+				<?php 
+					for ($i=0; $i < $rows; $i++) { 
+						$result->data_seek($i);
+						$row = $result->fetch_array(MYSQLI_ASSOC);
+				 ?>
 					<tr>
-						<td>Pramuka</td>
-						<td>Gerakan Kepanduan Sekolah</td>
-						<td><a href="editekstra.php?id=90" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a> <a href="editekstra.php?id=90" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
+						<td><?php echo $row['nama_ekskul'] ?></td>
+						<td>
+							<div class="btn-group">
+								<a href="editekskul.php?id=<?php echo $row['id_ekskul']; ?>" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a> <a href="delekskul.php?idpost=<?php echo $row['id_ekskul']; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a>
+							</div>
+						</td>
 					</tr>
+				<?php } ?>
+				<!-- akhir perulangan -->
 				</tbody>
+			<!-- akhir tb_ekskul -->
 			</table>
-			<a href="addekstra.php" class="btn btn-success"><span class="glyphicon glyphicon-plus"></span> Tambah Ekstrakurikuler</a> 
+			<!-- toogle form -->
+				<a class="btn btn-success"  data-toggle="collapse" href="#tambahekskul" aria-expanded="false" aria-controls="tambahekskul"><span class="glyphicon glyphicon-plus"></span> Tambah Ekstrakurikuler</a>
+
+				<!-- view form -->
+				<div class="collapse" id="tambahekskul">
+				  <form action="addekskul.php" method="POST" role="form">
+				  	<legend>Tambah Ekstrakurikuler</legend>
+				  
+				  	<div class="form-group">
+				  		<label for="">Nama Ekstrakurikuler</label>
+				  		<input type="text" class="form-control" id="" placeholder="Prestasi">
+				  	</div>
+				  	<div class="form-group">
+				  		<label for="">Deskripsi</label>
+				  		<textarea type="text" class="form-control" id="" placeholder="Peserta"></textarea>
+				  	</div>
+				  	<div class="form-group">
+				  		<label for="">Tingkat</label>
+				  		<input type="text" class="form-control" id="" placeholder="Tingkat">
+				  	</div>
+				  	 
+				  	<br>
+				  	<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span> Submit</button>
+				  </form>
+				</div>
+			    </div>
+			  </div>
 		</div>
 	</div>
 		<!-- jQuery -->
