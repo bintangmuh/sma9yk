@@ -14,6 +14,13 @@ require 'allowedadmin.php';
 		<!-- Bootstrap CSS -->
 		<link href="../css/bootstrap.min.css" rel="stylesheet">
 		<link href="../css/style.css" rel="stylesheet">
+		<!-- jquery UI css -->
+		<link href="../css/jquery-ui.min.css" rel="stylesheet">
+		<style>
+			.ui-datepicker-month, .ui-datepicker-year {
+				color: #000;
+			}
+		</style>
 		<link href="style.css" rel="stylesheet">
 
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -32,27 +39,27 @@ require 'allowedadmin.php';
 		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 content-admin">
 			<!--pagination menu-->
 			<ol class="breadcrumb">
-			  <li><a href="index.php" title=""><span class="glyphicon glyphicon-home"></span> Beranda</a></li>
-			  <li><a href="agenda.php" title=""><span class="glyphicon glyphicon-calendar"></span> Agenda</a></li>
-			  <li><a href="addagenda.php" title=""> Tambah Agenda</a></li>
+			  <li><a href="index.php" ><span class="glyphicon glyphicon-home"></span> Beranda</a></li>
+			  <li><a href="agenda.php" ><span class="glyphicon glyphicon-calendar"></span> Agenda</a></li>
+			  <li><a href="addagenda.php" > Tambah Agenda</a></li>
 			</ol>
 			<!--Content Guru-->
 			<h3><span class="glyphicon glyphicon-user"></span>Tambah Agenda <?php echo "$sekolah"; ?></h3>
 			<hr>
-			<form action="inputagenda.php" method="POST" role="form">
+			<form action="submitagenda.php" method="POST" role="form">
 				
 				<div class="form-group">
-					<label for="">Nama Agenda : </label>
-					<input type="text" class="form-control" id="" placeholder="Judul">
+					<label for="judul">Nama Agenda : </label>
+					<input type="text" class="form-control" name="judul" id="judul" placeholder="Nama Agenda">
 				</div>
 				<div class="form-group">
-					<label for="">Isi : </label>
-					<textarea class="form-control" rows=10 name="content"></textarea>
+					<label for="content">Isi : </label>
+					<textarea id="content" class="form-control" rows=10 name="content"></textarea>
 				</div>
 				<div class="form-inline">
 				<div class="form-group">
 					<label for="date"><span class="glyphicon glyphicon-calendar"></span> Tanggal Diadakan : </label>
-					<input class="form-control" type="date" name="date" id="date" placeholder="jquery UI datepicker">
+					<input class="form-control" type="date" name="date" id="datepicker" placeholder="Tanggal">
 				</div>
 				
 				<div class="form-group">
@@ -76,7 +83,7 @@ require 'allowedadmin.php';
 					 </select>
 				</div>
 				</div>
-				<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span> Terbitkan</button>
+				<button type="submit" name="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span> Terbitkan</button>
 				</form>
 			
 			</form>
@@ -84,6 +91,18 @@ require 'allowedadmin.php';
 	</div>
 		<!-- jQuery -->
 		<script src="../js/jquery.js"></script>
+		<!-- jquery UI -->
+		<script src="../js/jquery-ui.min.js"></script>
+		<script>
+		  $(function() {
+		    $( "#datepicker" ).datepicker({
+			      changeMonth: true,		     
+			      changeYear: true		     
+			    });
+		    $( "#datepicker" ).datepicker( "option", "dateFormat", "yy-mm-dd" );
+		
+		  });
+		</script>
 		<!-- Bootstrap JavaScript -->
 		<script src="../js/bootstrap.min.js"></script>
 		<?php $conn->close(); ?>

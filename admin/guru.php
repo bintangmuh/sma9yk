@@ -31,8 +31,8 @@
 		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 content-admin">
 			<!--pagination menu-->
 			<ol class="breadcrumb">
-			  <li><a href="index.php" title=""><span class="glyphicon glyphicon-home"></span> Beranda</a></li>
-			  <li><a href="guru.php" title=""><span class="glyphicon glyphicon-user"></span> Guru</a></li>
+			  <li><a href="index.php" ><span class="glyphicon glyphicon-home"></span> Beranda</a></li>
+			  <li><a href="guru.php" ><span class="glyphicon glyphicon-user"></span> Guru</a></li>
 			</ol>
 			<!--Content Guru-->
 			<h3><span class="glyphicon glyphicon-user"></span> Guru <?php echo "$sekolah"; ?></h3>

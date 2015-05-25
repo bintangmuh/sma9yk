@@ -18,12 +18,12 @@
 			<li class="dropdown visible-xs">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-th-list"></span> <strong>Menu Admin</strong> <b class="caret"></b></a>
 			<ul class="dropdown-menu">
-			<li><a href="index.php" title=""><span class="glyphicon glyphicon-home"></span> Beranda</a> </li>
-			<li><a href="berita.php" title=""><span class="glyphicon glyphicon-comment"></span> Berita</a></li>
-			<li><a href="agenda.php" title=""><span class="glyphicon glyphicon-calendar"></span> Agenda</a></li>
-			<li><a href="guru.php" title=""><span class="glyphicon glyphicon-user"></span> Guru</a></li>
-			<li><a href="" title=""><span class="glyphicon glyphicon-education"></span> Siswa</a></li>
-			<li><a href="" title=""><span class="glyphicon glyphicon-pencil"></span> Pelajaran</a></li>
+			<li><a href="index.php" ><span class="glyphicon glyphicon-home"></span> Beranda</a> </li>
+			<li><a href="berita.php" ><span class="glyphicon glyphicon-comment"></span> Berita</a></li>
+			<li><a href="agenda.php" ><span class="glyphicon glyphicon-calendar"></span> Agenda</a></li>
+			<li><a href="guru.php" ><span class="glyphicon glyphicon-user"></span> Guru</a></li>
+			<li><a href="" ><span class="glyphicon glyphicon-education"></span> Siswa</a></li>
+			<li><a href="" ><span class="glyphicon glyphicon-pencil"></span> Pelajaran</a></li>
 			</ul>
 			</li>
 

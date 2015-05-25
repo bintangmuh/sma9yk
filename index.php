@@ -17,7 +17,7 @@
 				<h1><?php echo "$sekolah" ?></h1>
 				<?php echo "$alamat "; ?><span class="glyphicon glyphicon-phone-alt"> </span> <?php echo "$telepon"; ?> <br>
 				 <br>
-				<a href="#" class="btn btn-primary" title="">Ikuti Tour</a>
+				<a href="#" class="btn btn-primary" >Ikuti Tour</a>
 			</div>	
 		</div>
 		<div class="container">
@@ -38,7 +38,7 @@
 					 
 					</div>
 					<hr>
-				  <a href="#" title="">Lihat Post ></a>
+				  <a href="#" >Lihat Post ></a>
 				</div>
 			</div>
 		</div>
@@ -59,7 +59,7 @@
 					  <div class="media-body">
 					    <h4 class="media-heading">Media heading</h4>
 					    <small>Senin, 17 April 2015</small>
-					    <small>| Dipost oleh: <a href="" title="">admin</a></small>
+					    <small>| Dipost oleh: <a href="" >admin</a></small>
 					    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 					    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 					    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -69,7 +69,7 @@
 					  </div>
 					</div>
 					<hr>
-				  <a href="#" title="">Lihat Post ></a>
+				  <a href="#" >Lihat Post ></a>
 				</div>
 			</div>
 		</div>
@@ -93,7 +93,7 @@
 				   </form>
 				</div>
 				<div class="panel-footer">
-					Belum punya akun <a href="signup.php" title="">Silahkan Daftar!</a>
+					Belum punya akun <a href="signup.php" >Silahkan Daftar!</a>
 				</div>
 			</div>
 		</div>		

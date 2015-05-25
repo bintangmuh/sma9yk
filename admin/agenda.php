@@ -35,8 +35,8 @@
 		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 content-admin">
 			<!--pagination menu-->
 			<ol class="breadcrumb">
-			  <li><a href="index.php" title=""><span class="glyphicon glyphicon-home"></span> Beranda</a></li>
-			  <li><a href="agenda.php" title=""><span class="glyphicon glyphicon-calendar"></span> Agenda</a></li>
+			  <li><a href="index.php" ><span class="glyphicon glyphicon-home"></span> Beranda</a></li>
+			  <li><a href="agenda.php" ><span class="glyphicon glyphicon-calendar"></span> Agenda</a></li>
 			</ol>
 			<!--Content Guru-->
 			<h3><span class="glyphicon glyphicon-user"></span> Agenda <?php echo "$sekolah"; ?></h3>

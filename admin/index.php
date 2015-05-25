@@ -55,7 +55,6 @@ $rows = $agenda->num_rows;
 						<th>Jam</th>
 						<th>Agenda</th>
 						<th>Isi</th>
-						<th>Action</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -76,7 +75,6 @@ $rows = $agenda->num_rows;
 						<td><?php echo date("H:i",strtotime($row['agendawkt'])); ?></td>
 						<td><?php echo $row['judul']; ?> </td>
 						<td><?php echo $row['konten']; ?></td>
-						<td><a href="editagenda.php?id=<?php echo $row['id_agenda']; ?>" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a> <a href="delagenda.php?id=<?php echo $row['id_agenda']; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
 					</tr>
 				<?php } 
 				$agenda->close()

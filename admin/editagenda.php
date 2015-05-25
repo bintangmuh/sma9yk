@@ -19,6 +19,14 @@ $edit = ""
 		<link href="../css/style.css" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
 
+		<!-- jQuery UI Style -->
+		<link href="../css/jquery-ui.min.css" rel="stylesheet">
+		<style>
+			.ui-datepicker-month, .ui-datepicker-year {
+				color: #000;
+			}
+		</style>
+
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -35,8 +43,8 @@ $edit = ""
 		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 content-admin">
 			<!--pagination menu-->
 			<ol class="breadcrumb">
-			  <li><a href="index.php" title=""><span class="glyphicon glyphicon-home"></span> Beranda</a></li>
-			  <li><a href="agenda.php" title=""><span class="glyphicon glyphicon-calendar"></span> Agenda</a></li>
+			  <li><a href="index.php" ><span class="glyphicon glyphicon-home"></span> Beranda</a></li>
+			  <li><a href="agenda.php" ><span class="glyphicon glyphicon-calendar"></span> Agenda</a></li>
 			  <li> Edit Agenda</li>
 			  <li> Judul Agenda</li>
 			</ol>
@@ -56,7 +64,7 @@ $edit = ""
 				<div class="form-inline">
 				<div class="form-group">
 					<label for="date"><span class="glyphicon glyphicon-calendar"></span> Tanggal Diadakan : </label>
-					<input class="form-control" type="date" name="date" id="date" placeholder="jquery UI datepicker">
+					<input class="form-control" type="date" name="date" id="datepicker" placeholder="Tanggal diadakan">
 				</div>
 				
 				<div class="form-group">
@@ -88,6 +96,19 @@ $edit = ""
 	</div>
 		<!-- jQuery -->
 		<script src="../js/jquery.js"></script>
+
+		<!-- Jquery UI -->
+		<script src="../js/jquery-ui.min.js"></script>
+		<script>
+		  $(function() {
+		    $( "#datepicker" ).datepicker({
+			      changeMonth: true,		     
+			      changeYear: true		     
+			    });
+		    $( "#datepicker" ).datepicker( "option", "dateFormat", "yy-mm-dd" );
+		
+		  });
+		</script>
 		<!-- Bootstrap JavaScript -->
 		<script src="../js/bootstrap.min.js"></script>
 		<?php $conn->close(); ?>
