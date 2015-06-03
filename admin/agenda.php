@@ -1,7 +1,7 @@
 <?php require '../config.php'; 
 	session_start();
 	require 'allowedadmin.php';
-	$query="SELECT * FROM `tb_agenda` ";
+	$query="SELECT * FROM `tb_agenda` ORDER BY `tb_agenda`.`agendawkt` ASC ";
 	$agenda = $conn->query($query);
 
 	$rows = $agenda->num_rows;
@@ -88,7 +88,7 @@
 						<td><?php echo date("H:i",strtotime($row['agendawkt'])); ?></td>
 						<td><?php echo $row['judul']; ?> </td>
 						<td><?php echo $row['konten']; ?></td>
-						<td><a href="editagenda.php?id=<?php echo $row['id_agenda']; ?>" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a> <a href="delagenda.php?idpost=<?php echo $row['id_agenda']; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a></td>
+						<td><a href="controller/delagenda.php?idpost=<?php echo $row['id_agenda']; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Delete</a></td>
 					</tr>
 				<?php } ?>
 				</tbody>

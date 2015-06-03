@@ -3,9 +3,12 @@
 session_start();
 require 'allowedadmin.php';
 //querying agenda
-$query="SELECT * FROM `tb_agenda`";
+$today = date('Y-m-d');
+$query="SELECT * FROM `tb_agenda` WHERE `agendawkt` LIKE '%$today%' ORDER BY `agendawkt` ASC";
 $agenda = $conn->query($query);
 $rows = $agenda->num_rows;
+$berita = $conn->query("SELECT * FROM tb_berita");
+$jumlahberita = $berita->num_rows;
 ?>
 <!DOCTYPE html>
 <html>
@@ -82,26 +85,42 @@ $rows = $agenda->num_rows;
 				</tbody>
 			</table>
 			<h3 class="text-center">Statistik</h3>
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 bayang">
-				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-					<h3>Guru</h3>
-					<hr>
-					<p>Jumlah Staff Pengajar di <?php echo "$sekolah"; ?> yang terdaftar</p>
-					<h1><span class="glyphicon glyphicon-stats"></span>  65 Pengajar</h1>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<div class="panel panel-primary">
+					<div class="panel-heading">
+					   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					   	<h1><span class="glyphicon glyphicon-send" aria-hidden="true"></span></h1>
+					   </div>
+					   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pull-left">
+					   	<h1><?php echo "$jumlahberita"; ?></h1>
+					   	<p></p>
+					   </div>
+					   <div class="clearfix"> Berita pada website ini</div>
+					</div>
+					<div class="panel-footer">
+						<a href="agenda.php">Agenda</a>
+					</div>
 				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-					<h3>Siswa</h3>
-					<hr>
-					<p>Jumlah Siswa di <?php echo "$sekolah"; ?> yang terdaftar</p>
-					<ul>
-						<li>Kelas 10: <?php echo "100"; ?></li>
-						<li>Kelas 11: <?php echo "200"; ?></li>
-						<li>Kelas 12: <?php echo "160"; ?></li>
-					</ul>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<div class="panel panel-success">
+					<div class="panel-heading btn btn-success">
+					   <h1><span class="glyphicon glyphicon-send" aria-hidden="true"></span></h1>
+					</div>
+					<div class="panel-footer">
+						<a href="agenda.php">Berita</a>
+					</div>
+
 				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-					<h3>Sarana Prasarana</h3>
-					<hr>
+			</div>
+			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+				<div class="panel panel-danger">
+					<div class="panel-heading">
+					   <h1><span class="glyphicon glyphicon-user" aria-hidden="true"></span></h1>
+					</div>
+					<div class="panel-footer">
+						<a href="agenda.php">Administrator</a>
+					</div>
 				</div>
 			</div>
 		</div>

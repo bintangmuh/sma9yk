@@ -1,6 +1,14 @@
 <?php require '../config.php'; 
 	session_start();
 	require 'allowedadmin.php'	;
+	$sql1="SELECT * FROM `tb_prestasi`";
+	$sql2="SELECT * FROM `tb_profil`";
+	$prestasi = $conn->query($sql1);
+	$profil = $conn->query($sql2);
+	$profil->data_seek(0);
+	$kontenprofil= $profil->fetch_array(MYSQLI_ASSOC);
+	$jumlahprestasi = $prestasi->num_rows;
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -49,56 +57,47 @@
 				<li>sejarah</li>
 				<li>Prestasi</li>
 			</ul>
+			<!-- alert  -->
+			<?php if(isset($_GET['err']) && ($_GET['err'] == 0)) {?>
+			<div class="alert alert-success alert-dismissible" role="alert">
+			  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			  <strong>Berhasil</strong> Mengolah data
+			</div>
+			<?php } ?>
 			<div role="tabpanel">
 
 			  <!-- Nav tabs -->
 			  <ul class="nav nav-tabs" role="tablist">
 			    <li role="presentation" class="active"><a href="#visi" aria-controls="visi" role="tab" data-toggle="tab">Visi Misi</a></li>
 			    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Sejarah</a></li>
-			    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-certificate"></span> Prestasi</a></li>
+			    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-certificate"></span> Prestasi <span class="label label-primary"><?php echo "$jumlahprestasi"; ?></span></a></li>
 			  </ul>
 
 			  <!-- Tab panes -->
 			  <div class="tab-content">
 			    <div role="tabpanel" class="tab-pane active" id="visi">
 			    <h3>Visi Misi</h3>
-			    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			    <pre><?php echo $kontenprofil['visimisi']; ?></pre>
 			    <!-- form edit -->
 			    <form action="visimisi.php" method="POST" role="form"> 
 			    	<div class="form-group">
 			    		<label>Visi Misi</label>
-			    		<textarea name="visimisi" class="form-control" rows=10>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+			    		<textarea name="visimisi" class="form-control" rows=10><?php echo $kontenprofil['visimisi']; ?></textarea>
 			    	</div>
-			    	<button type="submit" class="btn btn-primary">Submit</button>
+			    	<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> Simpan</button>
 			    </form>
 			    </div>
 
 			    <!-- tab sejarah -->
 			    <div role="tabpanel" class="tab-pane" id="profile">
-			    <h3>Sejarah</h3>
-			    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			    <h3>Sejarah <?php echo "$sekolah"; ?></h3>
+			     <pre><?php echo $kontenprofil['sejarah']; ?></pre>
 			    <form action="sejarah.php" method="POST" role="form"> 
 			    	<div class="form-group">
 			    		<label>Sejarah</label>
-			    		<textarea name="sejarah" class="form-control" rows=10>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			    		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			    		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			    		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</textarea>
+			    		<textarea name="sejarah" class="form-control" rows=10><?php echo $kontenprofil['sejarah']; ?></textarea>
 			    	</div>
-			    	<button type="submit" class="btn btn-primary">Submit</button>
+			    	<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> Simpan</button>
 			    </form>
 			    </div>
 
@@ -118,27 +117,30 @@
 			    			<th>Nama</th>
 			    			<th>Tingkat</th>
 			    			<th>Tahun</th>
+			    			<th>Action</th>
 			    		</tr>
 			    	</thead>
 			    	<tbody>
+			    	<?php if($jumlahprestasi == 0) { ?>
 			    		<tr>
-			    			<td>Juara 1 Roket</td>
-			    			<td>RokeBot</td>
-			    			<td>Internasional</td>
-			    			<td>1995</td>
+			    			<td colspan="4" class="text-center">Tidak Ada Prestasi</td>
 			    		</tr>
+			    	<?php } else {
+			    		for ($rowprestasi=0; $rowprestasi < $jumlahprestasi; $rowprestasi++) { 
+			    				$prestasi->data_seek($rowprestasi);
+			    				$row = $prestasi->fetch_array(MYSQLI_ASSOC);
+			    	?>
 			    		<tr>
-			    			<td>Juara 1 App Developer</td>
-			    			<td>AppoLink</td>
-			    			<td>Internasional</td>
-			    			<td>2014</td>
+			    			<td><?php echo $row['prestasi']; ?></td>
+			    			<td><?php echo $row['nama_peserta']; ?></td>
+			    			<td><?php echo $row['tingkat']; ?></td>
+			    			<td><?php echo $row['tahun']; ?></td>
+			    			<td><a class="btn btn-danger" href="delprestasi.php?id=<?php echo $row['id_prestasi']; ?>"><span class="glyphicon glyphicon-trash"></span> Delete</a></td>
 			    		</tr>
-			    		<tr>
-			    			<td>Juara 1 Lomba Tari</td>
-			    			<td>Stari</td>
-			    			<td>Internasional</td>
-			    			<td>2012</td>
-			    		</tr>
+			    	<?php	
+			    		}
+			    	} 
+			    	?>
 			    	</tbody>
 			    </table>
 			    <!-- toogle form -->
@@ -150,16 +152,16 @@
 				  	<legend>Tambah Prestasi</legend>
 				  
 				  	<div class="form-group">
-				  		<label for="">Prestasi yang diraih</label>
-				  		<input type="text" class="form-control" id="" placeholder="Prestasi">
+				  		<label>Prestasi yang diraih</label>
+				  		<input type="text" name="prestasi" class="form-control" placeholder="Prestasi" required>
 				  	</div>
 				  	<div class="form-group">
 				  		<label for="">Nama Pemenang</label>
-				  		<input type="text" class="form-control" id="" placeholder="Peserta">
+				  		<input type="text" name="nama" class="form-control" id="" placeholder="Peserta" required>
 				  	</div>
 				  	<div class="form-group">
 				  		<label for="">Tingkat</label>
-				  		<input type="text" class="form-control" id="" placeholder="Tingkat">
+				  		<input type="text" name="tingkat" class="form-control" id="" placeholder="Tingkat" required>
 				  	</div>
 				  	<div class="form-inline">
 				  		<label for="">Tahun: </label>
@@ -172,7 +174,7 @@
 				  		</select>
 				  	</div>  
 				  	<br>
-				  	<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span> Submit</button>
+				  	<button type="submit" name="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span> Submit</button>
 				  </form>
 				</div>
 			    </div>
@@ -190,5 +192,7 @@
 		</script>
 		<script src="../js/bootstrap.min.js"></script>
 	</body>
-	<?php $conn->close(); ?>
+	<?php 
+	$prestasi->close();
+	$conn->close(); ?>
 </html>

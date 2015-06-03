@@ -19,6 +19,13 @@
 		<link href="../css/style.css" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
 
+		<!-- tinyMCE -->
+		<script type="text/javascript" src="../js/tinymce.min.js"></script>
+		<script type="text/javascript">
+		tinymce.init({
+		    selector: "textarea"
+		 });
+		</script>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -93,12 +100,19 @@
 						<td><?php echo $row['nama_ekskul'] ?></td>
 						<td>
 							<div class="btn-group">
-								<a href="editekskul.php?id=<?php echo $row['id_ekskul']; ?>" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span></a> <a href="delekskul.php?id=<?php echo $row['id_ekskul']; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></a>
+								<a href="editekskul.php?id=<?php echo $row['id_ekskul']; ?>" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span> Edit</a> <a href="controller/delekskul.php?id=<?php echo $row['id_ekskul']; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Delete</a>
 							</div>
 						</td>
 					</tr>
 					<tr>
-						<td colspan="4"><b>Deskripsi</b><br><?php echo $row['deskripsi']; ?></td>
+						<td colspan="3">
+						<b>Deskripsi</b><br>
+						<?php 
+						if(!($row['image'] == "")) {
+							 echo '<img src="../img/'.$row['image'].'" alt="'.$row['nama_ekskul'].'" class="img-thumbnail" height=200px width=200px style="float: left; margin-right: 5px;">';
+						} 
+						 echo $row['deskripsi']; ?>
+						</td>
 					</tr>
 				<?php } ?>
 				<!-- akhir perulangan -->
@@ -110,7 +124,7 @@
 
 				<!-- view form -->
 				<div class="collapse" id="tambahekskul">
-				  <form action="addekskul.php" method="POST" role="form">
+				  <form action="controller/addekskul.php" method="POST" role="form" enctype="multipart/form-data">
 				  	<legend>Tambah Ekstrakurikuler</legend>
 				  
 				  	<div class="form-group">
@@ -118,9 +132,12 @@
 				  		<input type="text" name="ekskul" class="form-control" id="name" placeholder="Nama Ekstrakurikuler">
 				  	</div>
 				  	<div class="form-group">
+				  		<input type="file" name="gambar" id="gambar">
+				  	</div>
+				  	<div class="form-group">
 				  		<label for="desk">Deskripsi</label>
 				  		<textarea type="text" name="desc" class="form-control" id="desk" placeholder="Deskripsi Ekstrakurikuler" rows="15"></textarea>
-				  	</div>				  	 
+				  	</div>
 				  	<button type="submit" name="submit" class="btn btn-primary"><span class="glyphicon glyphicon-send"></span> Submit</button>
 				  </form>
 				</div>

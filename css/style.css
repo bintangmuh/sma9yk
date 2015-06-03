@@ -3,7 +3,7 @@
 	font-family: calibri;
 }
 .header {
-	height: 300px;
+	min-height: 300px;
 	background-color: #148FEE;
 	text-shadow: 2px 2px 3px #7C7C7C;
 	padding-top: 50px;

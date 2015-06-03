@@ -112,13 +112,18 @@ else {
 				<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
 					<div class="panel panel-default bayang">
 						<div class="panel-body">
-						   <h4><?php echo $row['judul']; ?></h4>
-						   <pre><?php echo $row['konten']; ?></pre>
+						   <h3><?php echo $row['judul']; ?></h3>
+							<?php if (!($row['img_berita'] == "")) { ?>
+						   <img src="../img/<?php echo $row['img_berita']; ?>" class="img-thumbnail img-responsive" style="margin-bottom: 10px;"><br>
+							<?php } ?>
+							<div>
+						   <?php echo $row['konten']; ?>
+							</div><br>
 						   <h4 class="pull-left"><small>posted by <?php echo $row['user_id']; ?> pada <?php echo date( 'd M Y H:i', strtotime($row['waktu'])); ?></small></h4>
 						   <div class="btn-group pull-right">
 						   	<a href="../news.php?idpost=<?php echo $row['id_post']; ?>" class="btn btn-default"><span class="glyphicon glyphicon-eye-open"></span> Lihat</a> 
 						   	<a href="editnews.php?idpost=<?php echo $row['id_post']; ?>" class="btn btn-primary"><span class="glyphicon glyphicon-pencil"></span> Edit</a> 
-						   <a href="delberita.php?idpost=<?php echo $row['id_post']; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Delete</a>
+						   <a href="controller/delberita.php?idpost=<?php echo $row['id_post']; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span> Delete</a>
 						   </div>
 						</div>
 					</div>

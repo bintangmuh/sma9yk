@@ -33,6 +33,13 @@
 		<link href="../css/style.css" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
 
+		<!-- TinyMCE  -->
+		<script type="text/javascript" src="../js/tinymce.min.js"></script>
+		<script type="text/javascript">
+		tinymce.init({
+		    selector: "textarea"
+		 });
+		</script>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -58,11 +65,28 @@
 			<hr>
 			
 				<!-- view form -->
-				  <form action="up-ekskul.php" method="POST" role="form">
+				  <form action="controller/up-ekskul.php" method="POST" role="form" enctype="multipart/form-data" >
 				  	<input type="hidden" name="idekskul" value="<?php echo "$id"; ?>">
 				  	<div class="form-group">
 				  		<label for="name">Nama Ekstrakurikuler</label>
 				  		<input type="text" name="ekskul" class="form-control" id="name" value="<?php echo $row['nama_ekskul']; ?>" placeholder="Nama Ekstrakurikuler">
+				  	</div>
+				  	<div class="panel panel-default">
+				  		<div class="panel-body">
+				  			<?php 
+				  				if($row['image'] == "") {
+				  					echo "Tidak ada gambar";
+				  				} else {
+				  					echo '<img class="img-responsive" src="../img/'.$row['image'].'">';
+				  				}
+				  			 ?>
+				  		</div>
+				  		<div class="panel-footer">
+				  		   <div class="form-group">
+						  		<label><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> form upload gambar</label>
+						  		<input type="file" name="gambar" id="gambar">
+				  			</div>
+				  		</div>
 				  	</div>
 				  	<div class="form-group">
 				  		<label for="desk">Deskripsi</label>

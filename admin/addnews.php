@@ -16,6 +16,14 @@ require 'allowedadmin.php';
 		<link href="../css/style.css" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
 
+		<!-- tinyMCE -->
+		<script type="text/javascript" src="../js/tinymce.min.js"></script>
+		<script type="text/javascript">
+		tinymce.init({
+		    selector: "textarea"
+		 });
+		</script>
+
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -35,11 +43,15 @@ require 'allowedadmin.php';
 			</ol>
 			<h3><span class="glyphicon glyphicon-plus"></span> Tambah Berita</h3>
 			<hr>
-			<form action="submitberita.php" method="POST" role="form">						
+			<form action="controller/submitberita.php" method="POST" role="form" enctype="multipart/form-data">						
 					<div class="form-group">
 						<label for="title">Judul Berita</label>
 						<input type="text" name="judul" class="form-control" id="title" name="judul" placeholder="Judul">
 					</div>
+					<div class="form-group">
+						<label>Tambah Foto: </label>
+				  		<input type="file" name="gambar" id="gambar">
+				  	</div>
 					<div class="form-group">
 						<label for="">Konten Berita</label>
 						<textarea name="konten" rows="10" class="form-control" placeholder="Konten Berita"></textarea>

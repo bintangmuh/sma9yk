@@ -46,7 +46,7 @@ require 'allowedadmin.php';
 			<!--Content Guru-->
 			<h3><span class="glyphicon glyphicon-user"></span>Tambah Agenda <?php echo "$sekolah"; ?></h3>
 			<hr>
-			<form action="submitagenda.php" method="POST" role="form">
+			<form action="controller/submitagenda.php" method="POST" role="form">
 				
 				<div class="form-group">
 					<label for="judul">Nama Agenda : </label>

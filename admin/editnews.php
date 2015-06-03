@@ -31,7 +31,13 @@ $row = $resedit->fetch_array(MYSQLI_ASSOC);
 		<link href="../css/bootstrap.min.css" rel="stylesheet">
 		<link href="../css/style.css" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
-
+		<!-- tinyMCE -->
+		<script type="text/javascript" src="../js/tinymce.min.js"></script>
+		<script type="text/javascript">
+		tinymce.init({
+		    selector: "textarea"
+		 });
+		</script>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -53,11 +59,27 @@ $row = $resedit->fetch_array(MYSQLI_ASSOC);
 			
 			<h3><span class="glyphicon glyphicon-pencil"></span> <?php echo $row['judul']; ?> <small><code>Edit Berita</code></small></h3>
 			<hr>
-			<form action="edittbberita.php" method="POST" role="form">
+			<form action="controller/edittbberita.php" method="POST" role="form" enctype="multipart/form-data">
 					<input type="hidden" name="idpost" value="<?php echo $row['id_post'] ?>">						
 					<div class="form-group">
 						<label for="title">Judul Berita</label>
 						<input type="text" name="judul" class="form-control" id="judul" name="judul" placeholder="Judul" value="<?php echo $row['judul'] ?>">
+					</div>
+					<div class="panel panel-default">
+						<div class="panel-body">
+						<!-- image preview -->
+							<?php if (!($row['img_berita'] == "")) { ?>
+						   <img src="../img/<?php echo $row['img_berita']; ?>" class="img-thumbnail img-responsive" width="200px">
+							<?php } ?>
+
+						   
+						</div>
+						<div class="panel-footer">
+							<div class="form-group">
+								<label><span class="glyphicon glyphicon-camera" aria-hidden="true"></span> Edit Foto: </label>
+				  				<input type="file" name="gambar" id="gambar">
+				  			</div>
+						</div>
 					</div>
 					<div class="form-group">
 						<label for="">Konten Berita</label>

@@ -1,0 +1,798 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"for",
+				"form	<form>"
+			],
+			[
+				"agenda",
+				"agendawkt"
+			],
+			[
+				"background-cl",
+				"background-color"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"des",
+				"descrip"
+			],
+			[
+				"desk",
+				"Deskripsi"
+			],
+			[
+				"pro",
+				"process"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
+				"btn-",
+				"btn-primary"
+			],
+			[
+				"style",
+				"style	Attr"
+			],
+			[
+				"pos",
+				"postcount"
+			],
+			[
+				"pri",
+				"printf"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"pad",
+				"padding-left"
+			],
+			[
+				"margi",
+				"margin-top"
+			],
+			[
+				"id",
+				"id_post"
+			],
+			[
+				"strto",
+				"strtotime"
+			],
+			[
+				"marg",
+				"margin-top"
+			],
+			[
+				"header",
+				"header"
+			],
+			[
+				"hea",
+				"header"
+			],
+			[
+				"sess",
+				"session_start"
+			],
+			[
+				"func",
+				"create_function"
+			],
+			[
+				"sql",
+				"sqlDate"
+			],
+			[
+				"inputt",
+				"inputt	input - text"
+			],
+			[
+				"inputd",
+				"inputd	input - datetime"
+			],
+			[
+				"date",
+				"date_timestamp_get"
+			],
+			[
+				"padd",
+				"padding-left"
+			],
+			[
+				"over",
+				"overflow-style"
+			],
+			[
+				"ove",
+				"overflow-x"
+			],
+			[
+				"tra",
+				"transition"
+			],
+			[
+				"paddi",
+				"padding-top"
+			],
+			[
+				"a",
+				"a	<a>"
+			],
+			[
+				"label",
+				"label	<label>"
+			],
+			[
+				"st",
+				"style	Attr"
+			],
+			[
+				"e",
+				"echo	echo \"…\""
+			],
+			[
+				"con",
+				"conn"
+			],
+			[
+				"Data",
+				"database"
+			],
+			[
+				"re",
+				"req	require …"
+			],
+			[
+				"bu",
+				"bubblesortreversed"
+			],
+			[
+				"m",
+				"metodesort"
+			],
+			[
+				"i",
+				"im	import"
+			],
+			[
+				"in",
+				"index"
+			],
+			[
+				"arr",
+				"array"
+			],
+			[
+				"let",
+				"letakakhir"
+			],
+			[
+				"le",
+				"letakpos"
+			],
+			[
+				"Le",
+				"letakpos"
+			],
+			[
+				"leta",
+				"letak"
+			],
+			[
+				"ps",
+				"posisi"
+			],
+			[
+				"S",
+				"Scanner"
+			],
+			[
+				"car",
+				"cariNama"
+			],
+			[
+				"D",
+				"daftarNama"
+			],
+			[
+				"DE",
+				"DECLARATION"
+			],
+			[
+				"END",
+				"END-FOR"
+			],
+			[
+				"EN",
+				"END-IF"
+			],
+			[
+				"ind",
+				"indeks2"
+			],
+			[
+				"inde",
+				"indeks2"
+			],
+			[
+				"pan",
+				"panjang1"
+			],
+			[
+				"kak",
+				"KakiKiri"
+			],
+			[
+				"pa",
+				"PahaKiri"
+			],
+			[
+				"pah",
+				"PahaKanan"
+			],
+			[
+				"tan",
+				"TanganKiri"
+			],
+			[
+				"t",
+				"TanganKanan"
+			],
+			[
+				"tamp",
+				"tampilDataJam"
+			],
+			[
+				"s",
+				"search"
+			],
+			[
+				"nex",
+				"nextLine"
+			],
+			[
+				"Sa",
+				"Scanner"
+			],
+			[
+				"prnt",
+				"println"
+			],
+			[
+				"pr",
+				"println"
+			],
+			[
+				"tam",
+				"tampilDataPegawai"
+			],
+			[
+				"gaji",
+				"gajiJam"
+			],
+			[
+				"gj",
+				"gajiPerJam"
+			],
+			[
+				"str",
+				"String"
+			],
+			[
+				"nam",
+				"nama"
+			],
+			[
+				"gol",
+				"goljam"
+			],
+			[
+				"el",
+				"el	else"
+			],
+			[
+				"Pe",
+				"penjumlahan"
+			],
+			[
+				"print",
+				"println"
+			],
+			[
+				"matr",
+				"matriksA"
+			],
+			[
+				"ne",
+				"nextInt"
+			],
+			[
+				"matrik",
+				"matriksB"
+			],
+			[
+				"mat",
+				"matriksC"
+			],
+			[
+				"an",
+				"ang2"
+			],
+			[
+				"detik",
+				"detik1"
+			],
+			[
+				"ni",
+				"nilaiUnicode"
+			],
+			[
+				"p",
+				"pu	public"
+			],
+			[
+				"sy",
+				"System"
+			],
+			[
+				"br",
+				"break"
+			],
+			[
+				"C",
+				"C"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"table",
+				"Snippet: bs3-table-striped"
+			],
+			[
+				"gly",
+				"Snippet: bs3-glyphicon"
+			],
+			[
+				"inline",
+				"Snippet: bs3-form-inline"
+			],
+			[
+				"input hid",
+				"Snippet: input - hidden"
+			],
+			[
+				"package ma",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Discover Packages"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"comen",
+				"Toggle Comment"
+			],
+			[
+				"bs3-gl",
+				"Snippet: bs3-glyphicon"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"bs3-table",
+				"Snippet: bs3-table-bordered"
+			],
+			[
+				"glyp",
+				"Snippet: bs3-glyphicon"
+			],
+			[
+				"templ",
+				"Snippet: bs3-html5-template"
+			],
+			[
+				"inlin",
+				"Snippet: bs3-form-inline"
+			],
+			[
+				"bs3-tex",
+				"Snippet: bs3-input-text-h"
+			],
+			[
+				"bs3-tab",
+				"Snippet: bs3-panel-table"
+			],
+			[
+				"temp",
+				"Snippet: bs3-html5-template"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"java",
+				"Snippet: java.math."
+			],
+			[
+				"",
+				"File: Close All"
+			]
+		],
+		"width": 400.0
+	},
+	"console":
+	{
+		"height": 304.0,
+		"history":
+		[
+			"soalButs.java",
+			"coba",
+			"help",
+			"javac",
+			"javac soalButs.java",
+			"setpat",
+			"java",
+			"java soalButs",
+			"javac soalButs.java"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/xampp/htdocs/tugasweb/LS_10/kegiatan4/session.php",
+		"/G/ls10/session.php",
+		"/D/xampp/htdocs/tugasweb/LS_10/cookies/cookie3.php",
+		"/D/xampp/htdocs/tugasweb/LS_10/cookies/cookie2.php",
+		"/D/xampp/htdocs/tugasweb/LS_10/cookies/cookie1.php",
+		"/D/xampp/htdocs/tugasweb/LS_10/cookies/cookie4.php",
+		"/D/xampp/htdocs/tugasweb/LS_10/bahan diskusi/login.php",
+		"/D/xampp/htdocs/tugasweb/LS_10/bahan diskusi/ceklogin.php",
+		"/D/xampp/htdocs/tugasweb/LS_10/bahan diskusi/index2.php",
+		"/D/xampp/htdocs/tugasweb/LS_10/awal.php",
+		"/D/xampp/htdocs/tugasweb/LS_10/cek.php",
+		"/D/xampp/htdocs/tugasweb/LS_10/kegiatan8.php",
+		"/D/xampp/htdocs/sma9yk/admin/agenda.php",
+		"/D/xampp/htdocs/sma9yk/admin/editagenda.php",
+		"/D/xampp/htdocs/sma9yk/admin/index.php",
+		"/D/xampp/htdocs/sma9yk/css/style.css",
+		"/D/xampp/htdocs/sma9yk/admin/edittbberita.php",
+		"/D/xampp/htdocs/sma9yk/admin/setting.php",
+		"/D/xampp/htdocs/sma9yk/admin/menu.php",
+		"/D/xampp/htdocs/sma9yk/admin/ekskul.php",
+		"/D/xampp/htdocs/sma9yk/admin/berita.php",
+		"/D/xampp/htdocs/sma9yk/admin/style.css",
+		"/D/xampp/htdocs/sma9yk/admin/editekskul.php",
+		"/D/xampp/htdocs/sma9yk/admin/addagenda.php",
+		"/D/xampp/htdocs/sma9yk/index.php",
+		"/D/xampp/htdocs/sma9yk/admin/editnews.php",
+		"/D/xampp/htdocs/sma9yk/admin/submitagenda.php",
+		"/D/xampp/htdocs/sma9yk/admin/navbar.php",
+		"/D/xampp/htdocs/sma9yk/admin/submitberita.php",
+		"/D/xampp/htdocs/sma9yk/admin/addekskul.php",
+		"/D/xampp/htdocs/sma9yk/admin/delekskul.php",
+		"/D/xampp/htdocs/sma9yk/css/jquery-ui.min.css",
+		"/D/xampp/htdocs/sma9yk/css/bootstrap.min.css",
+		"/D/xampp/htdocs/sma9yk/admin/guru.php",
+		"/D/xampp/htdocs/sma9yk/admin/up-ekskul.php",
+		"/D/xampp/htdocs/sma9yk/admin/submitekskul.php",
+		"/D/xampp/htdocs/sma9yk/to do list",
+		"/D/xampp/htdocs/sma9yk/admin/addnews.php",
+		"/D/xampp/htdocs/sma9yk/admin/delagenda.php",
+		"/D/xampp/htdocs/sma9yk/config.php",
+		"/D/xampp/htdocs/sma9yk/admin/delberita.php",
+		"/D/xampp/htdocs/sma9yk/README.md",
+		"/D/xampp/htdocs/sma9yk/css/bootstrap.css",
+		"/E/xampp/htdocs/sma9yk/config.php",
+		"/E/xampp/htdocs/sma9yk/admin/style.css",
+		"/E/xampp/htdocs/sma9yk/css/style.css",
+		"/E/xampp/htdocs/sma9yk/admin/addnews.php",
+		"/E/xampp/htdocs/sma9yk/admin/editnews.php",
+		"/E/xampp/htdocs/sma9yk/admin/berita.php",
+		"/E/xampp/htdocs/sma9yk/admin/menu.php",
+		"/E/xampp/htdocs/sma9yk/admin/navbar.php",
+		"/E/xampp/htdocs/sma9yk/admin/submitberita.php",
+		"/E/xampp/htdocs/sma9yk/admin/agenda.php",
+		"/E/xampp/htdocs/sma9yk/admin/index.php",
+		"/E/Program Files/sublime/Data/Packages/User/WakaTime.sublime-settings",
+		"/E/Program Files/sublime/Data/Packages/WakaTime/WakaTime.sublime-settings",
+		"/E/xampp/htdocs/sma9yk/login.php",
+		"/E/xampp/htdocs/sma9yk/testberita.php",
+		"/E/xampp/htdocs/sma9yk/logout.php",
+		"/E/xampp/htdocs/sma9yk/admin/allowedadmin.php",
+		"/E/xampp/htdocs/sma9yk/account.php",
+		"/E/xampp/htdocs/sma9yk/submitberita.php",
+		"/E/xampp/htdocs/sma9yk/info.php",
+		"/E/xampp/htdocs/sma9yk/admin/addagenda.php",
+		"/E/xampp/htdocs/sma9yk/admin/guru.php",
+		"/E/xampp/htdocs/sma9yk/beta.php",
+		"/E/xampp/htdocs/sma9yk/signup.php",
+		"/E/xampp/htdocs/sma9yk/index.php",
+		"/E/xampp/htdocs/sma9yk/css/bootstrap.min.css",
+		"/E/xampp/htdocs/sma9yk/index.html",
+		"/E/xampp/htdocs/sma9yk/database.php",
+		"/E/pjava/CariBiner.java",
+		"/E/pjava/CariBinerMenurunSoal3.java",
+		"/E/pjava/CariBinerMenurun.java",
+		"/E/pjava/alpro/soal1ls11.java",
+		"/E/pjava/alpro/soal2ls11.java",
+		"/E/pjava/alpro/CariLinear.java",
+		"/E/pjava/alpro/soalButs.java",
+		"/E/pjava/alpro/CariNama.java",
+		"/E/xampp/htdocs/githubpages/bintangmuh.github.io/teletype/demo.html",
+		"/E/Program Files/sublime/Data/Packages/Terminal/Default (Windows).sublime-keymap",
+		"/E/pjava/alpro/test.java",
+		"/E/pjava/alpro/pseudoAlis.txt",
+		"/E/pjava/alpro/soal4ls6.java",
+		"/E/pjava/alpro/soal2ls6.java",
+		"/E/pjava/alpro/soal2ls7.java",
+		"/E/pjava/alpro/soalutsA.java",
+		"/E/pjava/alpro/soalutsB.java",
+		"/E/pjava/alpro/rekursi.java",
+		"/E/pjava/alpro/OpArit.java",
+		"/E/pjava/alpro/soal1ls7.java",
+		"/E/Bintang's Doc/Semester 2/alpro/LS_8/OpLogika.java",
+		"/E/Bintang's Doc/Semester 2/alpro/LS_8/OpBanding.java",
+		"/E/Bintang's Doc/Semester 2/alpro/LS_8/opincredandecre.java",
+		"/E/pjava/alpro/opbit.java",
+		"/E/pjava/alpro/FormatString.java",
+		"/E/pjava/alpro/testarray.java",
+		"/E/pjava/alpro/soal1ls6.java",
+		"/E/pjava/alpro/soal3ls6.java",
+		"/E/pjava/alpro/soal1ls5.java",
+		"/E/pjava/alpro/soal2ls5.java",
+		"/E/pjava/alpro/soal3ls5.java",
+		"/E/pjava/alpro/soal4ls5.java",
+		"/E/pjava/alpro/soal5ls5.java",
+		"/E/pjava/alpro/Gajipegawai.java",
+		"/E/pjava/alpro/soal3ls5do.java",
+		"/E/pjava/alpro/kalkulator.java",
+		"/E/pjava/alpro/soal2ls4.java",
+		"/E/pjava/alpro/soal3ls4.java",
+		"/E/pjava/alpro/soal5ls4.java",
+		"/E/pjava/alpro/soal4ls4.java",
+		"/E/pjava/alpro/soalbls3.java",
+		"/E/pjava/alpro/soalA3.java",
+		"/E/pjava/alpro/soalA4.java",
+		"/E/pjava/alpro/soalA5.java",
+		"/E/pjava/alpro/soalA2.java",
+		"/E/pjava/alpro/soalcls3.java",
+		"/E/pjava/alpro/soalA1.java",
+		"/E/pjava/alpro/soaA1.java",
+		"/E/pjava/alpro/Peluru.java",
+		"/E/pjava/alpro/opplusplus.java",
+		"/E/pjava/alpro/tugas2.txt",
+		"/E/Bintang's Doc/Semester 2/LS_2_14520241057/soalD.java",
+		"/E/Bintang's Doc/Semester 2/LS_2_14520241057/soalC.java",
+		"/E/Bintang's Doc/Semester 2/LS_2_14520241057/soalA.java",
+		"/E/Bintang's Doc/Semester 2/LS_2_14520241057/soalB.java",
+		"/D/coba.html",
+		"/E/pjava/alpro/coba.java"
+	],
+	"find":
+	{
+		"height": 22.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			"D:\\xampp\\htdocs\\sma9yk"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"acc_pas",
+			"acc_pas2",
+			"agendamenu",
+			"select",
+			"color:inherit",
+			"select",
+			"textarea",
+			"button, input, optgroup, select, textarea",
+			"textarea",
+			"<",
+			"title=\"\"",
+			"del",
+			"title=\"\"",
+			"pre",
+			"PRE",
+			"sr-only",
+			"conten",
+			"nav",
+			");\n",
+			"*",
+			"Selamat",
+			"center-blo",
+			"center",
+			"[teletype ~]#",
+			"()",
+			"}",
+			"{",
+			"second",
+			"glembur",
+			"bulan",
+			"gol",
+			"metodesaya",
+			"10s",
+			"9s",
+			"|",
+			"printData",
+			"ambilData",
+			"inputData",
+			"tampilkan",
+			"”",
+			"“",
+			"Sysem",
+			"String",
+			"b",
+			"a",
+			"gpj",
+			"gtp",
+			"nim1",
+			"String predikat",
+			"break",
+			"println",
+			"kata",
+			"bilr",
+			"Nilai",
+			"umur",
+			"<<"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 22.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"project": "setting.sublime-project",
+	"replace":
+	{
+		"height": 40.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"",
+				"E:\\Bintang's Doc\\web.sublime-workspace"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 147.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

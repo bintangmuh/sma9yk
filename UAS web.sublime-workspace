@@ -4,6 +4,50 @@
 		"selected_items":
 		[
 			[
+				"ex",
+				"exit"
+			],
+			[
+				"em",
+				"empty"
+			],
+			[
+				"inputs",
+				"inputs	input - submit"
+			],
+			[
+				"prestasi",
+				"prestasitext"
+			],
+			[
+				"agenda",
+				"agendawkt"
+			],
+			[
+				"background-cl",
+				"background-color"
+			],
+			[
+				"var",
+				"var_dump"
+			],
+			[
+				"des",
+				"descrip"
+			],
+			[
+				"desk",
+				"Deskripsi"
+			],
+			[
+				"pro",
+				"process"
+			],
+			[
+				"res",
+				"result"
+			],
+			[
 				"btn-",
 				"btn-primary"
 			],
@@ -336,10 +380,26 @@
 	"buffers":
 	[
 		{
+			"file": "admin/setting.php",
+			"settings":
+			{
+				"buffer_size": 8121,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "admin/editnews.php",
 			"settings":
 			{
-				"buffer_size": 2846,
+				"buffer_size": 3377,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "admin/edittbberita.php",
+			"settings":
+			{
+				"buffer_size": 850,
 				"line_ending": "Windows"
 			}
 		},
@@ -347,39 +407,7 @@
 			"file": "admin/berita.php",
 			"settings":
 			{
-				"buffer_size": 5292,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "admin/delagenda.php",
-			"settings":
-			{
-				"buffer_size": 494,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "admin/agenda.php",
-			"settings":
-			{
-				"buffer_size": 3945,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "admin/addagenda.php",
-			"settings":
-			{
-				"buffer_size": 3033,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "admin/editagenda.php",
-			"settings":
-			{
-				"buffer_size": 3065,
+				"buffer_size": 5527,
 				"line_ending": "Windows"
 			}
 		}
@@ -387,12 +415,40 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 242.0,
+		"height": 104.0,
 		"selected_items":
 		[
 			[
+				"glyp",
+				"Snippet: bs3-icon-glyphicon"
+			],
+			[
 				"gly",
-				"Snippet: bs3-glyphicon"
+				"Snippet: bs3-icon-glyphicon"
+			],
+			[
+				"fo",
+				"Code Folding: Fold Tag Attributes"
+			],
+			[
+				"inputf",
+				"Snippet: input - file"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"bs3-tem",
+				"Snippet: bs3-html5-template"
+			],
+			[
+				"bs3-ba",
+				"Snippet: bs3-badge"
+			],
+			[
+				"table",
+				"Snippet: bs3-table-striped"
 			],
 			[
 				"inline",
@@ -423,20 +479,8 @@
 				"Snippet: bs3-glyphicon"
 			],
 			[
-				"inst",
-				"Package Control: Install Package"
-			],
-			[
 				"bs3-table",
 				"Snippet: bs3-table-bordered"
-			],
-			[
-				"table",
-				"Snippet: bs3-table-striped"
-			],
-			[
-				"glyp",
-				"Snippet: bs3-glyphicon"
 			],
 			[
 				"templ",
@@ -475,7 +519,7 @@
 				"File: Close All"
 			]
 		],
-		"width": 400.0
+		"width": 512.0
 	},
 	"console":
 	{
@@ -505,28 +549,44 @@
 	"expanded_folders":
 	[
 		"/D/xampp/htdocs/sma9yk",
-		"/D/xampp/htdocs/sma9yk/admin",
-		"/D/xampp/htdocs/sma9yk/css"
+		"/D/xampp/htdocs/sma9yk/admin"
 	],
 	"file_history":
 	[
+		"/D/xampp/htdocs/sma9yk/admin/editekskul.php",
 		"/D/xampp/htdocs/sma9yk/admin/edittbberita.php",
-		"/D/xampp/htdocs/sma9yk/config.php",
-		"/D/xampp/htdocs/sma9yk/admin/delberita.php",
-		"/D/xampp/htdocs/sma9yk/admin/submitberita.php",
-		"/D/xampp/htdocs/sma9yk/README.md",
-		"/D/xampp/htdocs/sma9yk/admin/addagenda.php",
-		"/D/xampp/htdocs/sma9yk/to do list",
-		"/D/xampp/htdocs/sma9yk/admin/berita.php",
-		"/D/xampp/htdocs/sma9yk/admin/agenda.php",
+		"/D/xampp/htdocs/sma9yk/admin/upload.php",
 		"/D/xampp/htdocs/sma9yk/admin/addnews.php",
-		"/D/xampp/htdocs/sma9yk/admin/navbar.php",
-		"/D/xampp/htdocs/sma9yk/admin/index.php",
-		"/D/xampp/htdocs/sma9yk/admin/style.css",
+		"/D/xampp/htdocs/sma9yk/admin/berita.php",
 		"/D/xampp/htdocs/sma9yk/admin/menu.php",
+		"/D/xampp/htdocs/sma9yk/admin/ekskul.php",
+		"/D/xampp/htdocs/sma9yk/admin/editnews.php",
+		"/D/xampp/htdocs/sma9yk/admin/submitberita.php",
+		"/D/xampp/htdocs/sma9yk/admin/up-ekskul.php",
+		"/D/xampp/htdocs/sma9yk/admin/delekskul.php",
+		"/D/xampp/htdocs/sma9yk/testupload.php",
+		"/D/xampp/htdocs/sma9yk/admin/addekskul.php",
+		"/D/xampp/htdocs/sma9yk/upload.php",
+		"/D/xampp/htdocs/sma9yk/admin/submitekskul.php",
+		"/D/xampp/htdocs/sma9yk/admin/setting.php",
+		"/D/xampp/htdocs/sma9yk/admin/agenda.php",
+		"/D/xampp/htdocs/sma9yk/config.php",
+		"/D/xampp/htdocs/sma9yk/admin/delprestasi.php",
+		"/D/xampp/htdocs/sma9yk/admin/editagenda.php",
+		"/D/xampp/htdocs/sma9yk/admin/index.php",
 		"/D/xampp/htdocs/sma9yk/css/style.css",
-		"/D/xampp/htdocs/sma9yk/css/bootstrap.min.css",
+		"/D/xampp/htdocs/sma9yk/admin/style.css",
+		"/D/xampp/htdocs/sma9yk/admin/addagenda.php",
 		"/D/xampp/htdocs/sma9yk/index.php",
+		"/D/xampp/htdocs/sma9yk/admin/submitagenda.php",
+		"/D/xampp/htdocs/sma9yk/admin/navbar.php",
+		"/D/xampp/htdocs/sma9yk/css/jquery-ui.min.css",
+		"/D/xampp/htdocs/sma9yk/css/bootstrap.min.css",
+		"/D/xampp/htdocs/sma9yk/admin/guru.php",
+		"/D/xampp/htdocs/sma9yk/to do list",
+		"/D/xampp/htdocs/sma9yk/admin/delagenda.php",
+		"/D/xampp/htdocs/sma9yk/admin/delberita.php",
+		"/D/xampp/htdocs/sma9yk/README.md",
 		"/D/xampp/htdocs/sma9yk/css/bootstrap.css",
 		"/E/xampp/htdocs/sma9yk/config.php",
 		"/E/xampp/htdocs/sma9yk/admin/style.css",
@@ -620,31 +680,18 @@
 		"/E/pjava/Grade.java",
 		"/E/pjava/Nilaiif.java",
 		"/E/pjava/Bintang.java",
-		"/E/pjava/Piramid.java",
-		"/E/pjava/Nilaiun.java",
-		"/F/Gradeswitch.java",
-		"/E/pjava/Seleksiif.java",
-		"/E/pjava/Ganjilgenap.java",
-		"/E/pjava/switchBuah.java",
-		"/E/pjava/Faktorial.java",
-		"/E/pjava/Faktorial2.java",
-		"/E/pjava/Faktorialdo.java",
-		"/E/pjava/Akarkw.java",
-		"/E/Dropbox/tugas kelas 12/SIE/editdata.php",
-		"/E/pjava/Coba1.java",
-		"/E/pjava/Invardata.java",
-		"/E/wData Bintang SM/xampp/xampplite/htdocs/pilosis/abc247ec4501be56704f2fd9c879268d.php",
-		"/E/pjava/Program1.java"
+		"/E/pjava/Piramid.java"
 	],
 	"find":
 	{
-		"height": 34.0
+		"height": 44.0
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
+			"D:\\xampp\\htdocs\\sma9yk"
 		]
 	},
 	"find_state":
@@ -652,6 +699,19 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"\"]);\n",
+			"responsivr",
+			"filetoupload",
+			"agendamenu",
+			"select",
+			"color:inherit",
+			"select",
+			"textarea",
+			"button, input, optgroup, select, textarea",
+			"textarea",
+			"<",
+			"title=\"\"",
+			"del",
 			"title=\"\"",
 			"pre",
 			"PRE",
@@ -703,6 +763,7 @@
 		"regex": false,
 		"replace_history":
 		[
+			""
 		],
 		"reverse": false,
 		"show_context": true,
@@ -720,24 +781,24 @@
 	"groups":
 	[
 		{
-			"selected": 5,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "admin/editnews.php",
+					"file": "admin/setting.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2846,
+						"buffer_size": 8121,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2302,
-								2302
+								4070,
+								4070
 							]
 						],
 						"settings":
@@ -745,86 +806,28 @@
 							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"translate_tabs_to_spaces": false
 						},
-						"translation.x": 0.0,
-						"translation.y": 63.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 5,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "admin/berita.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 5292,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								3219,
-								2919
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 728.0,
+						"translation.x": 63.0,
+						"translation.y": 882.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 3,
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "admin/delagenda.php",
+					"buffer": 1,
+					"file": "admin/editnews.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 494,
+						"buffer_size": 3377,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								477,
-								477
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 4,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "admin/agenda.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 3945,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2540,
-								2540
+								444,
+								469
 							]
 						],
 						"settings":
@@ -833,27 +836,27 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 420.0,
+						"translation.y": 588.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "admin/addagenda.php",
+					"buffer": 2,
+					"file": "admin/edittbberita.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3033,
+						"buffer_size": 850,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								286,
-								286
+								846,
+								846
 							]
 						],
 						"settings":
@@ -869,20 +872,20 @@
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "admin/editagenda.php",
+					"buffer": 3,
+					"file": "admin/berita.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 3065,
+						"buffer_size": 5527,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								927,
-								927
+								4241,
+								4241
 							]
 						],
 						"settings":
@@ -891,7 +894,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1302.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
@@ -960,7 +963,7 @@
 		[
 			[
 				"",
-				"E:\\Bintang's Doc\\web.sublime-project"
+				"D:\\xampp\\htdocs\\jarkom-app\\jarkom.sublime-project"
 			]
 		],
 		"width": 380.0
@@ -981,7 +984,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 193.0,
+	"side_bar_width": 220.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
