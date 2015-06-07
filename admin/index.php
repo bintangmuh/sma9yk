@@ -7,8 +7,17 @@ $today = date('Y-m-d');
 $query="SELECT * FROM `tb_agenda` WHERE `agendawkt` LIKE '%$today%' ORDER BY `agendawkt` ASC";
 $agenda = $conn->query($query);
 $rows = $agenda->num_rows;
+
 $berita = $conn->query("SELECT * FROM tb_berita");
 $jumlahberita = $berita->num_rows;
+
+$jumlahagenda =$conn->query("SELECT * FROM tb_agenda")->num_rows;
+
+$jumlahekskul =$conn->query("SELECT * FROM tb_ekskul")->num_rows;
+
+$jumlahuser =$conn->query("SELECT * FROM tb_user WHERE level = 1")->num_rows;
+
+$jumprestasi =$conn->query("SELECT * FROM tb_prestasi")->num_rows;
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,6 +46,98 @@ $jumlahberita = $berita->num_rows;
 		<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
 			<h3><span class="glyphicon glyphicon-home"></span> Beranda - Datang di Admin Page</h3>
 			<hr>
+			<div class="row">
+				<h3 class="text-center"><span class="glyphicon glyphicon-stats" aria-hidden="true"></span> Statistik</h3>
+				<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+					<div class="panel panel-red">
+						<div class="panel-heading">
+						   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						   	<h1><span class="glyphicon glyphicon-user" aria-hidden="true"></span></h1>
+						   </div>
+						   <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-right">
+						   	<h1><?php echo "$jumlahuser"; ?></h1>
+						   	<p></p>
+						   </div>
+						   <div class="clearfix text-right"> Administrator Website</div>
+						</div>
+						<div class="panel-footer">
+							<a href="adminuser.php">Administrator</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+						   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						   	<h1><span class="glyphicon glyphicon-send" aria-hidden="true"></span></h1>
+						   </div>
+						   <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-right">
+						   	<h1><?php echo "$jumlahberita"; ?></h1>
+						   	<p></p>
+						   </div>
+						   <div class="clearfix text-right"> Berita pada website ini</div>
+						</div>
+						<div class="panel-footer">
+							<a href="berita.php">Berita</a>
+						</div>
+					</div>
+				</div>
+			
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<div class="panel panel-green">
+						<div class="panel-heading">
+						  <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						   	<h1><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span></h1>
+						   </div>
+						   <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-right">
+						   	<h1><?php echo "$jumlahagenda"; ?></h1>
+						   	<p></p>
+						   </div>
+						   <div class="clearfix text-right"> Agenda pada website ini</div>
+						</div>
+						<div class="panel-footer">
+							<a href="agenda.php">Agenda</a>
+						</div>
+
+					</div>
+				</div>
+				
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<div class="panel panel-blue">
+						<div class="panel-heading">
+						   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						   	<h1><span class="glyphicon glyphicon-knight" aria-hidden="true"></span></h1>
+						   </div>
+						   <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-right">
+						   	<h1><?php echo "$jumlahekskul"; ?></h1>
+						   	<p></p>
+						   </div>
+						   <div class="clearfix text-right"> Ekstrakurikuler</div>
+						</div>
+						<div class="panel-footer">
+							<a href="ekskul.php">Ekstrakurikuler</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+					<div class="panel panel-orange">
+						<div class="panel-heading">
+						   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+						   	<h1><span class="glyphicon glyphicon-apple" aria-hidden="true"></span></h1>
+						   </div>
+						   <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 text-right">
+						   	<h1><?php echo "$jumprestasi"; ?></h1>
+						   	<p></p>
+						   </div>
+						   <div class="clearfix text-right"> Prestasi Sekolah</div>
+						</div>
+						<div class="panel-footer">
+							<a href="setting.php">Setting Sekolah</a>
+						</div>
+					</div>
+				</div>
+			</div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -84,45 +185,7 @@ $jumlahberita = $berita->num_rows;
 				?>
 				</tbody>
 			</table>
-			<h3 class="text-center">Statistik</h3>
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-				<div class="panel panel-primary">
-					<div class="panel-heading">
-					   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-					   	<h1><span class="glyphicon glyphicon-send" aria-hidden="true"></span></h1>
-					   </div>
-					   <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 pull-left">
-					   	<h1><?php echo "$jumlahberita"; ?></h1>
-					   	<p></p>
-					   </div>
-					   <div class="clearfix"> Berita pada website ini</div>
-					</div>
-					<div class="panel-footer">
-						<a href="agenda.php">Agenda</a>
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-				<div class="panel panel-success">
-					<div class="panel-heading btn btn-success">
-					   <h1><span class="glyphicon glyphicon-send" aria-hidden="true"></span></h1>
-					</div>
-					<div class="panel-footer">
-						<a href="agenda.php">Berita</a>
-					</div>
 
-				</div>
-			</div>
-			<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
-				<div class="panel panel-danger">
-					<div class="panel-heading">
-					   <h1><span class="glyphicon glyphicon-user" aria-hidden="true"></span></h1>
-					</div>
-					<div class="panel-footer">
-						<a href="agenda.php">Administrator</a>
-					</div>
-				</div>
-			</div>
 		</div>
 	</div>
 	<?php $conn->close(); ?>

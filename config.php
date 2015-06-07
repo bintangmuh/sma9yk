@@ -5,8 +5,8 @@ $password = "";
 $mydb = "websekolah"; //nama database
 
 //sekolah
-$sekolah="Majisuka Jyogakuen";
-$alamat="Alamat Goes Here";
+$sekolah="SMP Negeri 5 Depok";
+$alamat="Sleman, Daerah Istimewa Yogyakarta";
 $telepon="+62845663";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $mydb);

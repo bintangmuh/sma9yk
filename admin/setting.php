@@ -23,6 +23,13 @@
 		<link href="../css/style.css" rel="stylesheet">
 		<link href="style.css" rel="stylesheet">
 
+		<!-- tinyMCE -->
+		<script type="text/javascript" src="../js/tinymce.min.js"></script>
+		<script type="text/javascript">
+		tinymce.init({
+		    selector: "textarea"
+		 });
+		</script>
 		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
@@ -45,12 +52,7 @@
 			<!--Content pengaturan-->
 			<h3><span class="glyphicon glyphicon-wrench"></span> Pengaturan Profil <?php echo "$sekolah"; ?></h3>
 			<hr>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Pengaturan konten profil pada website <?php echo "$sekolah"; ?></p>
 			<p>ada input data sebagai berikut</p>
 			<ul>
 				<li>visi misi</li>
@@ -69,47 +71,42 @@
 			  <!-- Nav tabs -->
 			  <ul class="nav nav-tabs" role="tablist">
 			    <li role="presentation" class="active"><a href="#visi" aria-controls="visi" role="tab" data-toggle="tab">Visi Misi</a></li>
-			    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Sejarah</a></li>
-			    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-certificate"></span> Prestasi <span class="label label-primary"><?php echo "$jumlahprestasi"; ?></span></a></li>
+			    <li role="presentation"><a href="#sejarah" aria-controls="sejarah" role="tab" data-toggle="tab">Sejarah</a></li>
+			    <li role="presentation"><a href="#prestasi" aria-controls="prestasi" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-certificate"></span> Prestasi <span class="label label-primary"><?php echo "$jumlahprestasi"; ?></span></a></li>
 			  </ul>
 
 			  <!-- Tab panes -->
 			  <div class="tab-content">
 			    <div role="tabpanel" class="tab-pane active" id="visi">
 			    <h3>Visi Misi</h3>
-			    <pre><?php echo $kontenprofil['visimisi']; ?></pre>
+			    <div class="fluid"><?php echo $kontenprofil['visimisi']; ?></div>
 			    <!-- form edit -->
-			    <form action="visimisi.php" method="POST" role="form"> 
+			    <form action="controller/editprofil.php" method="POST" role="form"> 
 			    	<div class="form-group">
-			    		<label>Visi Misi</label>
+			    	<h4>Edit: </h4>
 			    		<textarea name="visimisi" class="form-control" rows=10><?php echo $kontenprofil['visimisi']; ?></textarea>
 			    	</div>
-			    	<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> Simpan</button>
+			    	<button type="submit" name="visitrue" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> Simpan</button>
 			    </form>
 			    </div>
 
 			    <!-- tab sejarah -->
-			    <div role="tabpanel" class="tab-pane" id="profile">
+			    <div role="tabpanel" class="tab-pane" id="sejarah">
 			    <h3>Sejarah <?php echo "$sekolah"; ?></h3>
-			     <pre><?php echo $kontenprofil['sejarah']; ?></pre>
-			    <form action="sejarah.php" method="POST" role="form"> 
+			     <div><?php echo $kontenprofil['sejarah']; ?></div>
+			    <form action="controller/editprofil.php" method="POST" role="form"> 
 			    	<div class="form-group">
 			    		<label>Sejarah</label>
 			    		<textarea name="sejarah" class="form-control" rows=10><?php echo $kontenprofil['sejarah']; ?></textarea>
 			    	</div>
-			    	<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> Simpan</button>
+			    	<button type="submit" name="sejarahtrue" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-save" aria-hidden="true"></span> Simpan</button>
 			    </form>
 			    </div>
 
 			    <!-- tab prestasi -->
-			    <div role="tabpanel" class="tab-pane" id="messages">
+			    <div role="tabpanel" class="tab-pane" id="prestasi">
 			    <h3>Prestasi</h3>
-			    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+			    Daftar prestasi yang diraih <?php echo "$sekolah"; ?>
 			    <table class="table table-striped table-hover">
 			    	<thead>
 			    		<tr>
