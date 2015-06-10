@@ -1,6 +1,7 @@
 .body {
 	margin: 0px;
 	font-family: calibri;
+	background-color: #C4C4C4;
 }
 .header {
 	min-height: 300px;
@@ -24,4 +25,42 @@
 	padding: 10px;
 	border-radius: 3px;
 	margin-bottom: 20px;
+	position: relative;
+}
+.berita {
+	padding: 5px;
+}
+.img-clip {
+	box-shadow: 2px 6px 12px -4px rgba(133,130,133,1);
+	position: absolute;
+	right: 25px;
+	top: -40px;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 50%;
+	transition: 0.2s;
+}
+.img-clip:hover {
+	box-shadow: 2px 2px 30px -4px rgba(133,130,133,1);
+}
+.box {
+	background-color: #DDDDDD;
+	border: 2px #fff solid;
+	min-height: 250px;
+	transition: 0.2s;
+}
+.box h3, h4 {
+	margin-bottom: 0px;
+}
+.box:hover {
+	background-color: #E4E4E4;
+	border-color: #E4E4E4;
+	box-shadow: 2px 6px 5px -4px rgba(133,130,133,1);
+
+}
+.post-hover {
+	transition: 0.2s;
+}
+.post-hover:hover {
+	background-color: #E6E6E6;
 }

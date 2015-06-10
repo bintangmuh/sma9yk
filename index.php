@@ -1,152 +1,99 @@
-<?php require 'config.php'; ?>
+<?php 
+	require 'config.php';
+	$sql="SELECT * FROM `tb_berita` ORDER BY `tb_berita`.`waktu` DESC";
+	$result = $conn->query($sql);
+	$rows = $result->num_rows;
+ ?>
 <!DOCTYPE html>
-<html lang="">
+<html>
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>SMA Negeri 9 Yogyakarta</title>
+		<title><?php echo "$sekolah"; ?></title>
 
 		<!-- Bootstrap CSS -->
 		<link href="css/bootstrap.min.css" rel="stylesheet">
 		<link href="css/style.css" rel="stylesheet">
+
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
 	</head>
 	<body>
+		<?php include 'menu.php'; ?>
+
 		<div class="fluid header">
-		<div class="container">
-			<nav class="navbar navbar-inverse" role="navigation" style="border: 0px; background: #148FEE; z-index: 1; color: #fff;">
-				<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<div class="hidden-xs hidden-sm">						
-					<a class="navbar-brand" href="#">Title</a>
-					</div>
-				</div>
-			
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse navbar-ex1-collapse">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="#">Link</a></li>
-						<li><a href="#">Link</a></li>
-					</ul>
-					<form class="navbar-form navbar-left" role="search">
-						<div class="form-group">
-							<input type="text" class="form-control" placeholder="Search">
-						</div>
-						<button type="submit" class="btn btn-default">Submit</button>
-					</form>
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#">Link</a></li>
-						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li><a href="#">Separated link</a></li>
-							</ul>
-						</li>
-					</ul>
-				</div><!-- /.navbar-collapse -->
-			</nav>
-		</div>
-			<div class="col-md-push-6 col-lg-push-6 col-xs-12 col-sm-12 col-md-6 col-lg-6">
-				<h1><?php echo "$sekolah" ?></h1>
-				<?php echo "$alamat "; ?><span class="glyphicon glyphicon-phone-alt"> </span> <?php echo "$telepon"; ?> <br>
-				 <br>
-				<a href="#" class="btn btn-primary" >Ikuti Tour</a>
-			</div>	
-		</div>
-		<div class="container">
-		<!--Agenda Sekolah panel-->
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3><span class="glyphicon glyphicon-Calendar"></span> Agenda</h3>
-				</div>
-				<div class="panel-body">
-				  PHP goes Here.. <br>
-				  	<div class="media">
-					  <div class="media-left">
-					    <a href="#">
-					      <img class="media-object" src="">
-					    </a>
-					  </div>
-					 
-					</div>
-					<hr>
-				  <a href="#" >Lihat Post ></a>
-				</div>
+			<div class="container ">
+			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 hidden-xs">
+				<img src="img/logo.png" class="img-responsive">
+			</div>
+			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
+				<h1><?php echo "$sekolah"; ?></h1>
+				<p><?php echo $alamat ?></p>
+				<a href="virtualtour.php" class="btn btn-success">Virtual Tour</a>
+				
+			</div>
 			</div>
 		</div>
-		<!--News panel-->
-		<div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<h3><span class="glyphicon glyphicon-blackboard"></span> Berita Terbaru</h3>
-				</div>
-				<div class="panel-body">
-				  PHP goes Here.. <br>
-				  	<div class="media">
+		
+		<div class="container">
+			bs3-carousel
+		</div>
+		<div class="container">
+			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+			 <div class="panel panel-default">
+				 <div class="panel-heading">
+				 	<h3><span class="glyphicon glyphicon-comment" aria-hidden="true"></span> Berita Terbaru</h3>
+				 </div>
+			 	<div class="panel-body">
+					<?php for ($inbrita=0; $inbrita < 3 ; $inbrita++) { 
+						$result->data_seek($inbrita);
+						$row = $result->fetch_array(MYSQLI_ASSOC);
+					?>
+					<div class="media post-hover">
 					  <div class="media-left">
 					    <a href="#">
-					      <img class="media-object" src="">
+					      <img class="media-object" src="img/<?php echo $row['img_berita']; ?>" width="100px">
 					    </a>
 					  </div>
 					  <div class="media-body">
-					    <h4 class="media-heading">Media heading</h4>
-					    <small>Senin, 17 April 2015</small>
-					    <small>| Dipost oleh: <a href="" >admin</a></small>
-					    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-					    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-					    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-					    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-					    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-					    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+					    <h4 class="media-heading"><?php echo $row['judul'] ?></h4>
+					    <h4><small>Dipublikasikan oleh <?php echo $row['user_id']; ?> pada <?php echo date( 'd M Y H:i', strtotime($row['waktu'])); ?></small></h4><br>
+					    <div style="max-height: 100px; overflow:hidden; margin-bottom: 2px;">
+					    	<?php echo $row['konten']; ?>
+					    </div>
+					    <a href="newsview.php" class="btn btn-primary">Lihat Selengkapnya ></a><br>
 					  </div>
 					</div>
-					<hr>
-				  <a href="#" >Lihat Post ></a>
+					<hr>			
+					<?php } ?>
+				</div>
+			 	<div class="panel-footer">
+			 		<a href="news.php">Berita Lainnya</a>
+			 	</div>
+			 </div>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<strong><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Agenda Terdekat</strong>				
+					</div>
+					<div class="panel-body">
+					   <h4>Tanggal</h4>
+					   <p>title</p>
+					</div>
 				</div>
 			</div>
 		</div>
-		<!--login panel-->
-		<div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-			<div class="panel panel-default">
-				<div class="panel-heading">
-					<span class="glyphicon glyphicon-user"></span> Login
-				</div>
-				<div class="panel-body">
-				   <form action="login.php" method="POST" role="form">		   
-				   	<div class="form-group">
-				   		<label for="user">Username</label>
-				   		<input type="text" name="user" class="form-control" id="user" placeholder="NIM atau NIP">
-				   	</div>
-				   	<div class="form-group">
-				   		<label for="pass">Password</label>
-				   		<input type="password" name="pass" class="form-control" id="pass" placeholder="Password">
-				   	</div>
-				   	<button type="submit" class="btn btn-primary">Submit</button>
-				   </form>
-				</div>
-				<div class="panel-footer">
-					Belum punya akun <a href="signup.php" >Silahkan Daftar!</a>
-				</div>
-			</div>
-		</div>		
-		</div>
-		<div class="fluid">
-			<p class="text-center">Copyright &copy; <?php echo "$sekolah"; ?> 2015</p>
-		</div>
+
+		<center><h3><small>Copyright &copy; <?php echo "$sekolah"; ?></small></h3></center>
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->
 		<script src="js/bootstrap.min.js"></script>
 	</body>
-	<?php $conn->close(); ?>
 </html>

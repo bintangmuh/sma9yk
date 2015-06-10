@@ -61,7 +61,7 @@ if(isset($_POST['changepass'])) {
 					<label for="oldpass">Password lama: </label>
 					<input type="password" class="form-control" id="oldpass" name="oldpass" placeholder="Password Lama">
 				</div>
-
+				<hr>
 				<div class="form-group">
 					<label for="newpass">Password Baru: </label>
 					<input type="password" class="form-control" id="newpass" name="newpass" placeholder="Password Baru">

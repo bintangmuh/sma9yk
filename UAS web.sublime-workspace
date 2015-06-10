@@ -4,6 +4,34 @@
 		"selected_items":
 		[
 			[
+				"sql",
+				"sqldel"
+			],
+			[
+				"user",
+				"userid"
+			],
+			[
+				"use",
+				"userid"
+			],
+			[
+				"pass",
+				"pass1"
+			],
+			[
+				"ad",
+				"adminlist"
+			],
+			[
+				"new",
+				"newpass2"
+			],
+			[
+				"label",
+				"label	<label> with <input>"
+			],
+			[
 				"jum",
 				"jumprestasi"
 			],
@@ -128,10 +156,6 @@
 				"create_function"
 			],
 			[
-				"sql",
-				"sqlDate"
-			],
-			[
 				"inputt",
 				"inputt	input - text"
 			],
@@ -166,10 +190,6 @@
 			[
 				"a",
 				"a	<a>"
-			],
-			[
-				"label",
-				"label	<label>"
 			],
 			[
 				"st",
@@ -412,18 +432,18 @@
 			}
 		},
 		{
-			"file": "admin/navbar.php",
+			"file": "admin/user.php",
 			"settings":
 			{
-				"buffer_size": 2476,
+				"buffer_size": 2989,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "admin/menu.php",
+			"file": "admin/addadmin.php",
 			"settings":
 			{
-				"buffer_size": 1412,
+				"buffer_size": 4030,
 				"line_ending": "Windows"
 			}
 		},
@@ -439,11 +459,11 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 58.0,
+		"height": 392.0,
 		"selected_items":
 		[
 			[
-				"glyh",
+				"gl",
 				"Snippet: bs3-icon-glyphicon"
 			],
 			[
@@ -451,7 +471,7 @@
 				"Snippet: bs3-icon-glyphicon"
 			],
 			[
-				"gl",
+				"glyh",
 				"Snippet: bs3-icon-glyphicon"
 			],
 			[
@@ -589,9 +609,12 @@
 	],
 	"file_history":
 	[
+		"/D/xampp/htdocs/sma9yk/admin/navbar.php",
+		"/D/xampp/htdocs/sma9yk/admin/menu.php",
+		"/D/xampp/htdocs/sma9yk/admin/controller/addadmin.php",
+		"/D/xampp/htdocs/sma9yk/admin/index.php",
 		"/D/xampp/htdocs/sma9yk/admin/controller/editprofil.php",
 		"/D/xampp/htdocs/sma9yk/admin/berita.php",
-		"/D/xampp/htdocs/sma9yk/admin/index.php",
 		"/D/xampp/htdocs/sma9yk/admin/style.css",
 		"/D/xampp/htdocs/sma9yk/admin/ekskul.php",
 		"/D/xampp/htdocs/sma9yk/admin/editekskul.php",
@@ -611,7 +634,6 @@
 		"/D/xampp/htdocs/sma9yk/admin/agenda.php",
 		"/D/xampp/htdocs/sma9yk/admin/controller/delagenda.php",
 		"/D/xampp/htdocs/sma9yk/admin/edittbberita.php",
-		"/D/xampp/htdocs/sma9yk/admin/menu.php",
 		"/D/xampp/htdocs/sma9yk/admin/editprofil.php",
 		"/D/Bintang Docs/sublime/Data/Packages/WakaTime/WakaTime.sublime-settings",
 		"/D/xampp/htdocs/sma9yk/admin/upload.php",
@@ -626,7 +648,6 @@
 		"/D/xampp/htdocs/sma9yk/css/style.css",
 		"/D/xampp/htdocs/sma9yk/index.php",
 		"/D/xampp/htdocs/sma9yk/admin/submitagenda.php",
-		"/D/xampp/htdocs/sma9yk/admin/navbar.php",
 		"/D/xampp/htdocs/sma9yk/css/jquery-ui.min.css",
 		"/D/xampp/htdocs/sma9yk/css/bootstrap.min.css",
 		"/D/xampp/htdocs/sma9yk/admin/guru.php",
@@ -715,8 +736,7 @@
 		"/E/pjava/alpro/opplusplus.java",
 		"/E/pjava/alpro/tugas2.txt",
 		"/E/Bintang's Doc/Semester 2/LS_2_14520241057/soalD.java",
-		"/E/Bintang's Doc/Semester 2/LS_2_14520241057/soalC.java",
-		"/E/Bintang's Doc/Semester 2/LS_2_14520241057/soalA.java"
+		"/E/Bintang's Doc/Semester 2/LS_2_14520241057/soalC.java"
 	],
 	"find":
 	{
@@ -823,7 +843,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 3,
 			"sheets":
 			[
 				{
@@ -851,7 +871,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 3,
 					"type": "text"
 				},
 				{
@@ -867,12 +887,8 @@
 						"selection":
 						[
 							[
-								3914,
-								3914
-							],
-							[
-								3959,
-								3959
+								281,
+								293
 							]
 						],
 						"settings":
@@ -881,7 +897,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 1302.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 2,
@@ -889,19 +905,49 @@
 				},
 				{
 					"buffer": 2,
-					"file": "admin/navbar.php",
+					"file": "admin/user.php",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 2476,
+						"buffer_size": 2989,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1442,
-								1442
+								2174,
+								2174
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 495.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "admin/addadmin.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4030,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								739,
+								739
 							]
 						],
 						"settings":
@@ -914,35 +960,6 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "admin/menu.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1412,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								865,
-								865
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
 					"type": "text"
 				},
 				{
@@ -970,7 +987,7 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 3,
+					"stack_index": 4,
 					"type": "text"
 				}
 			]

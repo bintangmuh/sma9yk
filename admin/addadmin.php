@@ -5,6 +5,28 @@ require 'allowedadmin.php';
 //querying agenda
 $sql = "SELECT user_id FROM tb_user";
 $admin = $conn->query($sql);
+
+if (isset($_POST['tambahadmin'])) {
+	$userid = $_POST['username'];
+	$pass1 = $_POST['pass1'];
+	$pass2 = $_POST['pass2'];
+	if ($pass1 == $pass2) {
+		$sqlinput = "INSERT INTO `$mydb`.`tb_user` (`user_id`, `password`, `level`) VALUES ('$userid', '$pass1', '1');";
+		$proses = $conn->query($sqlinput);
+	}
+}
+
+if (isset($_GET['del'])) {
+	$userid = $_GET['user'];
+	$sqldel = "DELETE FROM `$mydb`.`tb_user` WHERE `tb_user`.`user_id` = '$userid'";
+	$proses = $conn->query($sqldel);
+	if (!$proses) {
+		$message =  "gagal";	
+	} else {
+		$message = "berhasil menghapus admin";
+	}
+}
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,7 +34,7 @@ $admin = $conn->query($sql);
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Administrator Page - <?php echo "$sekolah"; ?></title>
+		<title>Tambah Administrator - <?php echo "$sekolah"; ?></title>
 
 		<!-- Bootstrap CSS -->
 		<link href="../css/bootstrap.min.css" rel="stylesheet">
@@ -34,7 +56,7 @@ $admin = $conn->query($sql);
 			<br>
 			<ol class="breadcrumb">
 			  <li><a href="index.php"><span class="glyphicon glyphicon-home"></span> Beranda</a></li>
-			  <li><a href="user.php"><span class="glyphicon glyphicon-asteriks"></span> Ganti Password</a></li>
+			  <li><a href="addadmin.php.php"><span class="glyphicon glyphicon-king"></span> Tambah Admin</a></li>
 			</ol>
 			<div class="panel panel-default">
 				<div class="panel-body">
@@ -45,15 +67,15 @@ $admin = $conn->query($sql);
 				   		<label for="username">Username</label>
 				   		<input type="text" class="form-control" name="username" placeholder="Username">
 				   	</div>
-				   
+				   <hr>
 				   <div class="form-group">
 				   		<label for="username">Password</label>
-				   		<input type="password" class="form-control" name="username" placeholder="Password">
+				   		<input type="password" class="form-control" name="pass1" placeholder="Password">
 				   	</div>
 
 				   	<div class="form-group">
 				   		<label for="username">Ulangi Password</label>
-				   		<input type="password" class="form-control" name="username" placeholder="Ulangi Password">
+				   		<input type="password" class="form-control" name="pass2" placeholder="Ulangi Password">
 				   	</div>
 
 				   	<input type="submit" name="tambahadmin" class="btn btn-primary" value="Daftarkan Admin">
@@ -72,10 +94,18 @@ $admin = $conn->query($sql);
 				   		</tr>
 				   	</thead>
 				   	<tbody>
+				   		
+				   		<?php for ($index=0; $index < $admin->num_rows ; $index++) { 
+				   				$admin->data_seek($index);
+				   				$adminlist = $admin->fetch_array(MYSQLI_ASSOC);
+
+				   		?>
 				   		<tr>
-				   			<td></td>
-				   			<td><a href="addadmin.php?del=true&id=1" class="btn btn-danger"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete</a></td>
+				   			<td><?php echo $adminlist['user_id']; ?></td>
+				   			<td><a href="addadmin.php?del=true&user=<?php echo $adminlist['user_id'];; ?>" class="btn btn-danger"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Delete</a></td>
 				   		</tr>
+				   		<?php } ?>
+				   		
 				   	</tbody>
 				   </table>
 				</div>
