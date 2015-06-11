@@ -6,7 +6,7 @@ $mydb = "websekolah"; //nama database
 
 //sekolah
 $sekolah="SMP Negeri 5 Depok";
-$alamat="Sleman, Daerah Istimewa Yogyakarta";
+$alamat="Jalan Weling Raya, Karanggayam, Caturtunggal, Depok, Sleman, Yogyakarta";
 $telepon="+62845663";
 // Create connection
 $conn = new mysqli($servername, $username, $password, $mydb);

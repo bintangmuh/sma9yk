@@ -25,7 +25,6 @@
 	</head>
 	<body>
 		<?php include 'menu.php'; ?>
-
 		<div class="fluid header">
 			<div class="container ">
 			<div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 hidden-xs">
@@ -39,10 +38,31 @@
 			</div>
 			</div>
 		</div>
-		
-		<div class="container">
-			bs3-carousel
+		<div class="fluid">
+			<div id="gallery" class="carousel slide" data-ride="carousel">
+			    <ol class="carousel-indicators">
+			        <li data-target="#gallery" data-slide-to="0" class=""></li>
+			        <li data-target="#gallery" data-slide-to="1" class=""></li>
+			        <li data-target="#gallery" data-slide-to="2" class="active"></li>
+			    </ol>
+			    <div class="carousel-inner">
+			        <div class="item active">
+			            <img alt="First slide" src="img/slider1.jpg">
+			        </div>
+			        <div class="item">
+			            <img alt="2nd slide" src="img/slider2.jpg">
+			        </div>
+			        <div class="item">
+			            <img alt="3rd slide" src="img/slider3.jpg">
+			        </div>
+
+			        
+			    </div>
+			    <a class="left carousel-control" href="#gallery" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+			    <a class="right carousel-control" href="#gallery" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+			</div>
 		</div>
+		
 		<div class="container">
 			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
 			 <div class="panel panel-default">
@@ -66,7 +86,7 @@
 					    <div style="max-height: 100px; overflow:hidden; margin-bottom: 2px;">
 					    	<?php echo $row['konten']; ?>
 					    </div>
-					    <a href="newsview.php" class="btn btn-primary">Lihat Selengkapnya ></a><br>
+					    <a href="newsview.php?newsid=<?php echo $row['id_post']; ?>" class="btn btn-primary">Lihat Selengkapnya ></a><br>
 					  </div>
 					</div>
 					<hr>			
