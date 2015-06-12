@@ -138,12 +138,7 @@ $jumprestasi =$conn->query("SELECT * FROM tb_prestasi")->num_rows;
 					</div>
 				</div>
 			</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			
 			<div class="bg-primary kotak">
 				<h4>Waktu Hari Ini</h4>
 				<span class="glyphicon glyphicon-calendar"></span> <strong>Tanggal : </strong><?php echo date('d M Y'); ?><br>

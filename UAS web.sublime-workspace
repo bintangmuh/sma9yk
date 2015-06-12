@@ -4,8 +4,96 @@
 		"selected_items":
 		[
 			[
+				"overfl",
+				"overflow"
+			],
+			[
+				"border",
+				"border"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"agen",
+				"agendasatuan"
+			],
+			[
+				"ag",
+				"agendasatuan"
+			],
+			[
+				"age",
+				"agenda"
+			],
+			[
 				"sql",
-				"sqldel"
+				"sqlagenda"
+			],
+			[
+				"tex",
+				"text-decoration"
+			],
+			[
+				"res",
+				"result2"
+			],
+			[
+				"eksk",
+				"ekskulview"
+			],
+			[
+				"eks",
+				"ekskulview"
+			],
+			[
+				"eksku",
+				"ekskul"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"rg",
+				"rgba()"
+			],
+			[
+				"marg",
+				"margin-bottom"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"ne",
+				"newsid"
+			],
+			[
+				"bacl",
+				"background-color"
+			],
+			[
+				"mar",
+				"margin-top"
+			],
+			[
+				"bord",
+				"border-color"
+			],
+			[
+				"tran",
+				"transition"
+			],
+			[
+				"pro",
+				"proses"
+			],
+			[
+				"html",
+				"html	html"
 			],
 			[
 				"user",
@@ -84,14 +172,6 @@
 				"Deskripsi"
 			],
 			[
-				"pro",
-				"process"
-			],
-			[
-				"res",
-				"result"
-			],
-			[
 				"btn-",
 				"btn-primary"
 			],
@@ -106,14 +186,6 @@
 			[
 				"pri",
 				"printf"
-			],
-			[
-				"te",
-				"text-align"
-			],
-			[
-				"tex",
-				"text-align"
 			],
 			[
 				"wi",
@@ -134,10 +206,6 @@
 			[
 				"strto",
 				"strtotime"
-			],
-			[
-				"marg",
-				"margin-top"
 			],
 			[
 				"header",
@@ -372,10 +440,6 @@
 				"matriksA"
 			],
 			[
-				"ne",
-				"nextInt"
-			],
-			[
 				"matrik",
 				"matriksB"
 			],
@@ -419,39 +483,42 @@
 			"file": "config.php",
 			"settings":
 			{
-				"buffer_size": 427,
+				"buffer_size": 464,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "admin/setting.php",
+			"file": "admin/ekskul.php",
 			"settings":
 			{
-				"buffer_size": 7547,
+				"buffer_size": 5563,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "admin/user.php",
+			"file": "css/style.css",
 			"settings":
 			{
-				"buffer_size": 2989,
+				"buffer_size": 1814,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "admin/addadmin.php",
+			"contents": "<head>\n	<title>Sambutan</title>\n	<link href=\"style.css\" rel=\"stylesheet\" type=\"text/css\">\n	<?php\n		// require '../connect.php';\n		// $hasil=mysql_query(\"SELECT * FROM `ekstrakulikuler`\");\n	?>\n</head>\n\n<body>\n	<div class=\"atas\">\n	   <a href=\"main.html\"><p>SMP Negeri 1 Seyegan</p></a>\n    <div class=\"nav\">\n            <ul id=\"touch\">\n                <li>\n                    <a href=\"#\"><img src=\"../New folder/logo.png\" /></a>\n                </li>\n            </ul>\n            <a href=\"signin.html\"><input type=\"submit\" name=\"signup\" value=\"log in\"></a>\n    </div>\n    <div class=\"line\">\n            <img src=\"../New folder/line.png\" />\n        </div>\n	<div id='page'>\n		<div id='header'>\n		<img src='../images/logo.png' width=50> <h1>SMP N 1 SEYEGAN</h1>\n		</div>\n		<div id='search'><input type='text' placeholder='Search' width=20 name='search'> <input type=\"submit\" name=\"Go\" value=\"Go\"> </div>\n		<div id='left'>\n		<ul>\n			<li><a href=\"../main.html\">Home</a></li>\n			<li><a href=\"Visi.php\">Visi Misi</a></li>\n			<li><a href=\"Tatib.php\">Tata Tertib</a></li>\n			<li><a href=\"Sambutan.php\">Sambutan Kepala sekolah</a></li>\n			<li><a href=\"ekskul_list.php\">Exstrakulikuler</a></li>\n			<li><a href=\"Guest.php\">Guest Book</a></li>\n			<li><a href=\"Prestasi.php\">Prestasi</a></li>\n			<li><a href=\"fasilitas_list.php\">Fasilitas</a></li>\n			<li><a href=\"daftar_siswa.php\">Data Siswa</a></li>\n			<li><a href=\"daftar_pegawai.php\">Data Pegawai</a></li>\n		</ul>\n		</div>\n		<div id='right'>\n			<h2>Sambutan Kepala Sekolah</h2>\n			<p>\n			Salam sejahtera untuk kita semua. Puji syukur marilah kita panjatkan kehadirat Allah SWT<br>\nTuhan Yang Maha Kuasa, atas limpahan rahmat-Nya kita dapat bersilaturahmi melalui website sekolah kami www.sdlempuyangwangi.sch.id \nSaat sekarang ini, globalisasi telah menyentuh seluruh sendi-sendi kehidupan manusia di dunia. Tak terkecuali bangsa Indonesia, mau tak mau juga harus mengikuti arus globalisasi. Tantangan kehidupan yang menghadang pun juga meningkat seiring dengan dimanjakannya manusia di dunia dengan kecepatan akses informasi dari seluruh penjuru dunia. Masyarakat saat ini juga semakin melek informasi dan kritis dalam memandang suatu fenomena yang ada\n     Namun demikian, disamping sederetan kemanfaatan hadirnya teknologi informa si yang sangat pesat, juga ada dampak negatif yang sangat mempengaruhi paradigma dan pola kehidupan masyarakat dunia. Guna menjawab tantangan tersebut, SMPN 1 Seyegan berusaha memaksimalkan potensi yang ada untuk membangun komunikasi efektif dan jaringan informasi pendidikan secara lebih luas dengan harapan dapat menambah wawasan dan cakrawala pengetahuan serta sebagai media sharring antar guru, siswa, guru dengan siswa, guru dengan orang tua/wali, sekolah dengan stakeholders dan masyara kat luas.\n      Hadirnya website tersebut pada awal tahun pelajaran mempunyai nilai tersen diri dan merupakan era kebangkitan SMPN 1 Seyegan untuk tampil lebih elegan, profesional, produktif, transparan, akuntabel dalam menjalankan fungsi layanan publik di Kota Pendidikan. Penampilan SMPN 1 Seyegan di dunia maya bukan bukan sesuatu yang latah, akan tetapi merupakan upaya kreatif dan proaktif terhadap keputusan Pemerintah yang menetapkan SMPN 1 Seyegan sebagai Rintisan Sekolah Standar Nasional (RSSN) pada tahun 2007.\n      Besar harapan kami, kepada Keluarga Besar SMPN 1 Seyegan untuk memberikan sumbangsihnya dalam pengembangan website SMPN 1 Seyegan. Kritik dan saran yang konstruktif dari masyarakat kami terima dengan tangan terbuka guna penyempurnaan dan peningkatan profesionalisme pada masa yang akan datang. Akhirnya, kami mengucapkan Selamat Datang, Sugeng Rawuh, Welcome to SMPN 1 Seyegan. Semoga Sukses ! Good Luck !\n	</p>\n		<!-- </div>\n		<div id='foot'>\n		SMP N 1 SEYEGAN<a href='#header'>BACK TO TOP</a>\n		</div> -->\n	</div>\n	<!-- <div class=\"footer3\">\n        <p id=\"footer\">Copyright informatika uny 2014. All Right Reserved</p>\n        <img src=\"../New folder/logo1.png\" /><p>SMP Negeri 1 seyegan</p>\n    </div> -->\n    <div class=\"back\">\n        <a href=\"main.html\"><img src=\"../new folder/back.png\"></a>\n    </div>\n</body>",
+			"file": "/D/xampp/htdocs/titip/Sambutan.php",
+			"file_size": 4168,
+			"file_write_time": 130785926187407706,
 			"settings":
 			{
-				"buffer_size": 4030,
+				"buffer_size": 4113,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "admin/controller/editprofil.php",
+			"file": "/D/xampp/htdocs/titip/style.css",
 			"settings":
 			{
-				"buffer_size": 568,
+				"buffer_size": 8012,
 				"line_ending": "Windows"
 			}
 		}
@@ -463,12 +530,40 @@
 		"selected_items":
 		[
 			[
+				"colo",
+				"Color Picker"
+			],
+			[
 				"gl",
 				"Snippet: bs3-icon-glyphicon"
 			],
 			[
+				"col",
+				"Color Picker"
+			],
+			[
+				"color",
+				"Color Picker"
+			],
+			[
+				"thum",
+				"Snippet: bs3-thumbnail-content"
+			],
+			[
 				"gly",
 				"Snippet: bs3-icon-glyphicon"
+			],
+			[
+				"bs3-n",
+				"Snippet: bs3-navbar-responsive"
+			],
+			[
+				"bs3-h",
+				"Snippet: bs3-html5-template"
+			],
+			[
+				"htm",
+				"Snippet: <?php echo htmlentities(…) ?>"
 			],
 			[
 				"glyh",
@@ -571,7 +666,7 @@
 				"File: Close All"
 			]
 		],
-		"width": 512.0
+		"width": 400.0
 	},
 	"console":
 	{
@@ -601,37 +696,48 @@
 	"expanded_folders":
 	[
 		"/D/xampp/htdocs/sma9yk",
-		"/D/xampp/htdocs/sma9yk/admin",
-		"/D/xampp/htdocs/sma9yk/admin/controller",
-		"/D/xampp/htdocs/sma9yk/fonts",
-		"/D/xampp/htdocs/sma9yk/img",
-		"/D/xampp/htdocs/sma9yk/js"
+		"/D/xampp/htdocs/sma9yk/css"
 	],
 	"file_history":
 	[
+		"/D/xampp/htdocs/sma9yk/admin/index.php",
+		"/D/xampp/htdocs/sma9yk/agenda.php",
+		"/D/xampp/htdocs/sma9yk/news.php",
+		"/D/xampp/htdocs/sma9yk/index.php",
+		"/D/xampp/htdocs/sma9yk/prestasi.php",
+		"/D/xampp/htdocs/sma9yk/footer.php",
+		"/D/xampp/htdocs/sma9yk/css/style.css",
+		"/D/xampp/htdocs/sma9yk/websekolah.sql",
+		"/D/xampp/htdocs/sma9yk/ekskulview.php",
+		"/D/xampp/htdocs/sma9yk/ekskul.php",
+		"/D/xampp/htdocs/sma9yk/visimisi.php",
+		"/D/xampp/htdocs/sma9yk/sejarah.php",
+		"/D/xampp/htdocs/sma9yk/admin/agenda.php",
+		"/D/xampp/htdocs/sma9yk/newsview.php",
+		"/D/xampp/htdocs/sma9yk/admin/berita.php",
+		"/D/xampp/htdocs/sma9yk/admin/controller/upload.php",
+		"/D/xampp/htdocs/sma9yk/admin/setting.php",
+		"/D/xampp/htdocs/sma9yk/admin/controller/editprofil.php",
+		"/D/xampp/htdocs/sma9yk/admin/ekskul.php",
+		"/D/xampp/htdocs/sma9yk/menu.php",
+		"/D/xampp/htdocs/sma9yk/admin/user.php",
+		"/D/xampp/htdocs/sma9yk/admin/addadmin.php",
 		"/D/xampp/htdocs/sma9yk/admin/navbar.php",
 		"/D/xampp/htdocs/sma9yk/admin/menu.php",
 		"/D/xampp/htdocs/sma9yk/admin/controller/addadmin.php",
-		"/D/xampp/htdocs/sma9yk/admin/index.php",
-		"/D/xampp/htdocs/sma9yk/admin/controller/editprofil.php",
-		"/D/xampp/htdocs/sma9yk/admin/berita.php",
 		"/D/xampp/htdocs/sma9yk/admin/style.css",
-		"/D/xampp/htdocs/sma9yk/admin/ekskul.php",
 		"/D/xampp/htdocs/sma9yk/admin/editekskul.php",
 		"/D/xampp/htdocs/sma9yk/admin/addnews.php",
-		"/D/xampp/htdocs/sma9yk/admin/setting.php",
 		"/D/xampp/htdocs/sma9yk/admin/editnews.php",
 		"/D/xampp/htdocs/sma9yk/admin/controller/addekskul.php",
 		"/D/xampp/htdocs/sma9yk/admin/delekskul.php",
 		"/D/xampp/htdocs/sma9yk/admin/controller/up-ekskul.php",
 		"/D/xampp/htdocs/sma9yk/admin/controller/submitberita.php",
-		"/D/xampp/htdocs/sma9yk/admin/controller/upload.php",
 		"/D/xampp/htdocs/sma9yk/admin/controller/edittbberita.php",
 		"/D/xampp/htdocs/sma9yk/admin/controller/delberita.php",
 		"/D/xampp/htdocs/sma9yk/admin/addekskul.php",
 		"/D/xampp/htdocs/sma9yk/admin/addagenda.php",
 		"/D/xampp/htdocs/sma9yk/admin/controller/submitagenda.php",
-		"/D/xampp/htdocs/sma9yk/admin/agenda.php",
 		"/D/xampp/htdocs/sma9yk/admin/controller/delagenda.php",
 		"/D/xampp/htdocs/sma9yk/admin/edittbberita.php",
 		"/D/xampp/htdocs/sma9yk/admin/editprofil.php",
@@ -645,8 +751,6 @@
 		"/D/xampp/htdocs/sma9yk/config.php",
 		"/D/xampp/htdocs/sma9yk/admin/delprestasi.php",
 		"/D/xampp/htdocs/sma9yk/admin/editagenda.php",
-		"/D/xampp/htdocs/sma9yk/css/style.css",
-		"/D/xampp/htdocs/sma9yk/index.php",
 		"/D/xampp/htdocs/sma9yk/admin/submitagenda.php",
 		"/D/xampp/htdocs/sma9yk/css/jquery-ui.min.css",
 		"/D/xampp/htdocs/sma9yk/css/bootstrap.min.css",
@@ -723,20 +827,7 @@
 		"/E/pjava/alpro/soal2ls4.java",
 		"/E/pjava/alpro/soal3ls4.java",
 		"/E/pjava/alpro/soal5ls4.java",
-		"/E/pjava/alpro/soal4ls4.java",
-		"/E/pjava/alpro/soalbls3.java",
-		"/E/pjava/alpro/soalA3.java",
-		"/E/pjava/alpro/soalA4.java",
-		"/E/pjava/alpro/soalA5.java",
-		"/E/pjava/alpro/soalA2.java",
-		"/E/pjava/alpro/soalcls3.java",
-		"/E/pjava/alpro/soalA1.java",
-		"/E/pjava/alpro/soaA1.java",
-		"/E/pjava/alpro/Peluru.java",
-		"/E/pjava/alpro/opplusplus.java",
-		"/E/pjava/alpro/tugas2.txt",
-		"/E/Bintang's Doc/Semester 2/LS_2_14520241057/soalD.java",
-		"/E/Bintang's Doc/Semester 2/LS_2_14520241057/soalC.java"
+		"/E/pjava/alpro/soal4ls4.java"
 	],
 	"find":
 	{
@@ -747,6 +838,7 @@
 		"height": 90.0,
 		"where_history":
 		[
+			"D:\\xampp\\htdocs\\sma9yk\\admin",
 			"D:\\xampp\\htdocs\\sma9yk"
 		]
 	},
@@ -755,6 +847,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"absolute",
+			"position",
+			"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+			"terdekat",
+			"<center><h3><small>Copyright &copy; <?php echo \"$sekolah\"; ?></small></h3></center>",
+			"padding-top",
+			"header",
+			"img",
 			"Daftar",
 			"100ch",
 			"pre",
@@ -825,6 +925,8 @@
 		"regex": false,
 		"replace_history":
 		[
+			" ",
+			"		<?php include 'footer.php'; ?>\n<?php include 'footer.php'; ?>",
 			""
 		],
 		"reverse": false,
@@ -852,131 +954,15 @@
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 427,
+						"buffer_size": 464,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								427,
-								427
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 3,
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "admin/setting.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 7547,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								281,
-								293
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "admin/user.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 2989,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								2174,
-								2174
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false,
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 495.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 1,
-					"type": "text"
-				},
-				{
-					"buffer": 3,
-					"file": "admin/addadmin.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 4030,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								739,
-								739
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 0,
-					"type": "text"
-				},
-				{
-					"buffer": 4,
-					"file": "admin/controller/editprofil.php",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 568,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								563,
-								446
+								229,
+								229
 							]
 						],
 						"settings":
@@ -988,6 +974,130 @@
 						"zoom_level": 1.0
 					},
 					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "admin/ekskul.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5563,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1356,
+								1356
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 1620.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "css/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1814,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1559,
+								1559
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 980.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "/D/xampp/htdocs/titip/Sambutan.php",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4113,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3798,
+								3714
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/PHP/PHP.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "/D/xampp/htdocs/titip/style.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 8012,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4168,
+								4168
+							],
+							[
+								5033,
+								5033
+							],
+							[
+								6325,
+								6325
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4077.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
 					"type": "text"
 				}
 			]

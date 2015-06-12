@@ -4,7 +4,10 @@
 	//mencari data pada tabel berita
 	$id = $_GET['id'];
 
-	$sql ="SELECT * FROM `tb_ekskul` WHERE `id_ekskul` = id ";
+	$sql ="SELECT * FROM `tb_ekskul` WHERE `id_ekskul` = $id ";
+	$ekstrakurikuler = $conn->query($sql);
+	$ekstrakurikuler->data_seek(0);
+	$ekskulview = $ekstrakurikuler->fetch_array(MYSQLI_ASSOC);
 	$conn->close();
  ?>
 <!DOCTYPE html>
@@ -32,18 +35,21 @@
 		<div class="fluid header">
 			<div class="container ">
 			<div class="col-xs-12 col-sm-10 col-md-10 col-lg-10">
-				<h1>Hehe</h1>					
+				<h1><?php echo $ekskulview['nama_ekskul']; ?></h1>					
 			</div>
 			</div>
 		</div>
 		
 		<div class="container bayang ">
 			<img src="img/logo.png" width="80px" class="img-clip">
-			<img src="img/basketball.jpg" width="100%" class="img-responsive">
-			
+			<img src="img/<?php echo $ekskulview['image']; ?>" width="100%" class="img-responsive">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+				<h3><?php echo $ekskulview['nama_ekskul']; ?></h3>					
+				<?php echo $ekskulview['deskripsi']; ?>
+			</div>
 		</div>
 
-		<center><h3><small>Copyright &copy; <?php echo "$sekolah"; ?></small></h3></center>
+<?php include 'footer.php'; ?>
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->

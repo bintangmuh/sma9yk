@@ -49,16 +49,17 @@
 						$agenda->data_seek($i);
 						$row = $agenda->fetch_array(MYSQLI_ASSOC);
 				 ?>
-			<div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 box">
+			<div class="col-xs-12 col-sm-4 col-md-3 col-lg-3 box">
 				<h3><?php echo $row['judul']; ?></h3>
-				<h4><?php echo date("d M Y",strtotime($row['agendawkt'])); ?></h4	>
+				<h4><?php echo date("d M Y",strtotime($row['agendawkt'])); ?></h4>
+				<hr>
 				<p><?php echo date("H:i",strtotime($row['agendawkt'])); ?></p>
 				<p><?php echo $row['konten']; ?></p>
 			</div>
 			<?php } ?>
 		</div>
 		
-		<center><h3><small>Copyright &copy; <?php echo "$sekolah"; ?></small></h3></center>
+		<?php include 'footer.php'; ?>
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->

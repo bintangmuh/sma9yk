@@ -47,7 +47,7 @@
 			<?php echo $sejarah['sejarah']; ?>
 		</div>
 
-		<center><h3><small>Copyright &copy; <?php echo "$sekolah"; ?></small></h3></center>
+<?php include 'footer.php'; ?>
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->

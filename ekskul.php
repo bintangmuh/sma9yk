@@ -42,6 +42,30 @@
 		</div>
 		
 		<div class="container bayang ">
+			<div class="fluid">
+				<div id="gallery" class="carousel slide" data-ride="carousel">
+				    <ol class="carousel-indicators">
+				    	<?php for ($i=0; $i < $banyakdata; $i++) { 
+				    		echo '<li data-target="#gallery" data-slide-to="'.$i.'" class=""></li>';
+				    	} ?>
+				    </ol>
+				    <div class="carousel-inner">
+				    	<?php 
+							for($i=0; $i<$banyakdata; $i++) { 
+								$proses->data_seek($i);
+								$ekskul = $proses->fetch_array(MYSQLI_ASSOC);
+						?>
+				        <div class="item <?php if ($i == 0) {echo "active";} ?>">
+				            <div class="slider-image" style="background-image: url(img/<?php echo $ekskul['image'] ?>); ">
+				            	<h2 class="text-center"><?php echo $ekskul['nama_ekskul']; ?></h2>
+				            </div>
+				        </div>
+				        <?php } ?>		        
+				    </div>
+				    <a class="left carousel-control" href="#gallery" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+				    <a class="right carousel-control" href="#gallery" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+				</div>
+			</div>
 			<img src="img/logo.png" width="80px" class="img-clip">
 			<h3 class="text-center">Ekstrakurikuler Sekolah <?php echo $sekolah ?></h3>
 			<hr>
@@ -63,7 +87,7 @@
 							<?php echo $ekskul['deskripsi']; ?>
 						</div>
 						<p>
-							<a href="ekskulview.php" class="btn btn-primary">Lihat</a>
+							<a href="ekskulview.php?id=<?php echo $ekskul['id_ekskul']; ?>" class="btn btn-primary">Lihat</a>
 						</p>
 					</div>
 				</div>
@@ -71,7 +95,7 @@
 			<?php } ?>
 		</div>
 
-		<center><h3><small>Copyright &copy; <?php echo "$sekolah"; ?></small></h3></center>
+<?php include 'footer.php'; ?>
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->

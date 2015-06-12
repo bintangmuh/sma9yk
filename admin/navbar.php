@@ -13,8 +13,8 @@
 	<!-- Collect the nav links, forms, and other content for toggling -->
 	<div class="collapse navbar-collapse navbar-ex1-collapse">
 		<ul class="nav navbar-nav">
-			<li ><a href="#">Beranda</a></li>
-			<li ><a href="#">Beranda Admin</a></li>
+			<li ><a href="../index.php">Beranda</a></li>
+			<li ><a href="index.php">Beranda Admin</a></li>
 			<li class="dropdown visible-xs">
 			<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="glyphicon glyphicon-th-list"></span> <strong>Menu Admin</strong> <b class="caret"></b></a>
 			<ul class="dropdown-menu">

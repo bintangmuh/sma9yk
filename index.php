@@ -1,8 +1,25 @@
 <?php 
 	require 'config.php';
 	$sql="SELECT * FROM `tb_berita` ORDER BY `tb_berita`.`waktu` DESC";
+	$sql2="SELECT * FROM `tb_profil`";
+
+	$today = date('Y-m-d');
+	$sqlagenda = "SELECT * FROM `tb_agenda` WHERE `agendawkt` >= '$today 00:00:00' ORDER BY `agendawkt` ASC";
+
+	// querying berita
 	$result = $conn->query($sql);
+
+	// visimisi dan sejarah
+	$result2= $conn->query($sql2);
+	$result2->data_seek(0);
+	$profil = $result2->fetch_array(MYSQLI_ASSOC);
+
+	// berita
 	$rows = $result->num_rows;
+
+	// agenda
+	$agenda = $conn->query($sqlagenda);
+
  ?>
 <!DOCTYPE html>
 <html>
@@ -47,13 +64,19 @@
 			    </ol>
 			    <div class="carousel-inner">
 			        <div class="item active">
-			            <img alt="First slide" src="img/slider1.jpg">
+			            <div class="slider-image" style="background-image: url(img/slider1.jpg); ">
+			            	
+			            </div>
 			        </div>
 			        <div class="item">
-			            <img alt="2nd slide" src="img/slider2.jpg">
+			            <div class="slider-image" style="background-image: url(img/slider2.jpg); ">
+			            	
+			            </div>
 			        </div>
 			        <div class="item">
-			            <img alt="3rd slide" src="img/slider3.jpg">
+			            <div class="slider-image" style="background-image: url(img/slider3.jpg); ">
+			            	
+			            </div>
 			        </div>
 
 			        
@@ -62,7 +85,20 @@
 			    <a class="right carousel-control" href="#gallery" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
 			</div>
 		</div>
-		
+		<div class="fluid header" style="margin-top: -10px;">
+			<div class="container">
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<h3>Visi Misi</h3>
+					<div class="profil"><?php echo $profil['visimisi'] ?></div>
+					<a href="visimisi.php" class="btn btn-success" style="margin-top: 10px;"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Visi Misi ></a>
+				</div>
+				<div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+					<h3>Sejarah</h3>
+					<div class="profil"><?php echo $profil['sejarah'] ?></div>
+					<a href="sejarah.php" class="btn btn-success" style="margin-top: 10px;"><span class="glyphicon glyphicon-share-alt" aria-hidden="true"></span> Sejarah Sekolah ></a>
+				</div>
+			</div>
+		</div>
 		<div class="container">
 			<div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
 			 <div class="panel panel-default">
@@ -74,7 +110,7 @@
 						$result->data_seek($inbrita);
 						$row = $result->fetch_array(MYSQLI_ASSOC);
 					?>
-					<div class="media post-hover">
+					<div class="media">
 					  <div class="media-left">
 					    <a href="#">
 					      <img class="media-object" src="img/<?php echo $row['img_berita']; ?>" width="100px">
@@ -100,17 +136,32 @@
 			<div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
 				<div class="panel panel-default">
 					<div class="panel-heading">
-						<strong><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Agenda Terdekat</strong>				
+						<strong><span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Agenda Hari Ini</strong>				
 					</div>
 					<div class="panel-body">
-					   <h4>Tanggal</h4>
-					   <p>title</p>
+						<?php if ($agenda->num_rows == 0) {
+							echo "Tidak ada agenda mendatang";
+						} ?>
+					   <?php for ($i=0; $i < $agenda->num_rows; $i++) { 
+					   		$agenda->data_seek($i);
+					   		$agendasatuan = $agenda->fetch_array(MYSQLI_ASSOC);
+					   	?>
+					   	<div class="fluid agenda-index">
+					   	<h3><?php echo $agendasatuan['judul']; ?></h3>
+						<h4><?php echo date("d M Y",strtotime($agendasatuan['agendawkt'])); ?></h4>
+						<p><?php echo date("H:i",strtotime($agendasatuan['agendawkt'])); ?></p>
+						<p><?php echo $agendasatuan['konten']; ?></p>
+					   	</div>
+					   <?php } ?>
+					</div>
+					<div class="panel-footer">
+						<a href="agenda.php">Agenda lainnya</a>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<center><h3><small>Copyright &copy; <?php echo "$sekolah"; ?></small></h3></center>
+<?php include 'footer.php'; ?>
 		<!-- jQuery -->
 		<script src="js/jquery.js"></script>
 		<!-- Bootstrap JavaScript -->
