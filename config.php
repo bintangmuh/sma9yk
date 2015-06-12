@@ -1,5 +1,5 @@
 <?php
-$servername = " db4free.net";
+$servername = "db4free.net";
 $username = "hidrocarbon";
 $password = "terserah";
 $mydb = "websekolah"; //nama database
