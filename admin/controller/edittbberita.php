@@ -24,7 +24,7 @@
 	echo "$img";
 	$prosesedit = $conn->query($query);
 	if (!$prosesedit) {
-		header("location: ../berita.php?err=2");
+		header("location: ../berita.php?err=1");
 	}
 
 	$conn->close();

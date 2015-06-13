@@ -24,9 +24,6 @@
 			<li id="ekskul"><a href="ekskul.php"><span class="glyphicon glyphicon-knight"></span> Ekstrakurikuler</a></li>
 			
 			<li id="pengaturan"><a href="setting.php"><span class="glyphicon glyphicon-wrench"></span> Setting Profil Sekolah</a></li>
-			<li><a href="guru.php" ><span class="glyphicon glyphicon-user"></span> Guru</a></li>
-			<li><a href="" ><span class="glyphicon glyphicon-education"></span> Siswa</a></li>
-			<li><a href="" ><span class="glyphicon glyphicon-pencil"></span> Pelajaran</a></li>
 			</ul>
 			</li>
 
