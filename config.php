@@ -1,7 +1,7 @@
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "db4free.net";
+$username = "hidrocarbon";
+$password = "terserah";
 $mydb = "websekolah"; //nama database
 
 //sekolah

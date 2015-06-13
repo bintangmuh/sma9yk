@@ -74,7 +74,7 @@
 			            </div>
 			        </div>
 			        <div class="item">
-			            <div class="slider-image" style="background-image: url(img/slider3.jpg); ">
+			            <div class="slider-image" style="background-image: url(img/slider3.JPG); ">
 			            	
 			            </div>
 			        </div>
