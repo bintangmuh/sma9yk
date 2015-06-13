@@ -3,8 +3,7 @@
 session_start();
 require 'allowedadmin.php';
 //querying agenda
-$sql = "SELECT user_id FROM tb_user";
-$admin = $conn->query($sql);
+
 
 if (isset($_POST['tambahadmin'])) {
 	$userid = $_POST['username'];
@@ -26,6 +25,9 @@ if (isset($_GET['del'])) {
 		$message = "berhasil menghapus admin";
 	}
 }
+
+$sql = "SELECT user_id FROM tb_user";
+$admin = $conn->query($sql);
 
 ?>
 <!DOCTYPE html>
